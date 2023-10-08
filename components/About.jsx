@@ -20,7 +20,7 @@ const Aboutus = () => {
                         At Sea Hawk Adventures, we are passionate about adventure and the great outdoors. With years of experience and a deep love for nature, our team of expert guides is dedicated to providing you with the ultimate white-water rafting experience.
                     </p>
                     <p className=' font-mono my-2'>
-                        Nestled in the heart of Uttarakhand, our Ganga river offers thrilling rapids, stunning scenery, and memories that will last a lifetime. Whether you're an adrenaline junkie seeking the rush of the rapids or a nature enthusiast looking to explore untouched wilderness, we invite you to join us on an unforgettable journey through the untamed waters of Ganges.
+                        Nestled in the heart of Uttarakhand, our Ganga river offers thrilling rapids, stunning scenery, and memories that will last a lifetime. Whether you&apos;re an adrenaline junkie seeking the rush of the rapids or a nature enthusiast looking to explore untouched wilderness, we invite you to join us on an unforgettable journey through the untamed waters of Ganges.
                     </p>
                 </div>
                 <div className='flex items-center'>

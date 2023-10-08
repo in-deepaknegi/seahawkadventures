@@ -23,7 +23,7 @@ const Slider = () => {
                             </div>
                             <div className='w-full mt-10 max-w-3xl'>
                                 <h1 className='text-5xl'>
-                                    It's Time to Start Your Amazing Adventures
+                                    It&apos;s Time to Start Your Amazing Adventures
                                 </h1>
                             </div>
                             <div className='w-full mt-10 max-w-3xl'>
