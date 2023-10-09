@@ -1,14 +1,13 @@
 import React from 'react'
 import Image from 'next/image'
-import Avatar from '../public/rafting01.jpg'
+import Avatar from '@/public/rafting01.jpg'
 
-
-const Aboutus = () => {
+const About = () => {
     return (
         <section className='w-full px-1 md:px-8 my-12'>
             <div className='flex md:flex-row flex-col mx-3'>
                 <div className='w-[90%] relative mx-6'>
-                    <p className='relative uppercase mt-2 z-10 font-bold text-lg text-green-500'>
+                    <p className='relative uppercase mt-2 z-10 font-bold text-lg text-orange-400'>
                         Discover Story
                     </p>
                     <h3 className='text-5xl relative mb-10 z-[1]'>
@@ -37,4 +36,4 @@ const Aboutus = () => {
     )
 }
 
-export default Aboutus
+export default About
