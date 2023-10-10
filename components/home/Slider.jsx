@@ -16,18 +16,18 @@ const Slider = () => {
                         />
 
                         <div className="mt-20 absolute flex flex-col top-0 bottom-0 left-0 w-full p-4 text-white items-center justify-center text-center">
-                            <div className='max-w-4xl mt-[15rem] md:mt-20'>
-                                <h2 className='-mt-3 md:text-lg font-semibold uppercase bg-gradient-to-r from-orange-400 to-lime-400 text-2xl bg-clip-text text-transparent'>
+                            <div className='max-w-4xl mt-[5rem] md:mt-20'>
+                                <h2 className='-mt-3 md:text-lg text-lg font-semibold uppercase bg-gradient-to-r from-orange-400 to-lime-400 bg-clip-text text-transparent'>
                                     <span>We are hiking and outdoor club</span>
                                 </h2>
                             </div>
                             <div className='w-full mt-10 max-w-3xl'>
-                                <h1 className='text-5xl'>
+                                <h1 className='md:text-5xl text-3xl'>
                                     It&apos;s Time to Start Your Amazing Adventures
                                 </h1>
                             </div>
                             <div className='w-full mt-10 max-w-3xl'>
-                                <p className='text-lg'>
+                                <p className='md:text-lg text-md'>
                                     Welcome to the thrilling world of Sea Hawk Adventures! Embark on an unforgettable adventure as you navigate through the heart-pounding rapids of Ganges
                                 </p>
                             </div>
@@ -36,7 +36,7 @@ const Slider = () => {
                             </button>
                         </div>
 
-                        <div className='container absolute right-0 left-0 mx-auto z-[11]'>
+                        {/* <div className='container absolute right-0 left-0 mx-auto z-[11]'>
                             <div className='flex flex-wrap -mx-6'>
                                 <div className='static min-h-0 my-0 col-md-12'>
                                     <div className='flex absolute h-full left-4 right-4 justify-center p-0'>
@@ -48,7 +48,7 @@ const Slider = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
