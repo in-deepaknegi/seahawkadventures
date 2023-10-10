@@ -16,7 +16,7 @@ const Blogs = () => {
                     </h3>
                 </div>
 
-                <div className='grid md:grid-cols-2 gap-3'>
+                <div className='grid lg:grid-cols-2 gap-3'>
                     <div>
                         <Image
                             src={Avatar}
@@ -42,9 +42,9 @@ const Blogs = () => {
                     </div>
                 </div>
 
-                <div className='mt-20 flex md:flex-row flex-col-reverse gap-3'>
-                    <div className='font-sans md:mx-6 md:ml-20 md:text-right ml-0'>
-                        <div className='flex md:float-right gap-8'>
+                <div className='mt-20 flex lg:flex-row flex-col-reverse gap-3'>
+                    <div className='font-sans md:mx-6 lg:ml-20 lg:text-right ml-0'>
+                        <div className='flex lg:float-right gap-8'>
                             <div>October 8, 2023</div>
                             <div>by Alisa Michaels</div>
                         </div>

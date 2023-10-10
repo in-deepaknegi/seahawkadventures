@@ -5,7 +5,7 @@ import Avatar from '@/public/rafting01.jpg'
 const About = () => {
     return (
         <section className='w-full px-1 md:px-8 my-12'>
-            <div className='flex md:flex-row flex-col-reverse mx-3'>
+            <div className='flex lg:flex-row flex-col-reverse mx-3'>
                 <div className='w-[90%] relative mx-6'>
                     <p className='relative uppercase mt-2 z-10 font-bold text-lg text-orange-400'>
                         Discover Story
@@ -23,7 +23,7 @@ const About = () => {
                     </p>
                 </div>
                 <div className='flex items-center'>
-                    <div className='mx-auto w-[70%]'>
+                    <div className='mx-auto lg:w-[70%] w-[50%]'>
                         <Image
                             src={Avatar}
                             alt='Sea Hawk Avatar'
