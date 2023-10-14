@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Slide1 from '@/public/kyak02.jpg'
+import Slide1 from '../../public/rafting.jpg'
 
 const Slider = () => {
     return (
