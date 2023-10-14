@@ -9,10 +9,10 @@ import Slide5 from '@/public/SHAG05.jpg'
 
 const Gallery = () => {
     return (
-        <div className='relative overflow-auto mt-[7rem] px-8 bg-gradient-to-b from-white to-gray-100'>
-            <div className='pt-10 grid lg:grid-cols-4 grid-cols-1 md:mx-10'>
+        <div className='relative overflow-auto mt-5 md:mt-[7rem] px-8 bg-gradient-to-b from-white to-gray-100'>
+            <div className='pt-10 grid lg:grid-cols-4 grid-cols-1 sm:mx-10'>
                 <div className='col-span-2'>
-                    <div className='my-4 mt-20'>
+                    <div className='md:mt-20 mt-10 mx-2'>
                         <p className='relative uppercase mt-2 z-10 font-bold text-lg text-orange-400'>
                             Photos from our clients and their trips
                         </p>
@@ -24,25 +24,25 @@ const Gallery = () => {
                 </div>
                 <div className=''>
                     <Image
-                        src={Slide1}
-                        alt='demo image'
-                    />
-                </div>
-                <div className=''>
-                    <Image
                         src={Slide4}
                         alt='demo image'
                     />
                 </div>
                 <div className=''>
                     <Image
-                        src={Slide3}
+                        src={Slide1}
                         alt='demo image'
                     />
                 </div>
                 <div className=''>
                     <Image
                         src={Slide2}
+                        alt='demo image'
+                    />
+                </div>
+                <div className=''>
+                    <Image
+                        src={Slide3}
                         alt='demo image'
                     />
                 </div>
