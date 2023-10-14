@@ -9,7 +9,7 @@ import Slide5 from '@/public/SHAG05.jpg'
 
 const Gallery = () => {
     return (
-        <div className='relative overflow-auto mt-5 md:mt-[7rem] px-8 bg-gradient-to-b from-white to-gray-100'>
+        <div className='relative overflow-auto mt-5 lg:mt-[7rem] px-8 bg-gradient-to-b from-white to-gray-100'>
             <div className='pt-10 grid lg:grid-cols-4 grid-cols-1 sm:mx-10'>
                 <div className='col-span-2'>
                     <div className='md:mt-20 mt-10 mx-2'>
