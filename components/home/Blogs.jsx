@@ -4,7 +4,7 @@ import Avatar from '@/public/slide01.jpg'
 
 const Blogs = () => {
     return (
-        <div className='mx-8 md:mx-20 mt-20 mb-10'>
+        <div className='mx-8 md:mx-20 mt-[7rem] mb-10'>
             <div>
                 <div className='w-full'>
                     <p className='relative uppercase mt-2 z-10 font-bold text-lg text-orange-400'>

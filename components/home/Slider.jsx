@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Slide1 from '@/public/slide01.jpg'
+import Slide1 from '@/public/kyak02.jpg'
 
 const Slider = () => {
     return (
@@ -11,13 +11,13 @@ const Slider = () => {
                         <Image
                             src={Slide1}
                             alt='Slide Image 01'
-                            className='h-screen brightness-[.6] object-cover'
+                            className='h-screen brightness-[0.985] object-cover'
                             priority={true}
                         />
 
                         <div className="mt-20 absolute flex flex-col top-0 bottom-0 left-0 w-full p-4 text-white items-center justify-center text-center">
                             <div className='max-w-4xl mt-[5rem] md:mt-20'>
-                                <h2 className='-mt-3 md:text-lg text-lg font-semibold uppercase bg-gradient-to-r from-orange-400 to-lime-400 bg-clip-text text-transparent'>
+                                <h2 className='-mt-3 md:text-xl text-lg font-semibold uppercase bg-gradient-to-r from-orange-500 to-lime-500 bg-clip-text text-transparent'>
                                     <span>We are hiking and outdoor club</span>
                                 </h2>
                             </div>

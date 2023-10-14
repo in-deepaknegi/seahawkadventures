@@ -1,10 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
-import Avatar from '@/public/rafting01.jpg'
+import Avatar from '@/public/kk01.jpg'
 
 const About = () => {
     return (
-        <section className='w-full px-1 md:px-8 my-12'>
+        <section className='w-full px-1 md:px-8 my-12 mt-[7rem]'>
             <div className='flex lg:flex-row flex-col-reverse mx-3'>
                 <div className='w-[90%] relative mx-6'>
                     <p className='relative uppercase mt-2 z-10 font-bold text-lg text-orange-400'>

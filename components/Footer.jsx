@@ -7,12 +7,13 @@ const Footer = () => {
         <footer className="bg-white">
             <div className="mx-auto max-w-full px-4 py-16 sm:px-6 lg:px-8">
                 <div className="lg:flex w-full">
-                    <div className="text-teal-600 dark:text-teal-300 mx-10">
-                        {/* <Image
+                    <div className="text-black text-3xl mx-10 font-sans">
+                        <Image
                             src={Logo}
-                            width={120}
+                            width={180}
+                            height={180}
                             alt='Sea Hawk Adventuers Logo'
-                        /> */}
+                        />
                         Sea Hawk Adventures
                     </div>
 
@@ -296,7 +297,7 @@ const Footer = () => {
                 <div className="mt-8 border-t border-gray-100 pt-8 ">
                     <div className="sm:flex sm:justify-between">
                         <p className="text-xs text-gray-500">
-                            &copy; 2022. Company Name. All rights reserved.
+                            &copy; 2023. Sea Hawk Adventures. All rights reserved.
                         </p>
 
                         <ul
@@ -329,6 +330,10 @@ const Footer = () => {
                                 </a>
                             </li>
                         </ul>
+                        <div className="text-xs text-gray-500">
+                            Designed by &nbsp;
+                            <a href="#">TheCodingByte</a>
+                        </div>
                     </div>
                 </div>
             </div>
