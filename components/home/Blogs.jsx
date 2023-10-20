@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Avatar from '@/public/slide01.jpg'
+import Avatar from '@/public/temp/slide01.jpg'
 
 const Blogs = () => {
     return (

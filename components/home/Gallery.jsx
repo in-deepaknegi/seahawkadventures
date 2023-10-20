@@ -4,7 +4,7 @@ import Slide1 from '@/public/gallery/1100.jpeg'
 import Slide2 from '@/public/gallery/1101.jpeg'
 import Slide3 from '@/public/gallery/1102.jpeg'
 import Slide4 from '@/public/gallery/1103.jpeg'
-import Slide5 from '@/public/SHAG05.jpg'
+import Slide5 from '@/public/gallery/1104.jpg'
 
 
 const Gallery = () => {
@@ -48,19 +48,12 @@ const Gallery = () => {
                 </div>
                 <div className=''>
                     <Image
-                        src={Slide3}
+                        src={Slide5}
                         alt='demo image'
                         className=' '
                     />
                 </div>
-
-                {/* <div className=''>
-                    <Image
-                        src={Slide5}
-                        alt='demo image'
-                        className=' object-cover w-[299px] h-[299px]'
-                    />
-                </div> */}
+                
                 <div className='flex items-center flex-col h-full w-full justify-center lg:my-0 my-8'>
                     <a href="/gallery" className=' text-xl uppercase border-l border-orange-400 pl-5'> View more photos</a>
                 </div>

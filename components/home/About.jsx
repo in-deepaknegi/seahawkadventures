@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Avatar from '@/public/kk01.jpg'
+import Avatar from '@/public/gallery/1104.jpg'
 
 const About = () => {
     return (
@@ -23,7 +23,7 @@ const About = () => {
                     </p>
                 </div>
                 <div className='flex items-center md:mb-0 mb-8'>
-                    <div className='mx-auto lg:w-[70%] w-[70%]'>
+                    <div className='mx-auto w-[70%]'>
                         <Image
                             src={Avatar}
                             alt='Sea Hawk Avatar'
