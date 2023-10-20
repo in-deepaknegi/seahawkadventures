@@ -1,9 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
-import Slide1 from '@/public/SHAG01.jpg'
-import Slide2 from '@/public/SHAG02.jpg'
-import Slide3 from '@/public/SHAG03.jpg'
-import Slide4 from '@/public/SHAG04.jpg'
+import Slide1 from '@/public/gallery/1100.jpeg'
+import Slide2 from '@/public/gallery/1101.jpeg'
+import Slide3 from '@/public/gallery/1102.jpeg'
+import Slide4 from '@/public/gallery/1103.jpeg'
 import Slide5 from '@/public/SHAG05.jpg'
 
 
@@ -21,12 +21,6 @@ const Gallery = () => {
                             <span className='absolute -z-[1] font-bold uppercase -left-2 -top-[40px] text-[110px] text-gray-200 hidden lg:block'>Photos</span>
                         </h3>
                     </div>
-                </div>
-                <div className=''>
-                    <Image
-                        src={Slide4}
-                        alt='demo image'
-                    />
                 </div>
                 <div className=''>
                     <Image
@@ -48,7 +42,13 @@ const Gallery = () => {
                 </div>
                 <div className=''>
                     <Image
-                        src={Slide5}
+                        src={Slide4}
+                        alt='demo image'
+                    />
+                </div>
+                <div className=''>
+                    <Image
+                        src={Slide3}
                         alt='demo image'
                         className=' '
                     />

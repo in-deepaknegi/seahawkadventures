@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Slide1 from '../../public/rafting.jpg'
+import Slide1 from '../../public/main/2201.jpeg'
 
 const Slider = () => {
     return (
@@ -8,10 +8,12 @@ const Slider = () => {
             <div className='relative m-0'>
                 <div className='flex flex-col md:flex-row'>
                     <div className='block relative w-full'>
+                        {/* <div className='bg-gradient-to-b from-black/40 to-transparent z-6 absolute h-full w-full'>
+                        </div> */}
                         <Image
                             src={Slide1}
                             alt='Slide Image 01'
-                            className='h-screen brightness-[0.985] object-cover'
+                            className='h-screen object-cover brightness-[.8]'
                             priority={true}
                         />
 

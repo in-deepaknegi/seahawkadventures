@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'sfpro';
+    src: url('/fonts/sfpro.woff2');
+}
+
+@layer base {
+    .font-sf {
+        font-family: sfpro;
+    }
+}

@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../Navbar'
 import Slider from './Slider'
+import Hero from './Hero'
 import Aboutus from './About'
 import Gallery from './Gallery'
 import Blogs from './Blogs'
@@ -10,7 +11,8 @@ const Main = () => {
   return (
     <main>
         <Navbar />
-        <Slider />
+        {/* <Slider /> */}
+        <Hero />
         <Aboutus />
         <Gallery />
         <Blogs />
