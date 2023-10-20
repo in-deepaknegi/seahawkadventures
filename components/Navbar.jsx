@@ -57,7 +57,7 @@ const Navbar = () => {
 
             <header className={`fixed top-0 font-sans w-full transition-all duration-500 border-b border-t z-20 
             ${scroll ? 'bg-white mt-0 ease-in-out' : 'mt-8 ease-in-out'}`}>
-                <div className='max-w-screen-xl px-6 sm:px-8 lg:px-8 mx-auto grid grid-flow-col md:py-2 backdrop-blur-sm'>
+                <div className='max-w-screen-xl px-2 sm:px-4 lg:px-8 mx-auto grid grid-flow-col md:py-2 backdrop-blur-sm'>
                     <div className='col-start-1 col-end-2 flex items-center'>
                         <a href='/' className='flex'>
                             <div className={`my-auto ml-3 text-3xl ${scroll ? 'text-black' : 'text-white'}`}>
