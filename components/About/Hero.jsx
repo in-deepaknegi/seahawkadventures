@@ -1,8 +1,9 @@
+import Image from 'next/image'
 import React from 'react'
-
+import Avatar from '@/public/gallery/1102.jpeg'
 const Hero = () => {
     return (
-        <section className='mx-6 lg:mx-16 mt-[10rem]'>
+        <section className='mx-6 lg:mx-16 mt-[16rem] mb-20'>
             <div className='flex lg:flex-row flex-col-reverse w-full'>
                 <div className='flex lg:flex-row flex-col-reverse mx-3'>
                     <div className='w-[90%] relative mx-6'>
@@ -26,6 +27,13 @@ const Hero = () => {
                             
                         </div>
                     </div>
+                </div>
+                <div>
+                    <Image 
+                    src={Avatar}
+                    alt='aaa'
+                    className='mb-4'
+                    />
                 </div>
             </div>
         </section>
