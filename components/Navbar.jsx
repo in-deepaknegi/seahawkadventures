@@ -9,7 +9,7 @@ const Navbar = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 2) {
+            if (window.scrollY > 0) {
                 setScroll(true)
             } else {
                 setScroll(false)
@@ -27,7 +27,7 @@ const Navbar = () => {
     return (
         <>
             {/* section above navbar */}
-            {/* <div className={`${scroll ? 'hidden' : 'fixed z-10 w-full px-10'}`}>
+            {/* <div className={`${scroll ? 'hidden' : 'transition-all duration-500 z-10 w-full px-10'}`}>
                 <div className='flex mx-10' style={{ justifyContent: 'space-between' }}>
                     <div className='my-auto flex'>
                         <Image
@@ -35,17 +35,9 @@ const Navbar = () => {
                             alt='phone logo'
                             className='w-8 h-8'
                         />
-                        <span className='my-auto ml-4 text-white font-semibold'>
+                        <span className='my-auto ml-4 text-black'>
                             +91-9756620538
                         </span>
-                    </div>
-                    <div className='flex items-center'>
-                        <Image
-                            src={Logo}
-                            alt='site-logo'
-                            width={200}
-                            className='z-10'
-                        />
                     </div>
                     <div className='my-auto'>
                         +91-9756620538
@@ -71,11 +63,11 @@ const Navbar = () => {
                         </a>
                     </div>
                     <ul className={`hidden lg:flex col-start-4 col-end-8 items-center transition-all duration-100 ${scroll ? 'text-black' : 'text-black'}`}>
-                        <a href="/" className='px-4 py-2 mx-2 cursor-pointer relative hover:text-green-600'>Home</a>
-                        <a href="/about" className='px-4 py-2 mx-2 cursor-pointer relative hover:text-green-600'>About</a>
-                        <a href="/about" className='px-4 py-2 mx-2 cursor-pointer relative hover:text-green-600'>Feature</a>
-                        <a href="/about" className='px-4 py-2 mx-2 cursor-pointer relative hover:text-green-600'>Testimonial</a>
-                        <a href="/about" className='px-4 py-2 mx-2 cursor-pointer relative hover:text-green-600'>Contact Us</a>
+                        <a href="/" className='px-4 py-2 mx-2 cursor-pointer relative'>Home</a>
+                        <a href="/about" className='px-4 py-2 mx-2 cursor-pointer relative'>About</a>
+                        <a href="/about" className='px-4 py-2 mx-2 cursor-pointer relative'>Feature</a>
+                        <a href="/about" className='px-4 py-2 mx-2 cursor-pointer relative'>Testimonial</a>
+                        <a href="/about" className='px-4 py-2 mx-2 cursor-pointer relative'>Contact Us</a>
 
                     </ul>
                     <div className='col-start-10 col-end-12 font-medium md:flex justify-end items-center hidden'>

@@ -285,7 +285,7 @@ const Footer = () => {
                         </ul>
                         <div className="text-xs text-gray-500">
                             Designed by &nbsp;
-                            <a href="#">TheCodingByte</a>
+                            <a href="https://www.deepaknegi.in/" target='_blank'>Deepak Negi</a>
                         </div>
                     </div>
                 </div>
