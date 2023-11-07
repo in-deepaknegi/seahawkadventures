@@ -17,6 +17,12 @@
     background-position: 50% -10px;
     backface-visibility: 10;
   }
+  .bg-about {
+    background-image: url("/main/2202.jpeg");
+    background-position: 50% -140px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .bg-support::before {
     content: "";
     position: absolute;

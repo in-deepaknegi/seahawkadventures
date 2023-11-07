@@ -47,8 +47,8 @@ const Navbar = () => {
 
 
 
-            <header className={`fixed top-0 font-sans w-full transition-all duration-500 border-b border-t z-20 
-            ${scroll ? 'bg-white mt-0 ease-in-out' : 'mt-8 ease-in-out'}`}>
+            <header className={`fixed top-0 font-sans w-full transition-all duration-500 border-b border-t border-black/10 z-20 
+            ${scroll ? 'bg-white mt-0 ease-in-out' : 'bg-white mt-8 ease-in-out'}`}>
                 <div className='max-w-screen-xl px-2 sm:px-4 lg:px-8 mx-auto grid grid-flow-col md:py-2 backdrop-blur-sm'>
                     <div className='col-start-1 col-end-2 flex items-center'>
                         <a href='/' className='flex'>
@@ -67,7 +67,7 @@ const Navbar = () => {
                         <a href="/about" className='px-4 py-2 mx-2 cursor-pointer relative'>About</a>
                         <a href="/about" className='px-4 py-2 mx-2 cursor-pointer relative'>Feature</a>
                         <a href="/about" className='px-4 py-2 mx-2 cursor-pointer relative'>Testimonial</a>
-                        <a href="/about" className='px-4 py-2 mx-2 cursor-pointer relative'>Contact Us</a>
+                        <a href="/contact" className='px-4 py-2 mx-2 cursor-pointer relative'>Contact</a>
 
                     </ul>
                     <div className='col-start-10 col-end-12 font-medium md:flex justify-end items-center hidden'>
