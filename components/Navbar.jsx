@@ -13,7 +13,7 @@ const Navbar = () => {
                                 Rupees
                             </div>
                             <span className='my-auto ml-1'>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className='text-white'><path d="m6 9 6 6 6-6" /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className='text-white'><path d="m6 9 6 6 6-6" /></svg>
                             </span>
                         </div>
                         <div className='hidden flex-1 items-center lg:flex-none'>
@@ -28,7 +28,7 @@ const Navbar = () => {
                         </div>
                     </div>
                 </div>
-                <div className='bg-white border-b border-gray-300 flex items-center justify-between lg:py-[0.25rem] lg:px-8'>
+                <div className='bg-white border-b border-gray-300 flex items-center justify-between px-6 lg:py-[0.25rem] lg:px-8'>
                     <div className='flex lg:flex-none'>
                         <a href='/' className='-m-1.5 p-1.5 text-2xl font-medium'>
                             <Image
@@ -37,6 +37,15 @@ const Navbar = () => {
                                 className='w-32'
                             />
                         </a>
+                    </div>
+                    <div className='flex lg:hidden'>
+                        <button
+                            type='button' className='-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700'>
+                            <span className='sr-only'>Open main menu</span>
+                            <svg className='h-6 w-6' fill='none' viewBox='0 0 24 24' strokeWidth='1.5' stroke='currentColor' aria-hidden='true'>
+                                <path strokeLinecap='round' strokeLinejoin='round' d='M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5' />
+                            </svg>
+                        </button>
                     </div>
                     <div className='hidden lg:flex lg:gap-x-12 ml-10'>
                         <a href='#' className='text-sm font-semibold leading-6 text-gray-900'>Explore</a>

@@ -1,8 +1,76 @@
+'use client'
 import React from 'react'
+import Image from 'next/image'
+import Hero1 from '@/public/hiking1.WEBP';
+import Hero2 from '@/public/hiking2.WEBP';
+import Hero3 from '@/public/hiking3.WEBP';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/effect-fade';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import { EffectFade, Autoplay, Navigation, Pagination } from 'swiper/modules';
+
+
+const Trek = [
+    {
+        id: 1,
+        imageUrl: Hero1,
+    },
+    {
+        id: 2,
+        imageUrl: Hero2,
+    },
+    {
+        id: 3,
+        imageUrl: Hero3,
+    },
+]
 
 const Hero = () => {
     return (
-        <div>Hero</div>
+        <section className='relative isolate overflow-hidden -mt-20'>
+            <Image
+                src={Hero3}
+                alt='hero image 3'
+                quality={100}
+                loading='eager'
+                fill={true}
+                sizes='100vw'
+                style={{
+                    objectFit: 'cover',
+                    objectPosition: 'top',
+                }}
+                className='absolute inset-0 z-[-10]'
+            />
+            <div className='md:absolute w-full h-full z-[-9] bg-gradient-to-b from-white/10 to-black/70'></div>
+
+            <div className='md:hidden block absolute w-full h-full z-[-9] bg-gradient-to-b from-black/10 via-black/30 to-black/80'></div>
+
+            <div className='mx-auto max-w-5xl text-center px-6 py-32 md:py-48 lg:py-40 lg:px-0'>
+                <div className='hidden sm:mb-8 sm:flex sm:justify-center'>
+                    <div className='relative rounded-full px-3 py-1 text-sm leading-6 text-white ring-1 ring-gray-200 hover:ring-gray-900/20'>
+                        Announcing our next round of funding.
+                        <a href='#' className='text-orange-500'>
+                            <span className='absolute inset-0' aria-hidden='true'> </span>
+                            &nbsp;Read more <span aria-hidden='true'>→</span>
+                        </a>
+                    </div>
+                </div>
+                <h1 className='text-4xl mt-5 font-semibold text-white md:text-5xl md:mt-0 lg:text-6xl'>
+                    Explore, Dream, Discover: Adventure Awaits!
+                </h1>
+                <p className='mt-6 text-base text-gray-50 md:font-light md:text-lg'>
+                    Embark on unforgettable hiking, rafting, and kayaking adventures in the stunning landscapes of Uttarakhand, surrounded by the majestic beauty of the Himalayas, and along the pristine Ganges River, where every bend brings new thrills and breathtaking views.
+                </p>
+                <div className='mt-10 flex items-center justify-center gap-x-6'>
+                    <a href='#' className='rounded-md bg-orange-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-orange-600 '>Discover trips</a>
+                    <a href='#' className='text-sm font-semibold leading-6 text-orange-500 my-auto'>
+                        Join us <span aria-hidden='true'>→</span></a>
+                </div>
+            </div>
+        </section>
     )
 }
 
