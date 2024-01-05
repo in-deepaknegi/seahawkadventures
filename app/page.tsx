@@ -1,7 +1,13 @@
-import Main from '@/components/home/Main'
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+import Hero from '@/components/home/Hero';
 
 export default function Home() {
   return (
-    <Main />
+    <>
+      <Navbar />
+      <Hero />
+      <Footer />
+    </>
   )
 }
