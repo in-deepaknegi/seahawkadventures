@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import Hiking1 from '@/public/hiking1.WEBP';
-import Kayak1 from '@/public/kayak1.jpg';
+import Rafting1 from '@/public/rafting1.WEBP';
+import Kayak1 from '@/public/kayak2.WEBP';
 
 const features = [
     {
@@ -64,7 +64,7 @@ const Feature = () => {
                         </div>
                         <div className='my-auto col-span-12 order-first lg:order-last lg:col-span-6'>
                             <Image
-                                src={Hiking1}
+                                src={Rafting1}
                                 alt='Product screenshot'
                                 quality={100}
                                 loading='eager'

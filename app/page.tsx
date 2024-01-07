@@ -4,6 +4,7 @@ import Hero from '@/components/home/Hero';
 import Feature from '@/components/home/Feature';
 import Newsletter from '@/components/Newsletter';
 import Hiw from '@/components/home/Hiw';
+import Blog from '@/components/home/Blog';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <Feature />
       <Hiw />
+      <Blog />
       <Newsletter />
       <Footer />
     </>

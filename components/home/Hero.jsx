@@ -1,38 +1,13 @@
 'use client'
 import React from 'react'
 import Image from 'next/image'
-import Hero1 from '@/public/hiking1.WEBP';
-import Hero2 from '@/public/hiking2.WEBP';
-import Hero3 from '@/public/hiking3.WEBP';
-
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/effect-fade';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import { EffectFade, Autoplay, Navigation, Pagination } from 'swiper/modules';
-
-
-const Trek = [
-    {
-        id: 1,
-        imageUrl: Hero1,
-    },
-    {
-        id: 2,
-        imageUrl: Hero2,
-    },
-    {
-        id: 3,
-        imageUrl: Hero3,
-    },
-]
+import Hero1 from '@/public/kayak1.WEBP';
 
 const Hero = () => {
     return (
         <section className='relative isolate overflow-hidden -mt-20'>
             <Image
-                src={Hero3}
+                src={Hero1}
                 alt='hero image 3'
                 quality={100}
                 loading='eager'

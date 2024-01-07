@@ -3,3 +3,7 @@
 # add different currency functionality
 
 # integrate AOS library
+
+
+# commit-1 : misc-changes
+# commit-2 : blog section
