@@ -8,15 +8,16 @@ const Navbar = () => {
             <nav>
                 <div className='bg-black'>
                     <div className='mx-auto flex h-10 items-center justify-between px-6 lg:px-8'>
-                        <div className='flex'>
-                            <div className='text-white text-sm lg:block'>
+                        <div className='flex-1'>
+                            <div className='text-white text-sm inline-flex'>
                                 Rupees
+                                <span className='my-auto ml-1'>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className='text-white'><path d="m6 9 6 6 6-6" /></svg>
+                                </span>
                             </div>
-                            <span className='my-auto ml-1'>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className='text-white'><path d="m6 9 6 6 6-6" /></svg>
-                            </span>
+
                         </div>
-                        <div className='hidden flex-1 items-center lg:flex-none'>
+                        <div className='hidden justify-center items-center lg:flex'>
                             <a href='#' className='text-gray-200 text-sm'>
                                 Get 20% discount on your first trip
                             </a>

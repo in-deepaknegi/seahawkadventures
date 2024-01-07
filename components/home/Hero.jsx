@@ -44,14 +44,14 @@ const Hero = () => {
                 }}
                 className='absolute inset-0 z-[-10]'
             />
-            <div className='md:absolute w-full h-full z-[-9] bg-gradient-to-b from-white/10 via-black/10 to-black/90'></div>
 
+            <div className='md:absolute w-full h-full z-[-9] bg-gradient-to-b from-white/10 via-black/10 to-black/90'></div>
             <div className='md:hidden block absolute w-full h-full z-[-9] bg-gradient-to-b from-black/10 via-black/30 to-black/80'></div>
 
             <div className='mx-auto max-w-5xl text-center px-6 py-32 md:py-48 lg:py-40 lg:px-0'>
                 <div className='hidden sm:mb-8 sm:flex sm:justify-center'>
-                    <div className='relative rounded-full px-3 py-1 text-sm leading-6 text-white ring-1 ring-gray-200 hover:ring-gray-900/20'>
-                        Announcing our next round of funding.
+                    <div className='relative rounded-full px-3 py-1 text-sm leading-6 text-white bg-black/60 ring-1 ring-gray-200 hover:ring-gray-900/20'>
+                        Explore our upcoming adventures.
                         <a href='#' className='text-orange-500'>
                             <span className='absolute inset-0' aria-hidden='true'> </span>
                             &nbsp;Read more <span aria-hidden='true'>→</span>
