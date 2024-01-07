@@ -36,19 +36,13 @@ const Hero = () => {
                 alt='hero image 3'
                 quality={100}
                 loading='eager'
-                fill={true}
-                sizes='100vw'
-                style={{
-                    objectFit: 'cover',
-                    objectPosition: 'top',
-                }}
-                className='absolute inset-0 z-[-10]'
+                className='w-full h-full object-cover absolute inset-0 z-[-10]'
             />
 
             <div className='md:absolute w-full h-full z-[-9] bg-gradient-to-b from-white/10 via-black/10 to-black/90'></div>
             <div className='md:hidden block absolute w-full h-full z-[-9] bg-gradient-to-b from-black/10 via-black/30 to-black/80'></div>
 
-            <div className='mx-auto max-w-5xl text-center px-6 py-32 md:py-48 lg:py-40 lg:px-0'>
+            <div className='mx-auto max-w-5xl text-center px-6 py-52 lg:py-40 lg:px-0'>
                 <div className='hidden sm:mb-8 sm:flex sm:justify-center'>
                     <div className='relative rounded-full px-3 py-1 text-sm leading-6 text-white bg-black/60 ring-1 ring-gray-200 hover:ring-gray-900/20'>
                         Explore our upcoming adventures.
@@ -58,10 +52,10 @@ const Hero = () => {
                         </a>
                     </div>
                 </div>
-                <h1 className='text-4xl mt-5 font-semibold text-white md:text-5xl md:mt-0 lg:text-6xl'>
+                <h1 className='mt-5 font-semibold text-white text-5xl md:mt-0 lg:text-6xl'>
                     Explore, Dream, Discover: Adventure Awaits!
                 </h1>
-                <p className='mt-6 text-base text-gray-50 md:font-light md:text-lg'>
+                <p className='mt-12 text-base text-gray-50 md:mt-6 md:font-light md:text-lg'>
                     Embark on unforgettable hiking, rafting, and kayaking adventures in the stunning landscapes of Uttarakhand, surrounded by the majestic beauty of the Himalayas, and along the pristine Ganges River, where every bend brings new thrills and breathtaking views.
                 </p>
                 <div className='mt-10 flex items-center justify-center gap-x-6'>
