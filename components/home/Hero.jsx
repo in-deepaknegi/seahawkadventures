@@ -4,13 +4,12 @@ import React from 'react'
 const Hero = () => {
     return (
         <section className='relative isolate overflow-hidden -mt-20'
-        style={{
-            backgroundImage: "url('/kayak1.WEBP')",
-            backgroundPosition: 'center',
-            backgroundSize: 'cover',
-            // backgroundAttachment: 'fixed',
-        }}>
-            
+            style={{
+                backgroundImage: "url('/kayak1.WEBP')",
+                backgroundPosition: 'center',
+                backgroundSize: 'cover',
+                // backgroundAttachment: 'fixed',
+            }}>
 
             <div className='md:absolute w-full h-full z-[-9] bg-gradient-to-b from-white/10 via-black/10 to-black/90'></div>
             <div className='md:hidden block absolute w-full h-full z-[-9] bg-gradient-to-b from-black/10 via-black/30 to-black/80'></div>
@@ -35,10 +34,10 @@ const Hero = () => {
                     Embark on unforgettable hiking, rafting, and kayaking adventures in the stunning landscapes of Uttarakhand, surrounded by the majestic beauty of the Himalayas, and along the pristine Ganges River, where every bend brings new thrills and breathtaking views.
                 </p>
                 <div className='mt-10 flex items-center justify-center gap-x-6'>
-                    <a href='#' className='rounded-md bg-orange-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-orange-600'>
+                    <a href='/explore' className='rounded-md bg-orange-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-orange-600'>
                         Discover trips
                     </a>
-                    <a href='#' className='text-sm font-semibold leading-6 text-orange-500 my-auto'>
+                    <a href='/#newsletter' className='text-sm font-semibold leading-6 text-orange-500 my-auto'>
                         Join us <span aria-hidden='true'>→</span>
                     </a>
                 </div>

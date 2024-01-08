@@ -53,7 +53,8 @@ const Blog = () => {
                 </div>
                 <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                     {posts.map((post) => (
-                        <article key={post.id} className="flex flex-col items-start">
+                        <article key={post.id} className="flex flex-col items-start"
+                            data-aos="fade-up" data-aos-duration="1000">
                             <div className='relative w-full'>
                                 <Image
                                     src={post.img}
