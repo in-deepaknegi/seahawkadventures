@@ -13,12 +13,7 @@ const posts = [
         description: 'Experience the heart-pounding thrill of white water rafting and discover the absolute best spots around the world to take on this exhilarating adventure.',
         time: '5 min read',
         category: { title: 'Marketing', href: '#' },
-        // author: {
-        //     name: 'Michael Foster',
-        //     role: 'Co-Founder / CTO',
-        //     href: '#',
-        //     imageUrl: Author1,
-        // },
+        delay: 500,
     },
     {
         id: 2,
@@ -28,6 +23,7 @@ const posts = [
         description: 'Discover the serene beauty and tranquility of kayaking as you explore the best places to paddle and immerse yourself in the stunning natural surroundings.',
         time: '6 min read',
         category: { title: 'Marketing', href: '#' },
+        delay: 1000,
     },
     {
         id: 3,
@@ -37,6 +33,7 @@ const posts = [
         description: 'Discover the breathtaking beauty of hiking in the majestic Himalayas, where towering peaks kiss the sky, and experience the exhilarating challenges that come with traversing this awe-inspiring mountain range.',
         time: '4 min read',
         category: { title: 'Marketing', href: '#' },
+        delay: 2000,
     },
 ]
 
@@ -56,8 +53,7 @@ const Blog = () => {
                 </div>
                 <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                     {posts.map((post) => (
-                        <article key={post.id} className="flex flex-col items-start"
-                            data-aos="fade-up" data-aos-duration="1000">
+                        <article key={post.id} className="flex flex-col items-start">
                             <div className='relative w-full'>
                                 <Image
                                     src={post.img}
