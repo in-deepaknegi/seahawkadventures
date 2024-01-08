@@ -64,10 +64,10 @@ const Footer = () => {
                                     <a href='#' className='hover:underline '>Hiking</a>
                                 </li>
                                 <li>
-                                    <a href='#' className='hover:underline '>Rafting</a>
+                                    <a href='/explore/rafting' className='hover:underline '>Rafting</a>
                                 </li>
                                 <li>
-                                    <a href='#' className='hover:underline'>Kayaking</a>
+                                    <a href='/explore/kayaking' className='hover:underline'>Kayaking</a>
                                 </li>
                                 <li>
                                     <a href="#" className='hover:underline'>Trekking</a>
@@ -84,10 +84,10 @@ const Footer = () => {
                                     <a href='#' className='hover:underline'>Trips</a>
                                 </li>
                                 <li>
-                                    <a href='#' className='hover:underline'>Contacts</a>
+                                    <a href='/contacts' className='hover:underline'>Contacts</a>
                                 </li>
                                 <li>
-                                    <a href="#" className='hover:underline'>About</a>
+                                    <a href="/about" className='hover:underline'>About</a>
                                 </li>
                             </ul>
                         </div>

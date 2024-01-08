@@ -26,9 +26,9 @@ const Navbar = () => {
 
                         </div>
                         <div className='hidden justify-center items-center lg:flex'>
-                            <a href='#' className='text-gray-200 text-sm'>
-                                Get 20% discount on your first trip
-                            </a>
+                            <div className='text-gray-200 text-sm'>
+                                Get 20% discount on your first booking
+                            </div>
                         </div>
                         <div className='lg:flex lg:flex-1 lg:gap-2 lg:items-center lg:justify-end'>
                             <a href='/login' className='text-gray-100 text-sm'>Log In</a>
@@ -58,18 +58,18 @@ const Navbar = () => {
                         </button>
                     </div>
                     <div className='hidden lg:flex lg:gap-x-12 ml-10'>
-                        <a href='#' className='text-sm font-semibold leading-6 text-gray-900'>Explore</a>
-                        <a href='#' className='text-sm font-semibold leading-6 text-gray-900'>Plan Trip</a>
-                        <a href='#' className='text-sm font-semibold leading-6 text-gray-900'>Contacts</a>
-                        <a href='#' className='text-sm font-semibold leading-6 text-gray-900'>About</a>
+                        <a href='/explore' className='text-sm font-semibold leading-6 text-gray-900'>Explore</a>
+                        <a href='/booking' className='text-sm font-semibold leading-6 text-gray-900'>Plan Trip</a>
+                        <a href='/contacts' className='text-sm font-semibold leading-6 text-gray-900'>Contacts</a>
+                        <a href='/about' className='text-sm font-semibold leading-6 text-gray-900'>About</a>
                     </div>
                     <div className='hidden lg:ml-8 lg:flex lg:flex-none lg:gap-4 lg:items-center lg:pl-8'>
                         <a href='#' className='text-gray-700'>Search</a>
                         <a href='#' className='text-gray-700'>Help</a>
                         <span className='h-5 w-[1px] bg-gray-500'></span>
-                        <a href=''>
-                            <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' strokeWidth='1.5' stroke='currentColor' aria-hidden='true' className='w-6 h-6 text-gray-400'><path strokeLinecap='round' strokeLinejoin='round' d='M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z'></path></svg>
-                        </a>
+                        <div>
+                            <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' strokeWidth='1.5' stroke='currentColor' aria-hidden='true' className='w-6 h-6 text-gray-600'><path strokeLinecap='round' strokeLinejoin='round' d='M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z'></path></svg>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -78,7 +78,7 @@ const Navbar = () => {
                     <div className='fixed inset-0 z-50'></div>
                     <div className='fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-12 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10'>
                         <div className='flex items-center justify-between'>
-                            <a href='#' className='-m-1.5 p-1.5'>
+                            <a href='/' className='-m-1.5 p-1.5'>
                                 <span className='sr-only'>Your Company</span>
                             </a>
                             <button
@@ -93,10 +93,10 @@ const Navbar = () => {
                         <div className='mt-6 flow-root'>
                             <div className='-my-6 divide-y divide-gray-500/10'>
                                 <div className='space-y-2 py-6'>
-                                    <a href='#' className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>Explore</a>
-                                    <a href='#' className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>Plan Trip</a>
-                                    <a href='#' className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>Contacts</a>
-                                    <a href='#' className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>About</a>
+                                    <a href='/explore' className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>Explore</a>
+                                    <a href='/booking' className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>Plan Trip</a>
+                                    <a href='/contacts' className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>Contacts</a>
+                                    <a href='/about' className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>About</a>
                                 </div>
                             </div>
                         </div>

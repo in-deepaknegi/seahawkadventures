@@ -54,11 +54,11 @@ const Feature = () => {
                                     ))}
                                 </div>
                                 <div className="mt-10 flex gap-x-6">
-                                    <a href="#" className="rounded-md px-3.5 py-2.5 text-sm font-semibold text-orange-600 shadow-sm ring-1 ring-orange-500 hover:text-white hover:bg-orange-500">
+                                    <a href="/booking" className="rounded-md px-3.5 py-2.5 text-sm font-semibold text-orange-600 shadow-sm ring-1 ring-orange-500 hover:text-white hover:bg-orange-500">
                                         Book now
                                     </a>
-                                    <a href="#" className="text-sm font-semibold leading-6 text-gray-900 my-auto">
-                                        Explore more <span aria-hidden="true">→</span></a>
+                                    <a href="/explore/rafting" className="text-sm font-semibold leading-6 text-gray-900 my-auto">
+                                        Explore rafting <span aria-hidden="true">→</span></a>
                                 </div>
                             </div>
                         </div>
@@ -109,11 +109,11 @@ const Feature = () => {
                                     ))}
                                 </div>
                                 <div className="mt-10 flex gap-x-6">
-                                    <a href="#" className="rounded-md px-3.5 py-2.5 text-sm font-semibold text-orange-600 shadow-sm ring-1 ring-orange-500 hover:text-white hover:bg-orange-500">
+                                    <a href="/booking" className="rounded-md px-3.5 py-2.5 text-sm font-semibold text-orange-600 shadow-sm ring-1 ring-orange-500 hover:text-white hover:bg-orange-500">
                                         Book now
                                     </a>
-                                    <a href="#" className="text-sm font-semibold leading-6 text-gray-900 my-auto">
-                                        Explore more <span aria-hidden="true">→</span></a>
+                                    <a href="/explore/kayaking" className="text-sm font-semibold leading-6 text-gray-900 my-auto">
+                                        Explore kayaking <span aria-hidden="true">→</span></a>
                                 </div>
                             </div>
                         </div>

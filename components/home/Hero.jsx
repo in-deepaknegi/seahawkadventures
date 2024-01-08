@@ -21,7 +21,7 @@ const Hero = () => {
                 <div className='hidden sm:mb-8 sm:flex sm:justify-center'>
                     <div className='relative rounded-full px-3 py-1 text-sm leading-6 text-white bg-black/60 ring-1 ring-gray-200 hover:ring-gray-900/20'>
                         Explore our upcoming adventures.
-                        <a href='#' className='text-orange-500'>
+                        <a href='/explore' className='text-orange-500'>
                             <span className='absolute inset-0' aria-hidden='true'> </span>
                             &nbsp;Read more <span aria-hidden='true'>→</span>
                         </a>
@@ -34,10 +34,10 @@ const Hero = () => {
                     Embark on unforgettable hiking, rafting, and kayaking adventures in the stunning landscapes of Uttarakhand, surrounded by the majestic beauty of the Himalayas, and along the pristine Ganges River, where every bend brings new thrills and breathtaking views.
                 </p>
                 <div className='mt-10 flex items-center justify-center gap-x-6'>
-                    <a href='#' className='rounded-md bg-orange-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-orange-600'>
+                    <a href='/explore' className='rounded-md bg-orange-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-orange-600'>
                         Discover trips
                     </a>
-                    <a href='#' className='text-sm font-semibold leading-6 text-orange-500 my-auto'>
+                    <a href="/#newsletter" className='text-sm font-semibold leading-6 text-orange-500 my-auto'>
                         Join us <span aria-hidden='true'>→</span>
                     </a>
                 </div>

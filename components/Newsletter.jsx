@@ -2,7 +2,7 @@ import React from 'react'
 
 const Newsletter = () => {
     return (
-        <section className='py-10 sm:py-24 lg:py-32'>
+        <section id="newsletter" className='py-10 sm:py-24 lg:py-32'>
             <div className='mx-auto items-center grid max-w-7xl grid-cols-1 px-6 lg:grid-cols-12 lg:gap-1 lg:px-8'>
                 <div className='mx-auto col-span-12 lg:col-span-7 lg:mx-0'>
                     <h2 className='text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>Stay Updated with Our Newsletter</h2>

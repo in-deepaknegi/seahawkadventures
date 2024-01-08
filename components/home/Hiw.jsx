@@ -79,10 +79,10 @@ const Hiw = () => {
             </div>
 
             <div className="mt-16 flex items-center justify-center gap-x-6">
-                <a href="#" className="rounded-md px-5 py-2.5 text-sm font-semibold text-white bg-orange-500 shadow-sm">
+                <a href="/booking" className="rounded-md px-5 py-2.5 text-sm font-semibold text-white bg-orange-500 shadow-sm">
                     Book
                 </a>
-                <a href="#" className="text-sm font-semibold leading-6 text-gray-900 my-auto">
+                <a href="/explore" className="text-sm font-semibold leading-6 text-gray-900 my-auto">
                     Explore more <span aria-hidden="true">→</span></a>
             </div>
         </section>
