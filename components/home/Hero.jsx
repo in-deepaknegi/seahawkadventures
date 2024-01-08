@@ -3,14 +3,14 @@ import React from 'react'
 
 const Hero = () => {
     return (
-        <section className='relative isolate overflow-hidden -mt-20'>
-            <Image
-                src={Hero1}
-                alt='hero image 3'
-                quality={100}
-                loading='eager'
-                className='w-full h-full object-cover absolute inset-0 z-[-10]'
-            />
+        <section className='relative isolate overflow-hidden -mt-20'
+        style={{
+            backgroundImage: "url('/kayak1.WEBP')",
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            // backgroundAttachment: 'fixed',
+        }}>
+            
 
             <div className='md:absolute w-full h-full z-[-9] bg-gradient-to-b from-white/10 via-black/10 to-black/90'></div>
             <div className='md:hidden block absolute w-full h-full z-[-9] bg-gradient-to-b from-black/10 via-black/30 to-black/80'></div>

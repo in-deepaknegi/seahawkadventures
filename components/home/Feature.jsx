@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect } from 'react';
 import Image from 'next/image';
-import Rafting1 from '@/public/rafting1.WEBP';
+import Rafting2 from '@/public/rafting2.WEBP';
 import Kayak1 from '@/public/kayak2.WEBP';
 
 const features = [
@@ -29,9 +29,6 @@ const features = [
 ]
 
 const Feature = () => {
-    useEffect(() => {
-        AOS.init();
-    })
     return (
         <>
             <section className='overflow-hidden bg-white py-16 sm:py-20'>
