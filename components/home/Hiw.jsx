@@ -25,20 +25,23 @@ const Hiw = () => {
     return (
         <section className='bg-white px-6 py-24 lg:py-32 lg:px-8'>
             <div className='mx-auto max-w-2xl md:text-center'>
-                <p className='text-base font-semibold leading-7 text-orange-500'>
+                <p className='text-base font-semibold leading-7 text-orange-500'
+                    data-aos="fade-up" data-aos-duration="1000">
                     Get familiar with our process
                 </p>
-                <h2 className='mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>
+                <h2 className='mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'
+                    data-aos="fade-up" data-aos-duration="1000">
                     Book Your Next Adventure With Us
                 </h2>
-                <p className='mt-6 text-lg leading-8 text-gray-600'>
+                <p className='mt-6 text-lg leading-8 text-gray-600'
+                    data-aos="fade-up" data-aos-duration="1000">
                     At our adventure company, booking your next Uttarakhand and Ganga River excursion is easy. Just pick your activity, choose a date and time, and book. Get ready to experience the thrill of the great outdoors!
                 </p>
             </div>
 
             <div className='mx-auto mt-16 hidden max-w-6xl lg:grid grid-cols-1 gap-8 lg:grid-cols-3'>
                 {Steps.map((step) => (
-                    <div key={step.id} className='flex flex-row md:flex-col'>
+                    <div key={step.id} className='flex flex-row md:flex-col' data-aos="fade-left" data-aos-duration="1000">
                         <div className='flex items-center leading-7 text-sm font-bold text-gray-700'>
                             {step.svg}
 
@@ -60,7 +63,7 @@ const Hiw = () => {
             <div className='mx-auto block mt-16 text-white max-w-2xl lg:hidden lg:px-8 lg:mt-0'>
                 <div className='mx-auto flex flex-col gap-y-4 md:gap-y-8'>
                     {Steps.map((step) => (
-                        <div key={step.id} className='flex gap-2 md:gap-6'>
+                        <div key={step.id} className='flex gap-2 md:gap-6' data-aos="fade-left" data-aos-duration="1000">
                             <div className='items-center text-gray-700'>
                                 {step.svg}
                                 <div className='mt-0 h-[calc(100%-1rem)] w-[1px] bg-gray-300 md:mt-2 lg:static mx-auto'></div>
@@ -79,10 +82,12 @@ const Hiw = () => {
             </div>
 
             <div className="mt-16 flex items-center justify-center gap-x-6">
-                <a href="#" className="rounded-md px-5 py-2.5 text-sm font-semibold text-white bg-orange-500 shadow-sm">
+                <a href="#" className="rounded-md px-5 py-2.5 text-sm font-semibold text-white bg-orange-500 shadow-sm"
+                data-aos="fade-up" data-aos-duration="1000">
                     Book
                 </a>
-                <a href="#" className="text-sm font-semibold leading-6 text-gray-900 my-auto">
+                <a href="#" className="text-sm font-semibold leading-6 text-gray-900 my-auto"
+                data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                     Explore more <span aria-hidden="true">→</span></a>
             </div>
         </section>

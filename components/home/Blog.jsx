@@ -45,16 +45,19 @@ const Blog = () => {
         <section className="bg-white py-24 sm:py-12">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl text-center">
-                    <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                    <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+                        data-aos="fade-up" data-aos-duration="1000">
                         Recent blogs and articles
                     </h2>
-                    <p className="mt-3 text-lg leading-8 text-gray-600">
+                    <p className="mt-3 text-lg leading-8 text-gray-600"
+                        data-aos="fade-up" data-aos-duration="1000">
                         Discover new adventures, tips, and tricks for hiking, rafting, and kayaking in various breathtaking locations around the world.
                     </p>
                 </div>
                 <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                     {posts.map((post) => (
-                        <article key={post.id} className="flex flex-col items-start">
+                        <article key={post.id} className="flex flex-col items-start"
+                            data-aos="fade-up" data-aos-duration="1000">
                             <div className='relative w-full'>
                                 <Image
                                     src={post.img}
