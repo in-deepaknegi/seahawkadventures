@@ -23,7 +23,7 @@ const posts = [
         description: 'Discover the serene beauty and tranquility of kayaking as you explore the best places to paddle and immerse yourself in the stunning natural surroundings.',
         time: '6 min read',
         category: { title: 'Marketing', href: '#' },
-        delay: 1000,
+        delay: 700,
     },
     {
         id: 3,
@@ -33,7 +33,7 @@ const posts = [
         description: 'Discover the breathtaking beauty of hiking in the majestic Himalayas, where towering peaks kiss the sky, and experience the exhilarating challenges that come with traversing this awe-inspiring mountain range.',
         time: '4 min read',
         category: { title: 'Marketing', href: '#' },
-        delay: 2000,
+        delay: 900,
     },
 ]
 
@@ -43,18 +43,18 @@ const Blog = () => {
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl text-center">
                     <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
-                        data-aos="fade-up" data-aos-duration="1000">
+                        data-aos="fade-up" data-aos-duration="500">
                         Recent blogs and articles
                     </h2>
                     <p className="mt-3 text-lg leading-8 text-gray-600"
-                        data-aos="fade-up" data-aos-duration="1000">
+                        data-aos="fade-up" data-aos-duration="500">
                         Discover new adventures, tips, and tricks for hiking, rafting, and kayaking in various breathtaking locations around the world.
                     </p>
                 </div>
                 <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                     {posts.map((post) => (
                         <article key={post.id} className="flex flex-col items-start"
-                            data-aos="fade-up" data-aos-duration="1000">
+                            data-aos="fade-up" data-aos-duration={post.delay}>
                             <div className='relative w-full'>
                                 <Image
                                     src={post.img}
