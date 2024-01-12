@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Hero from '@/components/about/Hero'
 import Timeline from '@/components/about/Timeline'
+import Team from '@/components/about/Team'
 
 export const metadata: Metadata = {
     title: 'About',
@@ -17,6 +18,7 @@ const page = () => {
             <main>
                 <Hero />
                 <Timeline />
+                <Team />
             </main>
             <Footer />
         </>
