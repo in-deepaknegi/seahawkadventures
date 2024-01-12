@@ -1,9 +1,22 @@
-# 05-01-24
-# add mobile menu
-# add different currency functionality
+# PAGE UPDATE
+# login
+# signup
+# explore
+# booking
+# contacts
+# about
+# explore/rafting
+# explore/kayaking
 
-# integrate AOS library
+# ISSUES
+
+# API
+# newsletter-api
+# contact-api
+# auth-api
+
+# SEO
+# fix sitename in google search
 
 
-# commit-1 : misc-changes
-# commit-2 : blog section
+# MISC
