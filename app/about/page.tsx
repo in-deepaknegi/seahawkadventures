@@ -1,5 +1,8 @@
 import React from 'react'
 import type { Metadata } from 'next'
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
+import Hero from '@/components/about/Hero'
 
 export const metadata: Metadata = {
     title: 'About',
@@ -8,7 +11,13 @@ export const metadata: Metadata = {
 
 const page = () => {
     return (
-        <div>About</div>
+        <>
+            <Navbar />
+            <main>
+                <Hero />
+            </main>
+            <Footer />
+        </>
     )
 }
 

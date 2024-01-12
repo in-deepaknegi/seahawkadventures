@@ -20,12 +20,18 @@ export default function Home() {
 
   return (
     <>
+      <div itemScope itemType="https://schema.org/WebSite">
+        <meta itemProp="url" content="https://www.seahawkadventures.com/" />
+        <meta itemProp="name" content="Sea Hawk Adventures" />
+      </div>
       <Navbar />
-      <Hero />
-      <Feature />
-      <Hiw />
-      <Blog />
-      <Newsletter />
+      <main>
+        <Hero />
+        <Feature />
+        <Hiw />
+        <Blog />
+        <Newsletter />
+      </main>
       <Footer />
     </>
   )
