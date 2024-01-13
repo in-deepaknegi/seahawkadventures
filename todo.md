@@ -4,7 +4,7 @@
 # explore
 # booking
 # contacts
-# about
+# about             [DONE]
 # explore/rafting
 # explore/kayaking
 
