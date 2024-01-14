@@ -4,9 +4,14 @@
 # explore
 # booking
 # contacts
+# - add map component
+# - integrate AOS
 # about             [DONE]
 # explore/rafting
 # explore/kayaking
+
+# SECTION ADD/UPDATE
+# - Testimonial
 
 # ISSUES
 

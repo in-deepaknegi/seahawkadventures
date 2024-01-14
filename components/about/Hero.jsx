@@ -37,25 +37,27 @@ const features = [
 const Hero = () => {
     useEffect(() => {
         AOS.init();
-      })
+    })
     return (
         <>
-            <section className='relative isolate overflow-hidden bg-white'
-                style={{
-                    backgroundImage: "url('/rafting3.WEBP')",
-                    backgroundPosition: 'center',
-                    backgroundSize: 'cover',
-                    // backgroundAttachment: 'fixed',
-                }}>
-                <div className='absolute w-full h-full z-[-9] bg-gradient-to-b from-black/30 to-black/70'></div>
+            <section className='px-6 mt-6 lg:px-8 lg:mt-8'>
+                <div className='relative isolate overflow-hidden rounded-2xl shadow-xl shadow-gray-400 bg-white'
+                    style={{
+                        backgroundImage: "url('/rafting3.WEBP')",
+                        backgroundPosition: 'center',
+                        backgroundSize: 'cover',
+                        // backgroundAttachment: 'fixed',
+                    }}>
+                    <div className='absolute w-full h-full z-[-9] bg-gradient-to-b from-black/30 to-black/70'></div>
 
-                <div className='mx-auto max-w-7xl py-20 px-6 lg:px-8 flex flex-col lg:flex-row gap-x-10 justify-between'>
-                    <h2 className='text-4xl font-bold tracking-tight text-white sm:text-7xl'>
-                        About Us
-                    </h2>
-                    <p className='my-auto text-lg leading-8 max-w-xl text-gray-100'>
-                        Welcome to our incredible adventure-filled world, where we specialize in turning your most daring and wildest dreams into unforgettable realities!
-                    </p>
+                    <div className='mx-auto max-w-7xl py-20 px-6 lg:px-8 flex flex-col lg:flex-row gap-x-10 justify-between'>
+                        <h2 className='text-4xl font-bold tracking-tight text-white sm:text-7xl'>
+                            About Us
+                        </h2>
+                        <p className='my-auto text-lg leading-8 max-w-xl text-gray-100'>
+                            Welcome to our incredible adventure-filled world, where we specialize in turning your most daring and wildest dreams into unforgettable realities!
+                        </p>
+                    </div>
                 </div>
             </section>
 

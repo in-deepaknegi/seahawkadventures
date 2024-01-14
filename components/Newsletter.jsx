@@ -23,7 +23,7 @@ const Newsletter = () => {
                     <p className='mt-4 text-sm fose text-gray-700'>
                         We care about your data. Read our
                         <span className='text-orange-600'>
-                            <a href="/privacy"> privacy policy</a>
+                            <a href="#"> privacy policy</a>
                         </span>.
                     </p>
                 </form>

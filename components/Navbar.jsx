@@ -37,7 +37,7 @@ const Navbar = () => {
                         </div>
                     </div>
                 </div>
-                <div className='bg-white border-b border-gray-300 flex items-center justify-between px-6 lg:py-[0.25rem] lg:px-8'>
+                <div className='bg-white border-b border-gray-200 flex items-center justify-between px-6 lg:py-[0.25rem] lg:px-8'>
                     <div className='flex lg:flex-none'>
                         <a href='/' className='-m-1.5 p-1.5 text-2xl font-medium'>
                             <Image
