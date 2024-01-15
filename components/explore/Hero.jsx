@@ -39,7 +39,7 @@ const Hero = () => {
 
     return (
         <>
-            <section className='bg-white px-6 py-24 lg:py-12 lg:px-8'>
+            <section className='bg-white px-6 py-16 lg:py-12 lg:px-8'>
                 <div className='max-w-2xl text-left'>
                     <h2 className='mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl'>
                         Choose your adventure

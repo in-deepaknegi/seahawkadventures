@@ -3,6 +3,8 @@ import type { Metadata } from 'next'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Hero from '@/components/explore/Hero'
+import Faq from '@/components/explore/Faq'
+import Newsletter from '@/components/Newsletter'
 
 export const metadata: Metadata = {
     title: 'Explore',
@@ -13,7 +15,11 @@ const page = () => {
     return (
         <>
             <Navbar />
-            <Hero />
+            <main>
+                <Hero />
+                <Faq />
+                <Newsletter />
+            </main>
             <Footer />
         </>
     )
