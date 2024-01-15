@@ -1,5 +1,8 @@
 import React from 'react'
 import type { Metadata } from 'next'
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
+import Hero from '@/components/explore/Hero'
 
 export const metadata: Metadata = {
     title: 'Explore',
@@ -8,9 +11,11 @@ export const metadata: Metadata = {
 
 const page = () => {
     return (
-        <div>
-            Explore
-        </div>
+        <>
+            <Navbar />
+            <Hero />
+            <Footer />
+        </>
     )
 }
 

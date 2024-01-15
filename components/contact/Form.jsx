@@ -67,8 +67,8 @@ const Form = () => {
                                     <div className='text-lg text-gray-900'>Email</div>
                                 </div>
 
-                                <a href="mailto:anjaanbackpackers@gmail.com" className='ml-12 text-[0.925rem]'>
-                                    travel@seahawkadventures.com
+                                <a href="mailto:office@seahawkadventures.com" className='ml-12 text-[0.925rem]'>
+                                    office@seahawkadventures.com
                                 </a>
                             </div>
                         </div>
