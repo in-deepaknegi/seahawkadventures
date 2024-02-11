@@ -2,7 +2,7 @@ import React from 'react'
 
 const Form = () => {
     return (
-        <section className='isolate relative'>
+        <section className='isolate relative' data-aos="fade-in" data-aos-duration="700">
             <div className='mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2'>
                 <form className="form space-y-5 max-w-xl px-6 mx-auto my-10 lg:my-24">
                     <div>

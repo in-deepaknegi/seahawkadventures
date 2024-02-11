@@ -16,7 +16,7 @@ const page = () => {
     return (
         <>
             <Navbar />
-            <main className=' overflow-x-hidden'>
+            <main className='overflow-x-hidden'>
                 <Hero />
                 <Timeline />
                 <Team />

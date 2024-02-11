@@ -41,7 +41,7 @@ const Hero = () => {
     return (
         <>
             <section className='px-6 mt-6 lg:px-8 lg:mt-8'>
-                <div className='relative isolate rounded-2xl shadow-xl shadow-gray-400 bg-white'
+                <div className='relative isolate rounded-2xl overflow-hidden shadow-xl shadow-gray-400 bg-white'
                     style={{
                         backgroundImage: "url('/rafting3.WEBP')",
                         backgroundPosition: 'center',
@@ -61,26 +61,23 @@ const Hero = () => {
                 </div>
             </section>
 
-            <section className='overflow-hidden bg-white py-16 sm:py-20'>
+            <section className='overflow-hidden bg-white py-16 sm:py-20'
+                data-aos="fade-up" data-aos-duration="300">
                 <div className='mx-auto px-6 lg:px-8'>
-                    <div className='mx-auto grid gap-x-8 gap-y-8 sm:gap-y-20 lg:mx-0 lg:max-w-none grid-cols-12'>
+                    <div className='mx-auto grid gap-x-8 gap-y-8 sm:gap-y-20 lg:mx-0 lg:max-w-none sm:grid-cols-12'>
                         <div className='my-auto col-span-12 lg:pr-8 lg:col-span-6'>
                             <div className=''>
-                                <h2 className='text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl'
-                                    data-aos="fade-up" data-aos-duration="300">
+                                <h2 className='text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl'>
                                     Experience the Thrill of Rafting in Rishikesh
                                 </h2>
-                                <p className='mt-6 text-base text-gray-700 md:text-lg'
-                                    data-aos="fade-up" data-aos-duration="300" data-aos-delay="300" data-aos-offset="10">
+                                <p className='mt-6 text-base text-gray-700 md:text-lg'>
                                     At our company, we are passionate about providing unforgettable rafting and kayaking experiences on the majestic Ganges. Our mission is to create memories that last a lifetime, while ensuring the safety and enjoyment of our customers.
                                 </p>
                                 <div className="mt-10 flex gap-x-6">
-                                    <a href="/booking" className="rounded-md px-3.5 py-2.5 text-sm font-semibold text-orange-600 shadow-sm ring-1 ring-orange-500 hover:text-white hover:bg-orange-500"
-                                        data-aos="fade-up" data-aos-duration="300" data-aos-offset="100">
+                                    <a href="/booking" className="rounded-md px-3.5 py-2.5 text-sm font-semibold text-orange-600 shadow-sm ring-1 ring-orange-500 hover:text-white hover:bg-orange-500">
                                         Book now
                                     </a>
-                                    <a href="/explore/rafting" className="text-sm font-semibold leading-6 text-gray-900 my-auto"
-                                        data-aos="fade-up" data-aos-duration="300" data-aos-delay="200" data-aos-offset="100">
+                                    <a href="/explore/rafting" className="text-sm font-semibold leading-6 text-gray-900 my-auto">
                                         Explore rafting <span aria-hidden="true">→</span></a>
                                 </div>
                             </div>
