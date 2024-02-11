@@ -49,7 +49,7 @@ const people = [
 ]
 const Team = () => {
     return (
-        <section className='relativezzzz isolate bg-white py-20 sm:py-24'>
+        <section className='relative overflow-hidden isolate bg-white py-20 sm:py-24'>
             <div className='mx-auto max-w-7xl px-5 lg:px-8'>
                 <div className='mx-auto max-w-2xl lg:mx-0'>
                     <h2 className='text-4xl font-semibold md:text-5xl'
