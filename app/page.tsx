@@ -2,11 +2,11 @@
 
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import Hero from '@/components/home/Hero';
-import Feature from '@/components/home/Feature';
+import Hero from '@/components/(pages)/home/Hero';
+import Feature from '@/components/(pages)/home/Feature';
 import Newsletter from '@/components/Newsletter';
-import Hiw from '@/components/home/Hiw';
-import Blog from '@/components/home/Blog';
+import Hiw from '@/components/(pages)/home/Hiw';
+import Blog from '@/components/(pages)/home/Blog';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'
@@ -25,7 +25,7 @@ export default function Home() {
         <meta itemProp="name" content="Sea Hawk Adventures" />
       </div>
       <Navbar />
-      <main>
+      <main className='overflow-x-hidden'>
         <Hero />
         <Feature />
         <Hiw />

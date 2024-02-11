@@ -4,7 +4,7 @@ import Logo from '@/public/logo.jpg';
 
 const Footer = () => {
     return (
-        <footer className='relative pt-10 pb-4 border-t border-gray-200'>
+        <footer className='relative pt-10 overflow-x-hidden pb-4 border-t border-gray-200'>
             <div className='mx-auto px-6 lg:px-8'>
                 <div className='mb-6 sm:flex sm:justify-between'>
                     <div>

@@ -41,7 +41,7 @@ const Hero = () => {
     return (
         <>
             <section className='px-6 mt-6 lg:px-8 lg:mt-8'>
-                <div className='relative isolate overflow-hidden rounded-2xl shadow-xl shadow-gray-400 bg-white'
+                <div className='relative isolate rounded-2xl shadow-xl shadow-gray-400 bg-white'
                     style={{
                         backgroundImage: "url('/rafting3.WEBP')",
                         backgroundPosition: 'center',

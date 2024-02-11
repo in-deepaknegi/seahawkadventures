@@ -3,10 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-  html,
-  body {
-    overflow-x: hidden;
-  }
+  
   ::-webkit-scrollbar {
     width: 8px; /* width of the scrollbar */
     height: 12px; /* height of the scrollbar */

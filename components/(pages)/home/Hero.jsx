@@ -3,7 +3,7 @@ import React from 'react'
 
 const Hero = () => {
     return (
-        <section className='relative isolate overflow-hidden -mt-20'
+        <section className='relative isolate overflow-x-hidden -mt-20'
             style={{
                 backgroundImage: "url('/kayak1.WEBP')",
                 backgroundPosition: 'center',

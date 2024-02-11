@@ -2,8 +2,8 @@ import React from 'react'
 import type { Metadata } from 'next'
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import Form from '@/components/contact/Form';
-import Hero from '@/components/contact/Hero';
+import Form from '@/components/(pages)/contact/Form';
+import Hero from '@/components/(pages)/contact/Hero';
 
 export const metadata: Metadata = {
     title: 'Contact',

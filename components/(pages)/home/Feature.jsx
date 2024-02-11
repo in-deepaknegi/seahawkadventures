@@ -34,7 +34,7 @@ const features = [
 const Feature = () => {
     return (
         <>
-            <section className='overflow-hidden bg-white py-16 sm:py-20'>
+            <section className='bg-white py-16 sm:py-20'>
                 <div className='mx-auto px-6 lg:px-8'>
                     <div className='mx-auto grid gap-x-8 gap-y-8 sm:gap-y-20 lg:mx-0 lg:max-w-none grid-cols-12'>
                         <div className='col-span-12 order-last lg:order-first lg:pr-8 lg:col-span-6'>
