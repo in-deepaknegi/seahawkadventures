@@ -44,34 +44,32 @@ const Faq = () => {
                             team.
                         </p>
                     </div>
-                    <div className='col-span-7 mt-8 lg:mt-0'>
-                        <dl className='space-y-9'>
+                    <div className='lg:col-span-7 mt-8 lg:mt-0'>
+                        <ul className='space-y-9'>
                             {Data.map((item, i) => (
-                                <div key={i}>
-                                    <dt>
-                                        <button
-                                            onClick={() => toggleActive(i)}
-                                            className='flex w-full items-start justify-between text-left'>
-                                            <span className='text-base font-semibold leading-7 text-gray-900'>
-                                                {item.question}
-                                            </span>
-                                            <span>
-                                                {active === i ? (
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /></svg>
-                                                ) : (
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="M12 5v14" /></svg>
-                                                )}
-                                            </span>
-                                        </button>
-                                    </dt>
+                                <li key={i}>
+                                    <button
+                                        onClick={() => toggleActive(i)}
+                                        className='flex w-full items-start justify-between text-left'>
+                                        <span className='text-base font-semibold leading-7 text-gray-900'>
+                                            {item.question}
+                                        </span>
+                                        <span>
+                                            {active === i ? (
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /></svg>
+                                            ) : (
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="M12 5v14" /></svg>
+                                            )}
+                                        </span>
+                                    </button>
                                     {active === i && (
                                         <dd className='mt-2 text-base leading-7 text-gray-600'>
                                             {item.answer}
                                         </dd>
                                     )}
-                                </div>
+                                </li>
                             ))}
-                        </dl>
+                        </ul>
                     </div>
                 </div>
             </div>

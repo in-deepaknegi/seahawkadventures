@@ -6,21 +6,21 @@ const Steps = [
         name: "Choose Your Adventure",
         para: "Take all the time you need to browse through our wide range of adventure services. Uncover the various exciting options and select the one that resonates with you.",
         svg: (<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 4h1a3 3 0 0 1 3 3 3 3 0 0 1 3-3h1" /><path d="M13 20h-1a3 3 0 0 1-3-3 3 3 0 0 1-3 3H5" /><path d="M5 16H4a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h1" /><path d="M13 8h7a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-7" /><path d="M9 7v10" /></svg>),
-        delay: 500,
+        delay: 300,
     },
     {
         id: 2,
         name: "Select Date and Time",
         para: "Choose a date and time that works best for you and your group members. Consider everyone's schedule and availability to find a suitable time for your gathering.",
         svg: (<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 20h9" /><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z" /><path d="m15 5 3 3" /></svg>),
-        delay: 700,
+        delay: 500,
     },
     {
         id: 3,
         name: "Complete Your Booking",
         para: "Finalize your exciting adventure booking by providing us with your personal details and completing the payment process. Get ready for an unforgettable experience!",
         svg: (<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M8 3H2v15h7c1.7 0 3 1.3 3 3V7c0-2.2-1.8-4-4-4Z" /><path d="m16 12 2 2 4-4" /><path d="M22 6V3h-6c-2.2 0-4 1.8-4 4v14c0-1.7 1.3-3 3-3h7v-2.3" /></svg>),
-        delay: 900,
+        delay: 700,
     },
 ]
 
