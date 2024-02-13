@@ -25,6 +25,7 @@ const gallery = [
         href: '/explore/kayaking',
     },
 ]
+
 const Hero = () => {
 
     const [hoveredIndex, setHoveredIndex] = useState(null);
