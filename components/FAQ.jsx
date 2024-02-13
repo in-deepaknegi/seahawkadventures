@@ -1,31 +1,7 @@
 "use client"
 import React, { useState } from 'react'
 
-const Data = [
-    {
-        id: 1,
-        question: "Is rafting safe for beginners?",
-        answer: "Yes, our rafting trips are suitable for beginners. Our experienced guides provide thorough safety instructions and ensure your adventure is both fun and secure.",
-    },
-    {
-        id: 2,
-        question: "What should I bring?",
-        answer: "We recommend bringing comfortable clothes, sunscreen, a hat, and a water bottle. We provide all necessary rafting and kayaking equipment.",
-    },
-    {
-        id: 3,
-        question: "Are there age restrictions?",
-        answer: "Yes, participants must be at least 12 years old for rafting and 16 years old for kayaking. Minors must be accompanied by a parent or guardian."
-    },
-    {
-        id: 3,
-        question: "What is the duration?",
-        answer: "The duration of our trips varies depending on the chosen package. We offer half-day, full-day, and multi-day options."
-    },
-
-]
-
-const Faq = () => {
+const FAQ = ({ faq }) => {
     const [active, setActive] = useState(null);
 
     const toggleActive = (index) => {
@@ -46,7 +22,7 @@ const Faq = () => {
                     </div>
                     <div className='lg:col-span-7 mt-8 lg:mt-0'>
                         <ul className='space-y-9'>
-                            {Data.map((item, i) => (
+                            {faq.map((item, i) => (
                                 <li key={i}>
                                     <button
                                         onClick={() => toggleActive(i)}
@@ -77,4 +53,4 @@ const Faq = () => {
     )
 }
 
-export default Faq
+export default FAQ
