@@ -7,8 +7,8 @@ import Hero2 from '@/public/kayak1.WEBP'
 const posts = [
     {
         id: 1,
-        title: 'Rafting Adventures',
-        href: '#',
+        title: 'Rafting in Rishikesh',
+        href: 'blogs/rafting-in-rishikesh',
         img: Hero1,
         description: 'Experience the heart-pounding thrill of white water rafting and discover the absolute best spots around the world to take on this exhilarating adventure.',
         time: '5 min read',

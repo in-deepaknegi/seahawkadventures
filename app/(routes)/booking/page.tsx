@@ -1,6 +1,9 @@
 import React from 'react'
-import type { Metadata } from 'next'
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 import Form from '@/components/(pages)/booking/Form';
+
+import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
     title: 'Booking',
@@ -10,7 +13,11 @@ export const metadata: Metadata = {
 const page = () => {
     return (
         <>
-            <Form />
+            <Navbar />
+            <main>
+                <Form />
+            </main>
+            <Footer />
         </>
     )
 }

@@ -29,4 +29,30 @@
   textarea {
     @apply shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5;
   }
+  .blog :where(h1):not(:where([class~="not-blog"], [class~="not-blog"] *)) {
+    @apply text-2xl font-extrabold text-slate-950 md:text-4xl
+  }
+
+  .blog :where(h2):not(:where([class~="not-blog"], [class~="not-blog"] *)) {
+    @apply text-xl font-semibold text-slate-950 md:text-2xl
+  }
+
+  .blog :where(h3):not(:where([class~="not-blog"], [class~="not-blog"] *)) {
+    @apply text-lg font-semibold text-slate-950 md:text-xl
+  }
+  
+  .blog :where(img):not(:where([class~="not-blog"], [class~="not-blog"] *)) {
+    @apply mx-auto w-full h-full rounded-xl shadow-xl md:w-[80%]
+  }
+
+  .blog :where(p):not(:where([class~="not-blog"], [class~="not-blog"] *)) {
+    @apply text-[1.025rem] leading-6 text-slate-950
+  }
+
+  .blog :where(ul > li):not(:where([class~="not-blog"])) {
+    @apply text-[1.0225rem] leading-6 list-disc ml-4 text-slate-950 mt-2
+  }
+  .blog :where(ol > li):not(:where([class~="not-blog"])) {
+    @apply text-[1.0225rem] leading-6 list-decimal ml-7 text-slate-950 mt-1
+  }
 }

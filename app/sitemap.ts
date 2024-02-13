@@ -8,6 +8,7 @@ const urls = [
     'https://www.seahawkadventures.com/explore',
     'https://www.seahawkadventures.com/explore/kayaking',
     'https://www.seahawkadventures.com/explore/rafting',
+    'https://www.seahawkadventures.com/blogs/rafting-in-rishikesh'
 
 ]
 
