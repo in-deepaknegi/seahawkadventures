@@ -11,9 +11,6 @@ const BookingForm = () => {
     const [adventure, setAdventure] = useState('');
     const [dateTime, setDateTime] = useState('');
 
-    console.log(adventure);
-    console.log(dateTime);
-
     const nextStep = () => {
         setStep(step + 1);
     };
@@ -93,13 +90,13 @@ const BookingForm = () => {
                             <li className='md:flex-1'>
                                 <a href="" className={`${step === 2 ? 'border-blue-600' : ''} flex flex-col border-l-4  py-2 pl-4 md:border-l-0 md:border-t-4 md:py-0 md:pt-4 transition-all ease-linear duration-500`}>
                                     <span className='text-sm font-medium'>STEP 2</span>
-                                    <span className='text-lg'>Chouse your adventure</span>
+                                    <span className='text-lg'>Select Date and Time</span>
                                 </a>
                             </li>
                             <li className='md:flex-1'>
                                 <a href="" className={`${step === 3 ? 'border-blue-600' : ''} flex flex-col border-l-4  py-2 pl-4 md:border-l-0 md:border-t-4 md:py-0 md:pt-4 transition-all ease-linear duration-500`}>
                                     <span className='text-sm font-medium'>STEP 3</span>
-                                    <span className='text-lg'>Chouse your adventure</span>
+                                    <span className='text-lg'>Complete Your Booking</span>
                                 </a>
                             </li>
                         </ol>
@@ -167,15 +164,34 @@ const AdventureSelection = ({ onSelectAdventure }) => {
     );
 };
 
-const DateTimeSelection = ({ onDateTimeSelected }) => {
-    const handleDateTimeSelect = (selectedDateTime) => {
-        // Handle date and time selection logic
-        onDateTimeSelected(selectedDateTime);
+const DateTimeSelection = ({ onDateTimeSelected, onPrevStep }) => {
+    // const handleDateTimeSelect = (selectedDateTime) => {
+    //     onDateTimeSelected(selectedDateTime);
+    // };
+
+    const [selectedDate, setSelectedDate] = useState('');
+    const [selectedMonth, setSelectedMonth] = useState('');
+
+    const handleDateClick = (day) => {
+        setSelectedDate(day);
     };
+    const handleMonthChange = (e) => {
+        setSelectedMonth(e.target.value);
+    };
+
+    const handleDateTimeSelect = (e) => {
+        e.preventDefault();
+        onDateTimeSelected(selectedDate + " " + selectedMonth);
+        // Your submission logic here, you can use the selectedDate state
+        console.log('Selected Date:', selectedDate);
+    };
+    const daysInMonth = 31; // Update this dynamically based on selected month
+
+    const isSubmitDisabled = selectedDate === null;
 
     return (
         <div>
-            <div className='mx-auto max-w-md lg:py-8'>
+            <div className='mx-auto max-w-md px-8 lg:py-8'>
                 <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" onSubmit={handleDateTimeSelect}>
                     <div className="mb-4">
                         <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="month">
@@ -184,28 +200,29 @@ const DateTimeSelection = ({ onDateTimeSelected }) => {
                         <select
                             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                             id="month"
+                            required
                             onChange={handleMonthChange}
                             value={selectedMonth}
                         >
                             <option value="">Select Month</option>
-                            <option value="January">January</option>
                             <option value="February">February</option>
-                            {/* Add other months */}
+                            <option value="March">March</option>
                         </select>
                     </div>
-                    <div className="grid grid-cols-7 gap-1 mb-4">
-                        <div className="col-span-1 bg-gray-200 p-2">Sun</div>
-                        <div className="col-span-1 bg-gray-200 p-2">Mon</div>
-                        <div className="col-span-1 bg-gray-200 p-2">Tue</div>
-                        <div className="col-span-1 bg-gray-200 p-2">Wed</div>
-                        <div className="col-span-1 bg-gray-200 p-2">Thu</div>
-                        <div className="col-span-1 bg-gray-200 p-2">Fri</div>
-                        <div className="col-span-1 bg-gray-200 p-2">Sat</div>
-                        {[...Array(31).keys()].map((index) => (
+                    <div className="grid grid-cols-7 gap-1 md:gap-2 mb-4 text-sm">
+                        <div className="col-span-1 bg-gray-200 p-1 rounded-2xl text-center">Sun</div>
+                        <div className="col-span-1 bg-gray-200 p-1 rounded-2xl text-center">Mon</div>
+                        <div className="col-span-1 bg-gray-200 p-1 rounded-2xl text-center">Tue</div>
+                        <div className="col-span-1 bg-gray-200 p-1 rounded-2xl text-center">Wed</div>
+                        <div className="col-span-1 bg-gray-200 p-1 rounded-2xl text-center">Thu</div>
+                        <div className="col-span-1 bg-gray-200 p-1 rounded-2xl text-center">Fri</div>
+                        <div className="col-span-1 bg-gray-200 p-1 rounded-2xl text-center">Sat</div>
+                        {[...Array(daysInMonth).keys()].map((index) => (
                             <div
                                 key={index}
-                                className="col-span-1 p-2 cursor-pointer"
-                                onClick={handleDateClick}
+                                className={`col-span-1 p-1 cursor-pointer text-center border rounded-2xl ${selectedDate === index + 1 ? 'bg-blue-500 text-white' : ''}`}
+                                required
+                                onClick={() => handleDateClick(index + 1)}
                             >
                                 {index + 1}
                             </div>
@@ -214,8 +231,9 @@ const DateTimeSelection = ({ onDateTimeSelected }) => {
                     <input type="hidden" name="selectedDate" value={selectedDate} />
                     <div className="flex items-center justify-between">
                         <button
-                            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                            className={`hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-2xl focus:outline-none focus:shadow-outline ${isSubmitDisabled ? 'bg-gray-300' : 'bg-blue-500'}`}
                             type="submit"
+                            disabled={isSubmitDisabled}
                         >
                             Submit
                         </button>
