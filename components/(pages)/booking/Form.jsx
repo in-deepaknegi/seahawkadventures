@@ -167,26 +167,10 @@ const AdventureSelection = ({ onSelectAdventure }) => {
     );
 };
 
-const DateTimeSelection = ({ onDateTimeSelected, onPrevStep }) => {
-    // const handleDateTimeSelect = (selectedDateTime) => {
-    //     onDateTimeSelected(selectedDateTime);
-    // };
-
-    const [selectedDate, setSelectedDate] = useState('');
-    const [selectedMonth, setSelectedMonth] = useState('');
-
-    const handleDateClick = (e) => {
-        setSelectedDate(e.target.textContent);
-    };
-    const handleMonthChange = (e) => {
-        setSelectedMonth(e.target.value);
-      };
-
-    const handleDateTimeSelect = (e) => {
-        e.preventDefault();
-        onDateTimeSelected(selectedDate + selectedMonth);
-        // Your submission logic here, you can use the selectedDate state
-        console.log('Selected Date:', selectedDate);
+const DateTimeSelection = ({ onDateTimeSelected }) => {
+    const handleDateTimeSelect = (selectedDateTime) => {
+        // Handle date and time selection logic
+        onDateTimeSelected(selectedDateTime);
     };
 
     return (

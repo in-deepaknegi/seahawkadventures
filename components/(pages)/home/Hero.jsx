@@ -35,7 +35,7 @@ const Hero = () => {
                 </p>
                 <div className='mt-10 flex items-center justify-center gap-x-6'>
                     <a href='/explore' className='rounded-md bg-orange-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-orange-600'>
-                        Discover trips
+                        Explore Adventures
                     </a>
                     <a href='/#newsletter' className='text-sm font-semibold leading-6 text-orange-500 my-auto'>
                         Join us <span aria-hidden='true'>→</span>
