@@ -7,6 +7,8 @@ import Feature from '@/components/(pages)/home/Feature';
 import Newsletter from '@/components/Newsletter';
 import Hiw from '@/components/(pages)/home/Hiw';
 import Blog from '@/components/(pages)/home/Blog';
+import Pricing from '@/components/(pages)/home/Pricing'
+import Icons from '@/components/Icons'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'
@@ -26,9 +28,11 @@ export default function Home() {
       </div>
       <Navbar />
       <main className='overflow-x-hidden'>
+        {/* <Icons /> */}
         <Hero />
         <Feature />
-        <Hiw />
+        {/* <Hiw /> */}
+        <Pricing />
         <Blog />
         <Newsletter />
       </main>
