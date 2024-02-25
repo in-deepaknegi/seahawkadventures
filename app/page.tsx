@@ -28,7 +28,7 @@ export default function Home() {
       </div>
       <Navbar />
       <main className='overflow-x-hidden'>
-        {/* <Icons /> */}
+        <Icons />
         <Hero />
         <Feature />
         {/* <Hiw /> */}

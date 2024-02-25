@@ -65,7 +65,7 @@ const Blog = () => {
                             </div>
                             <div className='mt-4 md:mt-10 max-w-xl'>
                                 <div className="flex items-center gap-x-4 text-xs">
-                                    <a href={post.category.href} className="relative z-10 rounded-full bg-gray-100 px-3 py-1.5 font-medium text-gray-800 hover:bg-gray-200"
+                                    <a href={post.category.href} className="relative rounded-full bg-gray-100 px-3 py-1.5 font-medium text-gray-800 hover:bg-gray-200"
                                     >
                                         {post.category.title}
                                     </a>

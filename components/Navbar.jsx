@@ -17,19 +17,23 @@ const Navbar = () => {
                 <div className='bg-black'>
                     <div className='mx-auto flex h-10 items-center justify-between px-6 lg:px-8'>
                         <div className='flex-1'>
-                            <div className='text-white text-sm inline-flex'>
-                                Rupees
-                                <span className='my-auto ml-1'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className='text-white'><path d="m6 9 6 6 6-6" /></svg>
-                                </span>
+                            <div className='text-white text-sm inline-flex my-auto mt-1 gap-6'>
+                                <div className='flex gap-2'>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className='text-gray-200'><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                    <a href="tel:+91 97566 20538">+91 97566 20538</a>
+                                </div>
+                                <div className='hidden md:flex gap-2 border-l pl-3'>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className='text-gray-200'><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                                    <a href="mailto:office@seahawkadventures.com">office@seahawkadventures.com</a>
+                                </div>
                             </div>
 
                         </div>
-                        <div className='hidden justify-center items-center lg:flex'>
+                        {/* <div className='hidden justify-center items-center lg:flex'>
                             <div className='text-gray-200 text-sm'>
                                 Get 20% discount on your first booking
                             </div>
-                        </div>
+                        </div> */}
                         <div className='lg:flex lg:flex-1 lg:gap-2 lg:items-center lg:justify-end'>
                             <a href='/login' className='text-gray-100 text-sm'>Log In</a>
                             <span className='hidden h-4 w-[1px] bg-gray-200 mx-2 lg:block'></span>
