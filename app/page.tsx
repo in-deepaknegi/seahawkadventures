@@ -30,9 +30,9 @@ export default function Home() {
       <main className='overflow-x-hidden'>
         <Icons />
         <Hero />
+        <Pricing />
         <Feature />
         {/* <Hiw /> */}
-        <Pricing />
         <Blog />
         <Newsletter />
       </main>

@@ -6,12 +6,12 @@ import Kayak1 from '@/public/kayak2.WEBP';
 
 const packages = [
     {
-        name: "Marine Drive - Shivpuri",
+        name: "12 Km Rafting",
         image: Rafting1,
         desc: [
             {
                 svg: (<svg xmlns="http://www.w3.org/2000/svg" className=" text-indigo-600" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" /><circle cx="12" cy="10" r="3" /></svg>),
-                location: "Marine Drive - Shivpuri [10 Km Rafting]"
+                location: "Marine Drive - Shivpuri"
             },
             {
                 svg: (<svg xmlns="http://www.w3.org/2000/svg" className=" text-indigo-600" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /></svg>),
@@ -22,7 +22,7 @@ const packages = [
                 location: "Every day at 10:00 AM and 02:00PM"
             },
         ],
-        rate: 450,
+        rate: 620,
         link: "www.example.com",
         features: [
             "5 products",
@@ -32,12 +32,12 @@ const packages = [
         ],
     },
     {
-        name: "Shivpuri - Nim Beach",
+        name: "16 Km Rafting",
         image: Rafting2,
         desc: [
             {
                 svg: (<svg xmlns="http://www.w3.org/2000/svg" className=" text-indigo-600" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" /><circle cx="12" cy="10" r="3" /></svg>),
-                location: "Marine Drive - Shivpuri [10 Km Rafting]"
+                location: "Shivpuri to NIM Beach"
             },
             {
                 svg: (<svg xmlns="http://www.w3.org/2000/svg" className=" text-indigo-600" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /></svg>),
@@ -48,7 +48,7 @@ const packages = [
                 location: "Every day at 10:00 AM and 02:00PM"
             },
         ],
-        rate: 700,
+        rate: 820,
         link: "www.example.com",
         features: [
             "5 products",
@@ -58,12 +58,12 @@ const packages = [
         ],
     },
     {
-        name: "Marine Drive - Nim Beach",
+        name: "26 Km Rafting",
         image: Kayak1,
         desc: [
             {
                 svg: (<svg xmlns="http://www.w3.org/2000/svg" className=" text-indigo-600" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" /><circle cx="12" cy="10" r="3" /></svg>),
-                location: "Marine Drive - Shivpuri [10 Km Rafting]"
+                location: "Marine drive to NIM Beach"
             },
             {
                 svg: (<svg xmlns="http://www.w3.org/2000/svg" className=" text-indigo-600" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /></svg>),
@@ -74,7 +74,7 @@ const packages = [
                 location: "Every day at 10:00 AM and 02:00PM"
             },
         ],
-        rate: 1000,
+        rate: 1220,
         link: "www.example.com",
         features: [
             "5 products",
@@ -112,7 +112,7 @@ const Pricing = () => {
                                 alt="alt"
                                 className="w-full h-[40%] aspect-video object-cover"
                             />
-                            <h3 className="text-2xl text-center pt-5 tracking-wide text-gray-900">
+                            <h3 className="text-2xl text-center font-semibold pt-5 tracking-wide text-gray-900">
                                 {pack.name}
                             </h3>
 
