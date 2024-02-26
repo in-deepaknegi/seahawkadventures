@@ -89,6 +89,37 @@ const Icons = () => {
                     </Link>
 
                     <Link
+                        href="https://www.facebook.com/seahawkadventure/"
+                        target="_blank"
+                        className="mx-auto"
+                    >
+                        <span className="sr-only">Facebook</span>
+                        <svg
+                            viewBox="0 0 16 16"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            className="w-8 h-8"
+                        >
+                            <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                            <g
+                                id="SVGRepo_tracerCarrier"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            ></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    fill="#1877F2"
+                                    d="M15 8a7 7 0 00-7-7 7 7 0 00-1.094 13.915v-4.892H5.13V8h1.777V6.458c0-1.754 1.045-2.724 2.644-2.724.766 0 1.567.137 1.567.137v1.723h-.883c-.87 0-1.14.54-1.14 1.093V8h1.941l-.31 2.023H9.094v4.892A7.001 7.001 0 0015 8z"
+                                ></path>
+                                <path
+                                    fill="#ffffff"
+                                    d="M10.725 10.023L11.035 8H9.094V6.687c0-.553.27-1.093 1.14-1.093h.883V3.87s-.801-.137-1.567-.137c-1.6 0-2.644.97-2.644 2.724V8H5.13v2.023h1.777v4.892a7.037 7.037 0 002.188 0v-4.892h1.63z"
+                                ></path>
+                            </g>
+                        </svg>
+                    </Link>
+
+                    <Link
                         href={`tel:+91 97566 20538`}
                         target="_blank"
                         className="mx-auto"
@@ -110,28 +141,7 @@ const Icons = () => {
                         </svg>
                     </Link>
 
-                    <Link
-                        href={`mailto:office@seahawkadventures.com`}
-                        target="_blank"
-                        className="mx-auto"
-                    >
-                        <span className="sr-only">Mail</span>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="18"
-                            height="18"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            className="w-6 h-6 text-amber-400"
-                        >
-                            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-                        </svg>
-                    </Link>
+
                 </div>
             </div>
         </section>
