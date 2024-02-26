@@ -1,8 +1,9 @@
 import Image from "next/image";
 import React from "react";
-import Rafting1 from '@/public/rafting2.WEBP';
-import Rafting2 from '@/public/rafting3.WEBP';
-import Kayak1 from '@/public/kayak2.WEBP';
+import Rafting1 from '@/public/rafting/r01.jpg';
+import Rafting2 from '@/public/rafting/r02.jpg';
+import Rafting3 from '@/public/rafting/r03.jpg';
+
 
 const packages = [
     {
@@ -33,7 +34,7 @@ const packages = [
     },
     {
         name: "16 Km Rafting",
-        image: Rafting2,
+        image: Rafting3,
         desc: [
             {
                 svg: (<svg xmlns="http://www.w3.org/2000/svg" className=" text-indigo-600" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" /><circle cx="12" cy="10" r="3" /></svg>),
@@ -59,7 +60,7 @@ const packages = [
     },
     {
         name: "26 Km Rafting",
-        image: Kayak1,
+        image: Rafting2,
         desc: [
             {
                 svg: (<svg xmlns="http://www.w3.org/2000/svg" className=" text-indigo-600" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" /><circle cx="12" cy="10" r="3" /></svg>),
@@ -110,7 +111,7 @@ const Pricing = () => {
                             <Image
                                 src={pack.image}
                                 alt="alt"
-                                className="w-full h-[40%] aspect-video object-cover"
+                                className="w-full h-[40%] aspect-video object-cover object-center"
                             />
                             <h3 className="text-2xl text-center font-semibold pt-5 tracking-wide text-gray-900">
                                 {pack.name}
@@ -139,7 +140,7 @@ const Pricing = () => {
                                 </p>
                                 <a
                                     href="#"
-                                    className="mt-6 block rounded-md bg-blue-600 px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-xl"
+                                    className="mt-6 block rounded-md bg-blue-500 px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-xl hover:bg-blue-600"
                                 >
                                     Buy plan
                                 </a>

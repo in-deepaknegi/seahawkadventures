@@ -1,6 +1,8 @@
-"use client"
-import React, { useEffect } from 'react';
+import React from 'react';
 import Image from 'next/image';
+
+import Button from '@/components/ui/button'
+
 import Rafting2 from '@/public/rafting2.WEBP';
 import Kayak1 from '@/public/kayak2.WEBP';
 
@@ -55,7 +57,7 @@ const Feature = () => {
                                 ))}
                             </div>
                             <div className="mt-10 flex gap-x-6">
-                                <a href="/booking" className="rounded-md px-3.5 py-2.5 text-sm font-semibold text-blue-600 shadow-sm ring-1 ring-blue-500 hover:text-white hover:bg-blue-600"
+                                <a href="/booking" className="rounded-md px-3.5 py-2.5 text-sm font-semibold text-orange-600 shadow-sm ring-1 ring-orange-500 hover:text-white hover:bg-orange-500"
                                 >
                                     Book now
                                 </a>
@@ -113,7 +115,8 @@ const Feature = () => {
                                 ))}
                             </div>
                             <div className="mt-10 flex gap-x-6">
-                                <a href="/booking" className="rounded-md px-3.5 py-2.5 text-sm font-semibold text-blue-600 shadow-sm ring-1 ring-blue-500 hover:text-white hover:bg-blue-600">
+                                <a href="/booking" className="rounded-md px-3.5 py-2.5 text-sm font-semibold text-orange-600 shadow-sm ring-1 ring-orange-500 hover:text-white hover:bg-orange-500"
+                                >
                                     Book now
                                 </a>
                                 <a href="/explore/kayaking" className="text-sm font-semibold leading-6 text-gray-900 my-auto">

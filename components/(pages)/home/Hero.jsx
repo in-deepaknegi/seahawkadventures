@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Button from '@/components/ui/button'
 
 const Hero = () => {
     return (
@@ -49,15 +50,10 @@ const Hero = () => {
                     every bend brings new thrills and breathtaking views.
                 </p>
                 <div className="mt-10 flex items-center justify-center gap-x-6">
-                    <a
-                        href="/explore"
-                        className="rounded-md bg-orange-500 font-semibold px-3.5 tracking-wide py-2.5 text-sm text-white shadow-sm hover:bg-orange-600"
-                    >
-                        Explore more
-                    </a>
+                    <Button text='Explore more'/>
                     <a
                         href="/#packages"
-                        className="leading-6 text-orange-500 font-semibold text-sm my-auto"
+                        className="leading-6 text-orange-500 font-semibold text-sm my-auto px-3 py-2 rounded-md"
                     >
                         Book next adventure <span aria-hidden="true">→</span>
                     </a>
