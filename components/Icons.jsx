@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Icons = () => {
     return (
-        <section className="fixed py-3 rounded-xl bottom-10 left-6 bg-black px-1.5 md:px-2 z-10 bg-clip-padding backdrop-filter bg-opacity-80 backdrop-blur-sm">
+        <section className="fixed py-3 rounded-xl bottom-3 md:bottom-10 left-6 bg-black px-1.5 md:px-2 z-10 bg-clip-padding backdrop-filter bg-opacity-80 backdrop-blur-sm">
             <div className="">
                 <div className="flex flex-col gap-y-3">
                     <Link

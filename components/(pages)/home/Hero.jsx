@@ -1,47 +1,36 @@
 "use client";
 import React from "react";
-import Button from '@/components/ui/button'
+import Button from "@/components/ui/button";
 
 const Hero = () => {
     return (
         <section
-            className="relative isolate overflow-x-hidden -mt-20"
+            className="relative isolate overflow-x-hidden -mt-20 min-h-screen"
             style={{
-                backgroundImage: "url('/kayak1.WEBP')",
+                backgroundImage: "url('/rafting/r03.jpg')",
                 backgroundPosition: "center",
                 backgroundSize: "cover",
-                // backgroundAttachment: 'fixed',
+                // backgroundAttachment: "fixed",
             }}
         >
-            <div className="md:absolute w-full h-full z-[-9] bg-gradient-to-b from-white/10 via-black/10 to-black/90"></div>
-            <div className="md:hidden block absolute w-full h-full z-[-9] bg-gradient-to-b from-black/10 via-black/30 to-black/80"></div>
+            <div className="md:absolute w-full h-full z-[-9] bg-gradient-to-t from-black via-black/30 to-black/10"></div>
+            <div className="md:hidden block absolute w-full h-full z-[-9] bg-gradient-to-t from-black/10 via-black/30 to-black"></div>
 
             <div
-                className="mx-auto max-w-5xl text-center px-6 py-52 lg:py-40 lg:px-0"
+                className="max-w-full px-8 md:px-16 lg:px-24 mx-auto pb-10 pt-40 lg:pt-[20rem]"
                 data-aos="fade-up"
                 data-aos-duration="500"
             >
-                <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-                    <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-white bg-black/60 ring-1 ring-gray-200 hover:ring-gray-900/20">
-                        Explore our upcoming adventures.
-                        <a href="/explore" className="text-sky-500">
-                            <span className="absolute inset-0" aria-hidden="true">
-                                {" "}
-                            </span>
-                            &nbsp;Read more <span aria-hidden="true">→</span>
-                        </a>
-                    </div>
-                </div>
                 <h1
-                    className="mt-5 font-semibold text-white text-5xl md:mt-0 lg:text-6xl"
-                    data-aos="fade-up"
+                    className="mt-5 text-5xl max-w-3xl text-center md:text-left font-semibold text-white md:mt-0 lg:text-6xl"
+                    data-aos="fade-right"
                     data-aos-duration="500"
                 >
                     Explore, Dream, Discover: Adventure Awaits!
                 </h1>
                 <p
-                    className="mt-12 text-base text-gray-50 md:mt-6 md:font-light md:text-lg"
-                    data-aos="fade-up"
+                    className="mt-12 md:ml-auto max-w-4xl text-center md:text-right text-base text-gray-50 md:mt-6 md:font-light md:text-lg"
+                    data-aos="fade-left"
                     data-aos-duration="500"
                 >
                     Embark on unforgettable hiking, rafting, and kayaking adventures in
@@ -49,8 +38,8 @@ const Hero = () => {
                     beauty of the Himalayas, and along the pristine Ganges River, where
                     every bend brings new thrills and breathtaking views.
                 </p>
-                <div className="mt-10 flex items-center justify-center gap-x-6">
-                    <Button text='Explore more'/>
+                <div className="mt-10 flex md:ml-auto justify-center md:justify-end gap-x-6">
+                    <Button text="Explore more" />
                     <a
                         href="/#packages"
                         className="leading-6 text-orange-500 font-semibold text-sm my-auto px-3 py-2 rounded-md"

@@ -29,12 +29,11 @@ const packages = [
             "5 products",
             "Up to 1,000 subscribers",
             "Basic analytics",
-            "48-hour support response time",
         ],
     },
     {
         name: "16 Km Rafting",
-        image: Rafting3,
+        image: Rafting2,
         desc: [
             {
                 svg: (<svg xmlns="http://www.w3.org/2000/svg" className=" text-indigo-600" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" /><circle cx="12" cy="10" r="3" /></svg>),
@@ -60,7 +59,7 @@ const packages = [
     },
     {
         name: "26 Km Rafting",
-        image: Rafting2,
+        image: Rafting3,
         desc: [
             {
                 svg: (<svg xmlns="http://www.w3.org/2000/svg" className=" text-indigo-600" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" /><circle cx="12" cy="10" r="3" /></svg>),
@@ -102,22 +101,22 @@ const Pricing = () => {
                     Book Rafting as per the Daily fixed River Rafting Departures. Get 40% off
                 </p>
 
-                <div className="mx-auto mt-10 flex flex-col lg:flex-row gap-8 h-full">
+                <div className="mx-auto mt-10 grid lg:grid-cols-3 gap-y-6 gap-x-6">
                     {packages.map((pack, index) => (
                         <div
                             key={index}
-                            className="flex flex-col rounded-3xl shadow-md ring-1 ring-gray-200 hover:ring-1 hover:shadow-2xl hover:ring-gray-300 hover:scale-[1.02] transition-all ease-in-out duration-300 overflow-hidden"
+                            className="rounded-3xl shadow-md ring-1 ring-gray-200 hover:ring-1 hover:shadow-2xl hover:ring-gray-300 hover:scale-[1.02] transition-all ease-in-out duration-300 overflow-hidden"
                         >
                             <Image
                                 src={pack.image}
                                 alt="alt"
-                                className="w-full h-[40%] aspect-video object-cover object-center"
+                                className="h-[33%] object-cover object-center"
                             />
                             <h3 className="text-2xl text-center font-semibold pt-5 tracking-wide text-gray-900">
                                 {pack.name}
                             </h3>
 
-                            <div className="px-8 py-8">
+                            <div className="px-8 py-8 mb-6 md:mb-8">
                                 <ul className="space-y-4 text-sm leading-6">
                                     {pack.desc.map((feature, i) => (
                                         <li key={i} className="flex gap-3">
