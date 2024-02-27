@@ -5,32 +5,29 @@ import Button from "@/components/ui/button";
 const Hero = () => {
     return (
         <section
-            className="relative isolate overflow-x-hidden -mt-20 min-h-screen transition-all ease-in duration-1000"
+            className="relative isolate overflow-x-hidden -mt-20 min-h-full lg:min-h-screen transition-all ease-in duration-1000"
             style={{
                 backgroundImage: "url('/rafting/m00.jpg')",
                 backgroundPosition: "center",
                 backgroundSize: "cover",
-                backgroundAttachment: "fixed",
+                // backgroundAttachment: "fixed",
             }}
         >
-            <div className="absolute w-full h-full z-[-9] bg-gradient-to-l from-black via-black/20 to-black/10"></div>
+            <div className="md:absolute w-full h-full z-[-9] bg-gradient-to-l from-black via-black/20 to-black/10"></div>
+            <div className="absolute w-full h-full z-[-9] bg-gradient-to-t from-black via-black/20 to-black/10"></div>
 
             <div
-                className="max-w-full px-8 md:px-16 lg:px-24 mx-auto pb-10 pt-40 lg:pt-[20rem]"
+                className="max-w-full px-8 md:px-16 lg:px-24 mx-auto pb-10 pt-56 lg:pt-[20rem]"
                 data-aos="fade-up"
                 data-aos-duration="500"
             >
                 <h1
                     className="mt-5 text-5xl max-w-3xl text-center ml-auto md:text-right font-semibold text-white md:mt-0 lg:text-6xl"
-                    data-aos="fade-right"
-                    data-aos-duration="500"
                 >
                     Dream, Explore: Adventure Awaits!
                 </h1>
                 <p
                     className="mt-12 md:ml-auto max-w-4xl text-center md:text-right text-base text-gray-50 md:mt-6 md:font-light md:text-lg"
-                    data-aos="fade-left"
-                    data-aos-duration="500"
                 >
                     Embark on unforgettable hiking, rafting, and kayaking adventures in
                     the stunning landscapes of Uttarakhand, surrounded by the majestic

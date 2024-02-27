@@ -36,22 +36,23 @@ const Navbar = () => {
                             </div>
                         </div> */}
                         <div className='lg:flex lg:flex-1 lg:gap-2 lg:items-center lg:justify-end'>
-                            <a href='/login' className='text-gray-100 text-sm'>Log In</a>
+                            <a href='/login' className='hidden text-gray-100 text-sm lg:block'>Log In</a>
                             <span className='hidden h-4 w-[1px] bg-gray-200 mx-2 lg:block'></span>
                             <a href='/signup' className='hidden text-gray-100 text-sm lg:block'>Create an account</a>
                         </div>
                     </div>
                 </div>
             </nav>
+
             <header className='sticky top-0 z-10'>
                 <div className='relative'>
-                    <div className='bg-white top-0 sticky border-b border-gray-200 flex items-center justify-between px-6 lg:py-[0.5rem] lg:px-8'>
+                    <div className='bg-white top-0 sticky border-b border-gray-200 flex items-center justify-between px-6 lg:py-[0.35rem] lg:px-8'>
                         <div className='flex lg:flex-none'>
                             <a href='/' className='-m-1.5 p-1.5 text-2xl font-medium'>
                                 <Image
                                     src={Logo}
                                     alt='site-logo'
-                                    className='w-32'
+                                    className='w-36'
                                 />
                             </a>
                         </div>
@@ -83,15 +84,15 @@ const Navbar = () => {
                 </div>
                 {mobilemenu && (
                     <div className='lg:hidden' role='dialog' aria-modal='true'>
-                        <div className='fixed inset-0 z-50'></div>
-                        <div className='fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-12 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10'>
+
+                        <div className='fixed inset-y-0 top-0 right-0  overflow-y-auto px-6 py-10 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 h-full w-full bg-white bg-clip-padding backdrop-filter bg-opacity-80 backdrop-blur-md'>
                             <div className='flex items-center justify-between'>
                                 <a href='/' className='-m-1.5 p-1.5'>
                                     <span className='sr-only'>Your Company</span>
                                 </a>
                                 <button
                                     onClick={toggleMobileMenu}
-                                    type='button' className='-m-2.5 rounded-md p-4 text-gray-700'>
+                                    type='button' className='-m-2.5 rounded-md p-4 ml-2 mt-1 text-gray-700'>
                                     <span className='sr-only'>Close menu</span>
                                     <svg className='h-6 w-6' fill='none' viewBox='0 0 24 24' strokeWidth='1.5' stroke='currentColor' aria-hidden='true'>
                                         <path strokeLinecap='round' strokeLinejoin='round' d='M6 18L18 6M6 6l12 12' />
@@ -107,6 +108,12 @@ const Navbar = () => {
                                         <a href='/about' className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>About</a>
                                     </div>
                                 </div>
+                            </div>
+                            <div className='flex flex-col mx-auto gap-4 mt-4'>
+                                <a href='/login' className='px-4 py-2 bg-black text-white text-center text-base rounded-lg'>Log In</a>
+
+                                <a href='/register' className='py-2 bg-black text-white  text-center text-base rounded-lg'>Create an Account</a>
+
                             </div>
                         </div>
                     </div>
