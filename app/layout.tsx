@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     title: "Sea Hawk Adventures",
     description: "Embark on unforgettable hiking, rafting, and kayaking adventures in the stunning landscapes of Uttarakhand, surrounded by the majestic beauty of the Himalayas, and along the pristine Ganges River",
     siteName: "Sea Hawk Adventures",
+    images: "/rafting/r00.jpg"
   }
 }
 
