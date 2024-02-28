@@ -13,8 +13,7 @@ const Hero = () => {
                 // backgroundAttachment: "fixed",
             }}
         >
-            <div className="md:absolute w-full h-full z-[-9] bg-gradient-to-l from-black via-black/20 to-black/10"></div>
-            <div className="absolute w-full h-full z-[-9] bg-gradient-to-t from-black via-black/20 to-black/10"></div>
+            <div className="absolute w-full h-full z-[-9] bg-gradient-to-t from-black via-black/10 to-black/50"></div>
 
             <div
                 className="max-w-full px-8 md:px-16 lg:px-24 mx-auto pb-10 pt-56 lg:pt-[20rem]"
@@ -34,11 +33,11 @@ const Hero = () => {
                     beauty of the Himalayas, and along the pristine Ganges River, where
                     every bend brings new thrills and breathtaking views.
                 </p>
-                <div className="mt-10 flex md:ml-auto justify-center md:justify-end gap-x-6">
-                    <Button text="Explore more" />
+                <div className="mt-10 flex flex-col sm:flex-row md:ml-auto justify-center md:justify-end gap-x-6">
+                    <Button text="Explore more" url="/explore" />
                     <a
                         href="/#packages"
-                        className="leading-6 text-orange-500 font-semibold text-sm my-auto px-3 py-2 rounded-md"
+                        className="leading-6 mx-auto sm:mx-0 mt-3 sm:mt-0 text-orange-500 font-semibold text-sm my-auto px-3 py-2 rounded-md"
                     >
                         Book next adventure <span aria-hidden="true">→</span>
                     </a>

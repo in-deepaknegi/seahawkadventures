@@ -5,7 +5,7 @@ import Image from "next/image";
 import Rafting1 from '@/public/rafting/r01.jpg';
 import Rafting2 from '@/public/rafting/r02.jpg';
 import Rafting3 from '@/public/rafting/r03.jpg';
-
+import Button from "@/components/ui/button";
 
 const packages = [
     {
@@ -18,19 +18,24 @@ const packages = [
             },
             {
                 svg: (<svg xmlns="http://www.w3.org/2000/svg" className=" text-indigo-600" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /></svg>),
-                location: "3 hours"
+                location: "1.5 hours"
             },
             {
                 svg: (<svg xmlns="http://www.w3.org/2000/svg" className=" text-indigo-600" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" ><path d="M8 2v4" /><path d="M16 2v4" /><path d="M21 14V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8" /><path d="M3 10h18" /><path d="m16 20 2 2 4-4" /></svg>),
                 location: "Every day at 10:00 AM and 02:00PM"
             },
+            {
+                svg: (<svg xmlns="http://www.w3.org/2000/svg" className=" text-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M8 6v6" /><path d="M15 6v6" /><path d="M2 12h19.6" /><path d="M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3" /><circle cx="7" cy="18" r="2" /><path d="M9 18h5" /><circle cx="16" cy="18" r="2" /></svg>),
+                location: "Transportation Included"
+            },
         ],
         rate: 620,
         link: "www.example.com",
         features: [
-            "5 products",
-            "Up to 1,000 subscribers",
-            "Basic analytics",
+            "Guide included",
+            "Additional safety kayaker",
+            "Age needed 14 - 55",
+            "Grade 4 + Grade 2 rapids"
         ],
     },
     {
@@ -43,20 +48,24 @@ const packages = [
             },
             {
                 svg: (<svg xmlns="http://www.w3.org/2000/svg" className=" text-indigo-600" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /></svg>),
-                location: "3 hours"
+                location: "2 hours"
             },
             {
                 svg: (<svg xmlns="http://www.w3.org/2000/svg" className=" text-indigo-600" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" ><path d="M8 2v4" /><path d="M16 2v4" /><path d="M21 14V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8" /><path d="M3 10h18" /><path d="m16 20 2 2 4-4" /></svg>),
                 location: "Every day at 10:00 AM and 02:00PM"
             },
+            {
+                svg: (<svg xmlns="http://www.w3.org/2000/svg" className=" text-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M8 6v6" /><path d="M15 6v6" /><path d="M2 12h19.6" /><path d="M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3" /><circle cx="7" cy="18" r="2" /><path d="M9 18h5" /><circle cx="16" cy="18" r="2" /></svg>),
+                location: "Transportation Included"
+            },
         ],
         rate: 1020,
         link: "www.example.com",
         features: [
-            "5 products",
-            "Up to 1,000 subscribers",
-            "Basic analytics",
-            "48-hour support response time",
+            "Guide included",
+            "Additional safety kayaker",
+            "Age needed 14 - 55",
+            "Grade 2 + Grade 3 + body surfing"
         ],
     },
     {
@@ -75,14 +84,18 @@ const packages = [
                 svg: (<svg xmlns="http://www.w3.org/2000/svg" className=" text-indigo-600" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" ><path d="M8 2v4" /><path d="M16 2v4" /><path d="M21 14V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8" /><path d="M3 10h18" /><path d="m16 20 2 2 4-4" /></svg>),
                 location: "Every day at 10:00 AM and 02:00PM"
             },
+            {
+                svg: (<svg xmlns="http://www.w3.org/2000/svg" className=" text-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M8 6v6" /><path d="M15 6v6" /><path d="M2 12h19.6" /><path d="M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3" /><circle cx="7" cy="18" r="2" /><path d="M9 18h5" /><circle cx="16" cy="18" r="2" /></svg>),
+                location: "Transportation Included"
+            },
         ],
         rate: 1520,
         link: "www.example.com",
         features: [
-            "5 products",
-            "Up to 1,000 subscribers",
-            "Basic analytics",
-            "48-hour support response time",
+            "Guide included",
+            "Additional safety kayaker",
+            "Age needed 14 - 55",
+            "Grade 2 + Grade 3 + Grade 4 + body surfing"
         ],
     },
 ];
@@ -91,12 +104,12 @@ const Pricing = () => {
 
     const [active, setActive] = useState(null);
 
-    const toggleActive = (index) => {
-        setActive(active === index ? null : index);
+    const toggleActive = () => {
+        setActive(!active);
     };
 
     return (
-        <section id="packages" className="relative isolate bg-white py-16 sm:py-24">
+        <section id="packages" className="relative isolate bg-white py-8 sm:py-16">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-4xl text-center">
                     <h2 className="text-base font-semibold leading-7 text-blue-700">
@@ -107,21 +120,21 @@ const Pricing = () => {
                     </p>
                 </div>
                 <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">
-                    Book Rafting as per the Daily fixed River Rafting Departures. Get 40% off
+                Experience the adrenaline rush of rafting in Rishikesh!
                 </p>
 
-                <div className="mx-auto mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-y-6 gap-x-6">
+                <div className="mx-auto h-auto mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-y-6 gap-x-6">
                     {packages.map((pack, i) => (
                         <div
                             key={i}
-                            className={`rounded-3xl ${active === i ? 'grid' : 'flex flex-col'}  shadow-md ring-1 ring-gray-200 hover:ring-1 hover:shadow-2xl hover:ring-gray-300 hover:scale-[1.02] transition-all ease-in-out duration-300 overflow-hidden`}
+                            className={`rounded-3xl grdi shadow-md ring-1 ring-gray-200 hover:ring-1 hover:shadow-2xl hover:ring-gray-300 hover:scale-[1.02] transition-all ease-in-out duration-300 overflow-hidden`}
                         >
                             <Image
                                 src={pack.image}
                                 alt="alt"
                                 className="object-cover object-center"
                             />
-                            <h3 className="text-3xl text-center font-semibold pt-5 tracking-wide text-gray-900">
+                            <h3 className="text-4xl md:text-3xl text-center font-bold pt-5 tracking-wide text-gray-900">
                                 {pack.name}
                             </h3>
 
@@ -146,15 +159,15 @@ const Pricing = () => {
                                         /person
                                     </span>
                                 </p>
-                                <div className={`flex w-full gap-4`}>
+                                <div className={`mt-5 flex w-full justify-start gap-0 md:gap-4`}>
                                     <a
                                         href={`https://wa.me/919756620538/?text=Hello! I'm interested in your rafting packages (${pack.name}) and would love to learn more. Can you please provide details on the types of trips available and their durations? Thank you `}
                                         target="_blank"
-                                        className="mt-6 flex rounded-md bg-green-500 px-2 text-center text-sm font-semibold leading-6 text-white shadow-xl hover:bg-green-600"
+                                        className="flex rounded-md bg-green-500 px-2 text-center text-sm font-semibold text-white shadow-xl hover:bg-green-600"
                                     >
 
                                         <svg
-                                            className="w-9 h-9 text-white"
+                                            className="w-9 text-white"
                                             fill="currentColor"
                                             viewBox="0 0 24 24"
                                             xmlns="http://www.w3.org/2000/svg"
@@ -163,7 +176,7 @@ const Pricing = () => {
                                             <g
                                                 id="SVGRepo_tracerCarrier"
                                                 strokeLinecap="round"
-                                                strokeLinejoin="round"
+                                                strokeLinejoin="round"  
                                             ></g>
                                             <g id="SVGRepo_iconCarrier">
                                                 {" "}
@@ -174,23 +187,19 @@ const Pricing = () => {
                                             Chat with us
                                         </span>
                                     </a>
-                                    <a
-                                        href="#"
-                                        className="mt-6 block rounded-md bg-blue-500 px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-xl hover:bg-blue-600"
-                                    >
-                                        Book now
-                                    </a>
+                                    <Button text="Book now" color="bg-blue-500" url={"#"} />
+
                                 </div>
 
                                 <div key={i} className={`mt-8`}>
                                     <button
-                                        onClick={() => toggleActive(i)}
+                                        onClick={() => toggleActive()}
                                         className="flex w-full items-start justify-between text-left">
                                         <span className="text-sm font-semibold leading-7 text-gray-900">
-                                            Read more
+                                            Additional Information
                                         </span>
                                         <span>
-                                            {active === i ? (
+                                            {active ? (
                                                 <svg
                                                     xmlns="http://www.w3.org/2000/svg"
                                                     width="18"
@@ -222,11 +231,11 @@ const Pricing = () => {
                                             )}
                                         </span>
                                     </button>
-                                    {active === i && (
-                                        <dd className="mt-2 text-base leading-7 text-gray-600">
-                                            <ul className="space-y-4 text-sm leading-6">
-                                                {pack.features.map((feature, i) => (
-                                                    <li key={i} className="flex gap-3">
+                                    {active && (
+                                        <dd className="mt-2 text-base leading-7 text-black">
+                                            <ul className="space-y-2 text-sm leading-6">
+                                                {pack.features.map((feature, j) => (
+                                                    <li key={j} className="flex gap-3">
                                                         <svg
                                                             xmlns="http://www.w3.org/2000/svg"
                                                             viewBox="0 0 20 20"

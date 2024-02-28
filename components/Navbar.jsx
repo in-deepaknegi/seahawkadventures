@@ -7,6 +7,11 @@ import Logo from '@/public/logo.jpg';
 const Navbar = () => {
 
     const [mobilemenu, setMobileMenu] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleDropdown = () => {
+        setIsOpen(!isOpen);
+    };
 
     const toggleMobileMenu = () => {
         setMobileMenu(!mobilemenu);
@@ -67,7 +72,35 @@ const Navbar = () => {
                             </button>
                         </div>
                         <div className='hidden lg:flex lg:gap-x-12 ml-10'>
-                            <a href='/explore' className='text-sm font-semibold leading-6 text-gray-900'>Explore</a>
+                            <button onClick={toggleDropdown} className='text-sm font-semibold leading-6 text-gray-900'>
+                                {/* <a href='/explore' className='text-sm font-semibold leading-6 text-gray-900'> */}
+                                Explore
+                                {/* </a> */}
+                                {isOpen && (
+                                    <div className="absolute mt-6 w-32 bg-white border rounded-lg shadow-xl">
+                                        <a
+                                            href="/explore/rafting"
+                                            className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+                                        >
+                                            Rafting
+                                        </a>
+                                        <a
+                                            href="/explore/kayaking"
+                                            className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+                                        >
+                                            Kayaking
+                                        </a>
+                                        <a
+                                            href="/explore/rafting"
+                                            className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+                                        >
+                                            Hiking
+                                        </a>
+                                    </div>
+                                )}
+                            </button>
+
+
                             <a href='/booking' className='text-sm font-semibold leading-6 text-gray-900'>Plan Trip</a>
                             <a href='/contacts' className='text-sm font-semibold leading-6 text-gray-900'>Contacts</a>
                             <a href='/about' className='text-sm font-semibold leading-6 text-gray-900'>About</a>
@@ -83,7 +116,7 @@ const Navbar = () => {
                     </div>
                 </div>
                 {mobilemenu && (
-                    <div className='lg:hidden' role='dialog' aria-modal='true'>
+                    <div className='w-full h-full lg:hidden' role='dialog' aria-modal='true'>
 
                         <div className='fixed inset-y-0 top-0 right-0  overflow-y-auto px-6 py-10 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 h-full w-full bg-white bg-clip-padding backdrop-filter bg-opacity-80 backdrop-blur-md'>
                             <div className='flex items-center justify-between'>
@@ -102,7 +135,36 @@ const Navbar = () => {
                             <div className='mt-6 flow-root'>
                                 <div className='-my-6 divide-y divide-gray-500/10'>
                                     <div className='space-y-2 py-6'>
-                                        <a href='/explore' className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>Explore</a>
+
+                                        <button onClick={toggleDropdown} className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900'>
+                                            {/* <a href='/explore' className='text-sm font-semibold leading-6 text-gray-900'> */}
+                                            <span className='text-left'>
+                                                Explore
+                                            </span>
+                                        </button>
+
+                                        {isOpen && (
+                                            <div className="ml-4 flex flex-col text-left gap-y-4 text-base font-semibold leading-7 text-gray-900">
+                                                <a
+                                                    href="/explore/rafting"
+                                                    className="hover:bg-gray-50 px-3 rounded-lg"
+                                                >
+                                                    Rafting
+                                                </a>
+                                                <a
+                                                    href="/explore/kayaking"
+                                                    className="hover:bg-gray-50 px-3 rounded-lg"
+                                                >
+                                                    Kayaking
+                                                </a>
+                                                <a
+                                                    href="/explore/rafting"
+                                                    className="hover:bg-gray-50 px-3 rounded-lg"
+                                                >
+                                                    Hiking
+                                                </a>
+                                            </div>
+                                        )}
                                         <a href='/booking' className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>Plan Trip</a>
                                         <a href='/contacts' className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>Contacts</a>
                                         <a href='/about' className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>About</a>
