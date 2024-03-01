@@ -159,7 +159,7 @@ const Pricing = () => {
                                         /person
                                     </span>
                                 </p>
-                                <div className={`mt-5 flex w-full justify-start gap-0 md:gap-4`}>
+                                <div className={`mt-5 flex w-full justify-start gap-2 md:gap-4`}>
                                     <a
                                         href={`https://wa.me/919756620538/?text=Hello! I'm interested in your rafting packages (${pack.name}) and would love to learn more. Can you please provide details on the types of trips available and their durations? Thank you `}
                                         target="_blank"
@@ -188,7 +188,6 @@ const Pricing = () => {
                                         </span>
                                     </a>
                                     <Button text="Book now" color="bg-blue-500" url={"#"} />
-
                                 </div>
 
                                 <div key={i} className={`mt-8`}>

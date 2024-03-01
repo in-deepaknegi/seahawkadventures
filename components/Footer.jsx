@@ -60,14 +60,15 @@ const Footer = () => {
                                 Services
                             </h3>
                             <ul className='flex flex-col space-y-2 flex-wrap text-sm font-medium text-gray-500'>
-                                <li>
-                                    <a href='#' className='hover:underline '>Hiking</a>
-                                </li>
+
                                 <li>
                                     <a href='/explore/rafting' className='hover:underline '>Rafting</a>
                                 </li>
                                 <li>
                                     <a href='/explore/kayaking' className='hover:underline'>Kayaking</a>
+                                </li>
+                                <li>
+                                    <a href='#' className='hover:underline '>Hiking</a>
                                 </li>
                                 <li>
                                     <a href="#" className='hover:underline'>Trekking</a>

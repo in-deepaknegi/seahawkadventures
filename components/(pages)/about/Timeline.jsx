@@ -37,22 +37,22 @@ const Timeline = () => {
             <div className='mx-auto px-6 lg:px-8'>
                 <div className='mx-auto flex flex-col lg:gap-y-0 gap-x-0 gap-y-10 lg:gap-x-8 lg:flex-row h-full'>
                     <div className='relative w-full'>
-                        <div className='sticky top-10'>
+                        <div className='sticky top-24'>
                             <h2 className='text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl'
-                                data-aos="fade-up" data-aos-duration="500">
+                                >
                                 The Incredible Journey We&apos;re On: A Story of Adventure and Discovery
                             </h2>
                             <p className='mt-6 text-[1.1011rem] leading-7 text-gray-600'
-                                data-aos="fade-up" data-aos-duration="500">
+                               >
                                 Join us on an absolutely unforgettable journey through time and space, where you&apos;ll experience history coming to life before your very eyes.
                             </p>
                             <div className="mt-10 flex gap-x-6">
                                 <a href="/booking" className="rounded-md px-3.5 py-2.5 text-sm font-semibold text-orange-600 shadow-sm ring-1 ring-orange-500 hover:text-white hover:bg-orange-500"
-                                    data-aos="fade-up" data-aos-duration="500" data-aos-offset="100">
+                                  >
                                     Book now
                                 </a>
                                 <a href="/explore/rafting" className="text-sm font-semibold leading-6 text-gray-900 my-auto"
-                                    data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-offset="100">
+                                    >
                                     Explore rafting <span aria-hidden="true">→</span>
                                 </a>
                             </div>
