@@ -114,52 +114,10 @@ const Gallery = () => {
                             src={Image14}
                             loading="eager"
                         />
-                        <div className="text-black font-semibold">Show more ...</div>
+                        <a href="/gallery" className="text-black hover:text-sky-700 font-semibold">
+                            Show more ...
+                        </a>
                     </div>
-
-                    {/* <div className="flex flex-col space-y-4">
-                        <Image
-                            alt="Gallery Image"
-                            className="h-[60%] object-cover object-center max-w-full rounded-lg"
-                            src={Image4}
-                        />
-                        <Image
-                            alt="Gallery Image"
-                            className="h-[40%] object-cover object-center max-w-full rounded-lg"
-                            src={Image5}
-                        />
-                    </div>
-
-                    <div className="flex flex-col space-y-4">
-                        <Image
-                            alt="Gallery Image"
-                            className="h-[30%] object-cover object-center max-w-full rounded-lg"
-                            src={Image6}
-                        />
-                        <Image
-                            alt="Gallery Image"
-                            className="h-[50%] object-cover object-center max-w-full rounded-lg"
-                            src={Image7}
-                        />
-                        <Image
-                            alt="Gallery Image"
-                            className="h-[20%] object-cover object-center max-w-full rounded-lg"
-                            src={Image8}
-                        />
-                    </div>
-
-                    <div className="flex flex-col space-y-4">
-                        <Image
-                            alt="Gallery Image"
-                            className="h-[50%] object-cover object-center max-w-full rounded-lg"
-                            src={Image9}
-                        />
-                        <Image
-                            alt="Gallery Image"
-                            className="h-[50%] object-cover object-center max-w-full rounded-lg"
-                            src={Image10}
-                        />
-                    </div> */}
                 </div>
             </div>
         </section>

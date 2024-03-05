@@ -72,9 +72,17 @@ const Navbar = () => {
                             </button>
                         </div>
                         <div className='hidden lg:flex lg:gap-x-12 ml-10'>
-                            <button onClick={toggleDropdown} className='text-sm font-semibold leading-6 text-gray-900'>
+                            <button onClick={toggleDropdown} className='flex text-sm font-semibold leading-6 text-gray-900 hover:text-sky-700'>
                                 {/* <a href='/explore' className='text-sm font-semibold leading-6 text-gray-900'> */}
                                 Explore
+                                <span className='mt-[0.15rem] ml-1 text-gray-800'>
+                                    {isOpen ? (
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m18 15-6-6-6 6" /></svg>
+                                    ) : (
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6" /></svg>
+                                    )}
+                                </span>
+
                                 {/* </a> */}
                                 {isOpen && (
                                     <div className="absolute mt-6 w-32 bg-white border rounded-lg shadow-xl">
@@ -101,9 +109,9 @@ const Navbar = () => {
                             </button>
 
 
-                            <a href='/booking' className='text-sm font-semibold leading-6 text-gray-900'>Plan Trip</a>
-                            <a href='/contacts' className='text-sm font-semibold leading-6 text-gray-900'>Contacts</a>
-                            <a href='/about' className='text-sm font-semibold leading-6 text-gray-900'>About</a>
+                            <a href='/booking' className='text-sm font-semibold leading-6 text-gray-900 hover:text-sky-700'>Plan Trip</a>
+                            <a href='/contacts' className='text-sm font-semibold leading-6 text-gray-900 hover:text-sky-700'>Contacts</a>
+                            <a href='/about' className='text-sm font-semibold leading-6 text-gray-900 hover:text-sky-700'>About</a>
                         </div>
                         <div className='hidden lg:ml-8 lg:flex lg:flex-none lg:gap-4 lg:items-center lg:pl-8'>
                             <a href='#' className='text-gray-700'>Search</a>
