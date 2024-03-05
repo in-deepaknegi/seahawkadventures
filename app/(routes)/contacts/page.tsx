@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Form from '@/components/(pages)/contact/Form';
 import Hero from '@/components/(pages)/contact/Hero';
+import Icons from '@/components/Icons';
 
 export const metadata: Metadata = {
     title: 'Contact',
@@ -15,6 +16,7 @@ const page = () => {
         <>
             <Navbar />
             <main>
+                <Icons />
                 <Hero />
                 <Form />
             </main>

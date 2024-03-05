@@ -25,7 +25,7 @@ const packages = [
                 location: "Every day at 10:00 AM and 02:00PM"
             },
             {
-                svg: (<svg xmlns="http://www.w3.org/2000/svg" className=" text-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M8 6v6" /><path d="M15 6v6" /><path d="M2 12h19.6" /><path d="M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3" /><circle cx="7" cy="18" r="2" /><path d="M9 18h5" /><circle cx="16" cy="18" r="2" /></svg>),
+                svg: (<svg xmlns="http://www.w3.org/2000/svg" className=" text-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><path d="M8 6v6" /><path d="M15 6v6" /><path d="M2 12h19.6" /><path d="M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3" /><circle cx="7" cy="18" r="2" /><path d="M9 18h5" /><circle cx="16" cy="18" r="2" /></svg>),
                 location: "Transportation Included"
             },
         ],
@@ -55,7 +55,7 @@ const packages = [
                 location: "Every day at 10:00 AM and 02:00PM"
             },
             {
-                svg: (<svg xmlns="http://www.w3.org/2000/svg" className=" text-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M8 6v6" /><path d="M15 6v6" /><path d="M2 12h19.6" /><path d="M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3" /><circle cx="7" cy="18" r="2" /><path d="M9 18h5" /><circle cx="16" cy="18" r="2" /></svg>),
+                svg: (<svg xmlns="http://www.w3.org/2000/svg" className=" text-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><path d="M8 6v6" /><path d="M15 6v6" /><path d="M2 12h19.6" /><path d="M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3" /><circle cx="7" cy="18" r="2" /><path d="M9 18h5" /><circle cx="16" cy="18" r="2" /></svg>),
                 location: "Transportation Included"
             },
         ],
@@ -85,7 +85,7 @@ const packages = [
                 location: "Every day at 10:00 AM and 02:00PM"
             },
             {
-                svg: (<svg xmlns="http://www.w3.org/2000/svg" className=" text-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M8 6v6" /><path d="M15 6v6" /><path d="M2 12h19.6" /><path d="M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3" /><circle cx="7" cy="18" r="2" /><path d="M9 18h5" /><circle cx="16" cy="18" r="2" /></svg>),
+                svg: (<svg xmlns="http://www.w3.org/2000/svg" className=" text-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><path d="M8 6v6" /><path d="M15 6v6" /><path d="M2 12h19.6" /><path d="M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3" /><circle cx="7" cy="18" r="2" /><path d="M9 18h5" /><circle cx="16" cy="18" r="2" /></svg>),
                 location: "Transportation Included"
             },
         ],
@@ -110,20 +110,24 @@ const Pricing = () => {
 
     return (
         <section id="packages" className="relative isolate bg-white py-8 sm:py-16">
-            <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                <div className="mx-auto max-w-4xl text-center">
-                    <h2 className="text-base font-semibold leading-7 text-blue-700">
+            <div className="mx-auto max-w-7xl px-6 lg:px-8" >
+                <div className="mx-auto max-w-4xl text-center" data-aos="fade-up"
+                    data-aos-duration="700">
+                    <p className="text-base font-semibold leading-7 text-blue-700">
                         Pricing
-                    </h2>
-                    <p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+                    </p>
+                    <h2 className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
                         River Rafting in Rishikesh
+                    </h2>
+                    <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">
+                        Experience the adrenaline rush of rafting in Rishikesh!
                     </p>
                 </div>
-                <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">
-                Experience the adrenaline rush of rafting in Rishikesh!
-                </p>
 
-                <div className="mx-auto h-auto mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-y-6 gap-x-6">
+
+                <div className="mx-auto h-auto mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-y-6 gap-x-6"
+                data-aos="fade-right"
+                data-aos-duration="700">
                     {packages.map((pack, i) => (
                         <div
                             key={i}
@@ -176,7 +180,7 @@ const Pricing = () => {
                                             <g
                                                 id="SVGRepo_tracerCarrier"
                                                 strokeLinecap="round"
-                                                strokeLinejoin="round"  
+                                                strokeLinejoin="round"
                                             ></g>
                                             <g id="SVGRepo_iconCarrier">
                                                 {" "}

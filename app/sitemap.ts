@@ -4,6 +4,7 @@ const urls = [
     'https://www.seahawkadventures.com/about',
     'https://www.seahawkadventures.com/booking',
     'https://www.seahawkadventures.com/contacts',
+    'https://www.seahawkadventures.com/gallery',
 
     'https://www.seahawkadventures.com/explore',
     'https://www.seahawkadventures.com/explore/kayaking',

@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Kayaking1 from '@/public/kayak1.WEBP'
+import Kayaking1 from '@/public/kayak/k01.jpg'
 
 const Hero = () => {
     return (
@@ -8,7 +8,7 @@ const Hero = () => {
             <section className='px-6 mt-6 lg:px-8 lg:mt-8'>
                 <div className='relative isolate rounded-2xl shadow-xl shadow-gray-400 overflow-hidden bg-white'
                     style={{
-                        backgroundImage: "url('/kayak3.WEBP')",
+                        backgroundImage: "url('/kayak/k05.jpg')",
                         backgroundPosition: 'center',
                         backgroundSize: 'cover',
                         // backgroundAttachment: 'fixed',

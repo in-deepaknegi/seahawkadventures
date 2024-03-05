@@ -6,7 +6,8 @@ import FAQ from '@/components/FAQ';
 
 import type { Metadata } from 'next'
 import Newsletter from '@/components/Newsletter';
-import Pricing from '@/components/(pages)/home/Pricing';
+import Pricing from '@/components/(pages)/home/Rafting';
+import Icons from '@/components/Icons';
 
 export const metadata: Metadata = {
     title: 'Rafting',
@@ -51,6 +52,7 @@ const page = () => {
         <>
             <Navbar />
             <main>
+                <Icons />
                 <Hero />
                 <Pricing />
                 <FAQ faq={faq} />

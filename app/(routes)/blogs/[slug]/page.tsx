@@ -7,6 +7,7 @@ import { MDXRemote } from 'next-mdx-remote/rsc'
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
+import Icons from '@/components/Icons';
 
 const Blog = ({ params }: { params: { slug: string } }) => {
     const id = params.slug
@@ -24,6 +25,7 @@ const Blog = ({ params }: { params: { slug: string } }) => {
             <Navbar />
 
             <main className='pt-8 pb-16 antialiased lg:pt-16 lg:pb-24'>
+                <Icons />
                 <div className='mx-auto flex max-w-6xl justify-between px-4 lg:px-0'>
                     <article className="relative max-w-3xl mx-auto pt-10">
                         <h1 className="text-2xl font-extrabold text-slate-900 md:text-4xl ">

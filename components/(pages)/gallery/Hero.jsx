@@ -243,7 +243,7 @@ const Hero = () => {
         <>
             <section className="relative isolate bg-olive-200/60 overflow-hidden">
                 <div className="my-10 max-w-6xl px-6 lg:px-10 mx-auto ">
-                    <div className="relative w-full h-full isolate">
+                    <div className="relative w-full h-full isolate shadow-2xl rounded-2xl">
                         <Swiper
                             spaceBetween={30}
                             effect={"fade"}
@@ -265,7 +265,7 @@ const Hero = () => {
                                         loading="eager"
                                         fill={true}
                                         sizes="100vw"
-                                        className="w-full h-full rounded-2xl shadow-xl object-cover object-center inset-0 z-[-10]"
+                                        className="w-full h-full rounded-2xl object-cover object-center inset-0 z-[-10]"
                                     />
 
                                     <div className="mx-auto px-8 pb-16 pt-[18.5rem] md:pt-[26rem]"></div>
@@ -276,7 +276,7 @@ const Hero = () => {
                 </div>
             </section>
 
-            <section id="gallery" className="relativeisolate py-8 lg:py-16">
+            <section className="relativeisolate py-8 lg:py-16">
                 <div className="max-w-7xl min-h-screen  mx-auto px-8">
                     <div className="flex mb-10 flex-col justify-between gap-y-5 py-4 md:gap-x-10 lg:flex-row">
                         <h2 className="text-4xl font-bold tracking-tight text-black sm:text-5xl">

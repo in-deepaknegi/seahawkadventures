@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import Image from 'next/image'
-import Rafting2 from '@/public/rafting2.WEBP'
+import Rafting2 from '@/public/rafting/r15.jpg'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'

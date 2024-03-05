@@ -3,9 +3,11 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Hero from '@/components/(pages)/explore/kayaking/Hero'
 import FAQ from '@/components/FAQ';
+import Kayaking from '@/components/(pages)/home/Kayaking';
 
 import type { Metadata } from 'next'
 import Newsletter from '@/components/Newsletter';
+import Icons from '@/components/Icons';
 
 export const metadata: Metadata = {
     title: 'Kayaking',
@@ -50,7 +52,9 @@ const page = () => {
         <>
             <Navbar />
             <main>
+                <Icons/>
                 <Hero />
+                <Kayaking />
                 <FAQ faq={faq} />
                 <Newsletter />
             </main>

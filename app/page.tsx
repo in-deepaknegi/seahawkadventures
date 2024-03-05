@@ -3,12 +3,12 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Hero from '@/components/(pages)/home/Hero';
-import Feature from '@/components/(pages)/home/Feature';
 import Newsletter from '@/components/Newsletter';
 import Hiw from '@/components/(pages)/home/Hiw';
 import Blog from '@/components/(pages)/home/Blog';
 import Gallery from '@/components/(pages)/home/Gallery';
-import Pricing from '@/components/(pages)/home/Pricing';
+import Rafting from '@/components/(pages)/home/Rafting';
+import Kayaking from '@/components/(pages)/home/Kayaking';
 import Icons from '@/components/Icons';
 
 import AOS from 'aos';
@@ -31,9 +31,9 @@ export default function Home() {
       <main className='overflow-x-hidden'>
         <Icons />
         <Hero />
-        <Pricing />
+        <Rafting />
+        <Kayaking />
         <Gallery />
-        <Feature />
         {/* <Hiw /> */}
         <Blog />
         <Newsletter />
