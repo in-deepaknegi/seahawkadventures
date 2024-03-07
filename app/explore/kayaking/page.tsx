@@ -4,6 +4,7 @@ import Footer from '@/components/Footer'
 import Hero from '@/components/(pages)/explore/kayaking/Hero'
 import FAQ from '@/components/FAQ';
 import Kayaking from '@/components/(pages)/home/Kayaking';
+import Logo from '@/components/Logo';
 
 import type { Metadata } from 'next'
 import Newsletter from '@/components/Newsletter';
@@ -57,6 +58,7 @@ const page = () => {
                 <Kayaking />
                 <FAQ faq={faq} />
                 <Newsletter />
+                <Logo />
             </main>
             <Footer />
         </>

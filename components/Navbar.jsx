@@ -72,8 +72,7 @@ const Navbar = () => {
                             </button>
                         </div>
                         <div className='hidden lg:flex lg:gap-x-12 ml-10'>
-                            <button onClick={toggleDropdown} className='flex text-sm font-semibold leading-6 text-gray-900 hover:text-sky-700'>
-                                {/* <a href='/explore' className='text-sm font-semibold leading-6 text-gray-900'> */}
+                            <button onClick={toggleDropdown} className='flex text-sm font-semibold leading-6 text-gray-900 hover:text-blue-600'>
                                 Explore
                                 <span className='mt-[0.15rem] ml-1 text-gray-800'>
                                     {isOpen ? (
@@ -109,9 +108,9 @@ const Navbar = () => {
                             </button>
 
 
-                            <a href='/booking' className='text-sm font-semibold leading-6 text-gray-900 hover:text-sky-700'>Plan Trip</a>
-                            <a href='/contacts' className='text-sm font-semibold leading-6 text-gray-900 hover:text-sky-700'>Contacts</a>
-                            <a href='/about' className='text-sm font-semibold leading-6 text-gray-900 hover:text-sky-700'>About</a>
+                            <a href='/gallery' className='text-sm font-semibold leading-6 text-gray-900 hover:text-blue-600'>Gallery</a>
+                            <a href='/contacts' className='text-sm font-semibold leading-6 text-gray-900 hover:text-blue-600'>Contacts</a>
+                            <a href='/about' className='text-sm font-semibold leading-6 text-gray-900 hover:text-blue-600'>About</a>
                         </div>
                         <div className='hidden lg:ml-8 lg:flex lg:flex-none lg:gap-4 lg:items-center lg:pl-8'>
                             <a href='#' className='text-gray-700'>Search</a>

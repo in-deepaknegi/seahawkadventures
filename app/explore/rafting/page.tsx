@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Hero from '@/components/(pages)/explore/rafting/Hero'
 import FAQ from '@/components/FAQ';
+import Logo from '@/components/Logo';
 
 import type { Metadata } from 'next'
 import Newsletter from '@/components/Newsletter';
@@ -57,6 +58,7 @@ const page = () => {
                 <Pricing />
                 <FAQ faq={faq} />
                 <Newsletter />
+                <Logo />
             </main>
             <Footer />
         </>

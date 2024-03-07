@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
 import Button from "@/components/ui/button";
+import B1 from "@/public/b.png"
+import Image from "next/image";
 
 const Hero = () => {
     return (
@@ -13,10 +15,15 @@ const Hero = () => {
                 // backgroundAttachment: "fixed",
             }}
         >
+        <Image 
+            src={B1}
+            alt="sdfd"
+            className="absolute bottom-0 h-20"
+        />
             <div className="absolute w-full h-full z-[-9] bg-gradient-to-t from-black via-black/10 to-black/50"></div>
 
             <div
-                className="max-w-full px-8 md:px-16 lg:px-24 mx-auto pb-10 pt-56 lg:pt-[20rem]"
+                className="max-w-full px-8 md:px-16 lg:px-24 mx-auto pb-10 pt-56 lg:pt-[16rem]"
                 data-aos="fade-up"
                 data-aos-duration="500"
             >

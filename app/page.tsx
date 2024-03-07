@@ -10,6 +10,7 @@ import Gallery from '@/components/(pages)/home/Gallery';
 import Rafting from '@/components/(pages)/home/Rafting';
 import Kayaking from '@/components/(pages)/home/Kayaking';
 import Icons from '@/components/Icons';
+import Logo from '@/components/Logo';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'
@@ -31,6 +32,7 @@ export default function Home() {
       <main className='overflow-x-hidden'>
         <Icons />
         <Hero />
+        <Logo />
         <Rafting />
         <Kayaking />
         <Gallery />

@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Image1 from "@/public/rafting/r00.png";
 import Image2 from "@/public/rafting/r01.jpg";
@@ -26,91 +26,6 @@ import Kayak6 from "@/public/kayak/k05.jpg";
 import Kayak7 from "@/public/kayak/k06.jpg";
 import Kayak8 from "@/public/kayak/k07.jpg";
 import Kayak9 from "@/public/kayak/k08.jpg";
-
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/effect-fade";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import { EffectFade, Autoplay, Navigation } from "swiper/modules";
-
-const swiperz = [
-    {
-        id: 1,
-        src: Image1,
-        alt: "Image-1",
-    },
-    {
-        id: 2,
-        src: Image2,
-        alt: "Image-2",
-    },
-    {
-        id: 3,
-        src: Kayak1,
-        alt: "Image-3",
-    },
-    {
-        id: 4,
-        src: Kayak2,
-        alt: "Image-4",
-    },
-    {
-        id: 5,
-        src: Image5,
-        alt: "Image-5",
-    },
-    {
-        id: 6,
-        src: Image6,
-        alt: "Image-6",
-    },
-    {
-        id: 7,
-        src: Image7,
-        alt: "Image-7",
-    },
-    {
-        id: 8,
-        src: Kayak3,
-        alt: "Image-8",
-    },
-    {
-        id: 9,
-        src: Kayak4,
-        alt: "Image-9",
-    },
-    {
-        id: 10,
-        src: Kayak5,
-        alt: "Image-10",
-    },
-    {
-        id: 11,
-        src: Image11,
-        alt: "Image-11",
-    },
-    {
-        id: 12,
-        src: Kayak6,
-        alt: "Image-12",
-    },
-    {
-        id: 13,
-        src: Image13,
-        alt: "Image-13",
-    },
-    {
-        id: 14,
-        src: Kayak7,
-        alt: "Image-14",
-    },
-    {
-        id: 15,
-        src: Image15,
-        alt: "Image-15",
-    },
-];
 
 const images = [
     {
@@ -239,46 +154,23 @@ const kayaks = [
 ];
 
 const Hero = () => {
+
+    const [select, setSelect] = useState(Image1);
+    const [selectr, setSelectr] = useState(Kayak1);
+
+    const handleSelect = (image) => {
+        setSelect(image);
+    }
+    const handleSelectr = (image) => {
+        setSelectr(image);
+    }
+
     return (
         <>
-            <section className="relative isolate bg-olive-200/60 overflow-hidden">
-                <div className="my-10 max-w-6xl px-6 lg:px-10 mx-auto ">
-                    <div className="relative w-full h-full isolate shadow-2xl rounded-2xl">
-                        <Swiper
-                            spaceBetween={30}
-                            effect={"fade"}
-                            speed={1000}
-                            autoplay={{
-                                delay: 1500,
-                                disableOnInteraction: false,
-                            }}
-                            loop={true}
-                            modules={[Autoplay, EffectFade, Navigation]}
-                            className="rounded-2xl"
-                        >
-                            {swiperz.map((image) => (
-                                <SwiperSlide key={image.id}>
-                                    <Image
-                                        src={image.src}
-                                        alt={image.alt}
-                                        quality={100}
-                                        loading="eager"
-                                        fill={true}
-                                        sizes="100vw"
-                                        className="w-full h-full rounded-2xl object-cover object-center inset-0 z-[-10]"
-                                    />
-
-                                    <div className="mx-auto px-8 pb-16 pt-[18.5rem] md:pt-[26rem]"></div>
-                                </SwiperSlide>
-                            ))}
-                        </Swiper>
-                    </div>
-                </div>
-            </section>
-
-            <section className="relativeisolate py-8 lg:py-16">
-                <div className="max-w-7xl min-h-screen  mx-auto px-8">
-                    <div className="flex mb-10 flex-col justify-between gap-y-5 py-4 md:gap-x-10 lg:flex-row">
+            <section className='relative bg-white py-16 sm:py-20'
+                data-aos="fade-up" data-aos-duration="700">
+                <div className='mx-auto max-w-7xl px-6 lg:px-8'>
+                    <div className="flex mb-10 flex-col justify-between gap-y-5 py-4 md:gap-x-10">
                         <h2 className="text-4xl font-bold tracking-tight text-black sm:text-5xl">
                             Rafting Images
                         </h2>
@@ -288,21 +180,47 @@ const Hero = () => {
                         </p>
                     </div>
 
-                    <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-                        {images.map((image) => (
-                            <div key={image.id} className="relative cursor-pointer">
+                    <div className='mt-10 mx-auto flex flex-col lg:gap-y-0 gap-x-0 gap-y-10 lg:gap-x-8 lg:flex-row h-full'>
+                        <div className='relative w-full'>
+                            <div className='sticky top-24 h-[82.5vh] shadow-xl'>
                                 <Image
                                     alt="Gallery Image"
-                                    className="object-cover h-full object-center w-full rounded-xl"
-                                    src={image.src}
+                                    src={select}
                                     quality={100}
                                     loading="eager"
+                                    className="object-cover h-full object-center w-full rounded-xl"
                                 />
                             </div>
-                        ))}
-                    </div>
+                        </div>
 
-                    <div className="mt-32 flex mb-10 flex-col justify-between gap-y-5 py-4 md:gap-x-10 lg:flex-row">
+                        <div className='w-full h-auto overflow-hidden'
+                            data-aos="zoom-out" data-aos-duration="700">
+                            <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 gap-3">
+                                {images.map((image) => (
+                                    <>
+                                        <button
+                                            onClick={() => handleSelect(image.src)}
+                                            key={image.id} className="relative cursor-pointer">
+                                            <Image
+                                                alt="Gallery Image"
+                                                className="object-cover h-full object-center w-full rounded-lg"
+                                                src={image.src}
+                                                quality={100}
+                                                loading="eager"
+                                            />
+                                        </button>
+                                    </>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className='relative bg-white py-16 sm:py-20'
+                data-aos="fade-up" data-aos-duration="700">
+                <div className='mx-auto max-w-7xl px-6 lg:px-8'>
+                    <div className="flex mb-10 flex-col justify-between gap-y-5 py-4 md:gap-x-10">
                         <h2 className="text-4xl font-bold tracking-tight text-black sm:text-5xl">
                             Kayaking Images
                         </h2>
@@ -312,18 +230,39 @@ const Hero = () => {
                         </p>
                     </div>
 
-                    <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-                        {kayaks.map((image) => (
-                            <div key={image.id} className="relative cursor-pointer">
+                    <div className='mt-10 mx-auto flex flex-col lg:gap-y-0 gap-x-0 gap-y-10 lg:gap-x-8 lg:flex-row h-full'>
+                        <div className='w-full h-auto overflow-hidden'
+                            data-aos="zoom-out" data-aos-duration="700">
+                            <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 gap-3">
+                                {kayaks.map((image) => (
+                                    <>
+                                        <button
+                                            onClick={() => handleSelectr(image.src)}
+                                            key={image.id} className="relative cursor-pointer">
+                                            <Image
+                                                alt="Gallery Image"
+                                                className="object-cover h-full object-center w-full rounded-lg"
+                                                src={image.src}
+                                                quality={100}
+                                                loading="eager"
+                                            />
+                                        </button>
+                                    </>
+                                ))}
+                            </div>
+                        </div>
+
+                        <div className='relative w-full'>
+                            <div className='sticky top-24 h-[82.5vh] shadow-xl'>
                                 <Image
                                     alt="Gallery Image"
-                                    className="object-cover h-full object-center w-full rounded-xl"
-                                    src={image.src}
+                                    src={selectr}
                                     quality={100}
                                     loading="eager"
+                                    className="object-cover h-full object-center w-full rounded-xl"
                                 />
                             </div>
-                        ))}
+                        </div>
                     </div>
                 </div>
             </section>
