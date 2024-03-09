@@ -2,12 +2,81 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { ChevronDown, PieChart } from "lucide-react";
+
 import Logo from '@/public/logo.jpg';
+import R1 from '@/public/rafting/m00.jpg'
+import K1 from '@/public/kayak/k06.jpg'
+
+const menu = [
+    {
+        title: "Rafting",
+        image: R1,
+        solutions: [
+            {
+                name: "12 Km Rafting",
+                description: "Read more about 12 km Rafting",
+                href: "#",
+            },
+            {
+                name: "16 Km Rafting",
+                description: "Read more about 16 km Rafting",
+                href: "#",
+            },
+            {
+                name: "26 Km Rafting",
+                description: "Read more about 26 km Rafting",
+                href: "#",
+            },
+        ],
+        width: "max-w-[33rem]"
+    },
+    {
+        title: "Kayaking",
+        image: K1,
+        solutions: [
+            {
+                name: "Beginner",
+                description: "Read more about our 4 days kayak lesson.",
+                href: "#",
+            },
+            {
+                name: "Intermediate",
+                description: "Read more about our 7 days kayak lesson.",
+                href: "#",
+            },
+        ],
+        width: "max-w-[35rem]"
+    },
+    {
+        title: "Expediture",
+        image: K1,
+        solutions: [
+            {
+                name: "Beginner",
+                description: "Read more about our 4 days kayak lesson.",
+                href: "#",
+            },
+            {
+                name: "Intermediate",
+                description: "Read more about our 7 days kayak lesson.",
+                href: "#",
+            },
+        ],
+        width: "max-w-[35rem]"
+    },
+];
 
 const Navbar = () => {
 
     const [mobilemenu, setMobileMenu] = useState(false);
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(true);
+
+    const [open, setOpen] = useState(null);
+
+    const toggleOpen = (index) => {
+        setOpen(open === index ? null : index);
+    };
 
     const toggleDropdown = () => {
         setIsOpen(!isOpen);
@@ -61,6 +130,7 @@ const Navbar = () => {
                                 />
                             </a>
                         </div>
+
                         <div className='flex lg:hidden'>
                             <button
                                 onClick={toggleMobileMenu}
@@ -71,41 +141,59 @@ const Navbar = () => {
                                 </svg>
                             </button>
                         </div>
-                        <div className='hidden lg:flex lg:gap-x-12 ml-10'>
-                            <button onClick={toggleDropdown} className='flex text-sm font-semibold leading-6 text-gray-900 hover:text-blue-600'>
-                                Explore
-                                <span className='mt-[0.15rem] ml-1 text-gray-800'>
-                                    {isOpen ? (
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m18 15-6-6-6 6" /></svg>
-                                    ) : (
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6" /></svg>
-                                    )}
-                                </span>
 
-                                {/* </a> */}
-                                {isOpen && (
-                                    <div className="absolute mt-6 w-32 bg-white border rounded-lg shadow-xl">
-                                        <a
-                                            href="/explore/rafting"
-                                            className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
-                                        >
-                                            Rafting
-                                        </a>
-                                        <a
-                                            href="/explore/kayaking"
-                                            className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
-                                        >
-                                            Kayaking
-                                        </a>
-                                        <a
-                                            href="/explore/rafting"
-                                            className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
-                                        >
-                                            Hiking
-                                        </a>
-                                    </div>
-                                )}
-                            </button>
+                        <div className='hidden lg:flex lg:gap-x-12 ml-10'>
+                            {menu.map((item, i) => (
+                                <div key={i} className="relative hidden lg:flex lg:gap-x-12">
+                                    <button
+                                        onMouseEnter={() => toggleOpen(i)}
+                                        onMouseLeave={() => toggleOpen(i)}
+                                        onFocus={() => toggleOpen(i)}
+                                        className="inline-flex justify-center items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900"
+                                    >
+                                        <span>{item.title}</span>
+                                        <ChevronDown className={`h-5 w-5 ${open === i ? 'rotate-180 transition-all ease-in duration-200' : ''}`} aria-hidden="true" />
+
+                                        {open === i && (
+                                            <div className="absolute -left-5 z-10 mt-5 top-1 pt-2 flex w-screen max-w-max px-4">
+                                                <div className={`w-screen ${item.width} flex-auto overflow-hidden rounded-3xl bg-white bg-clip-padding backdrop-filter bg-opacity-60 backdrop-blur-md text-sm leading-6 shadow-lg ring-1 ring-gray-900/5`}>
+                                                    <div className="p-2 flex flex-row space-x-3">
+                                                        {item.image && (
+                                                            <Image
+                                                                src={item.image}
+                                                                alt="image"
+                                                                className="w-[15rem] rounded-2xl object-cover"
+                                                            />
+                                                        )}
+
+                                                        <div className="p-2 flex flex-col">
+                                                            {item.solutions.map((item, j) => (
+                                                                <div
+                                                                    key={j}
+                                                                    className="group relative flex rounded-lg py-1 px-4 hover:bg-gray-50"
+                                                                >
+                                                                    <div className="text-left">
+                                                                        <a
+                                                                            href={item.href}
+                                                                            className="font-semibold text-black"
+                                                                        >
+                                                                            {item.name}
+                                                                            <span className="absolute inset-0" />
+                                                                        </a>
+                                                                        <p className="mt-1 text-gray-600 font-medium">
+                                                                            {item.description}
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            ))}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        )}
+                                    </button>
+                                </div>
+                            ))}
 
 
                             <a href='/gallery' className='text-sm font-semibold leading-6 text-gray-900 hover:text-blue-600'>Gallery</a>

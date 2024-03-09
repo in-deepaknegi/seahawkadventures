@@ -49,7 +49,7 @@ const Logo = () => {
             data-aos-duration="500"
         >
             <div className="mx-auto max-w-6xl px-4 md:px-6 lg:px-8">
-                <div className="grid grid-cols-5 h-30 gap-x-10">
+                <div className="grid grid-cols-2 md:grid-cols-5 h-15 md:h-30 gap-x-10">
                     {logos.map((logo) => (
                         <Link href={logo.href} key={logo.id} className="my-auto">
                             <Image src={logo.image} alt={logo.alt} className="object-cover" />
