@@ -31,77 +31,77 @@ const images = [
     {
         id: 1,
         src: Image1,
-        alt: "Image-1",
+        alt: "Rafting-1",
     },
     {
         id: 2,
         src: Image2,
-        alt: "Image-2",
+        alt: "Rafting-2",
     },
     {
         id: 3,
         src: Image3,
-        alt: "Image-3",
+        alt: "Rafting-3",
     },
     {
         id: 4,
         src: Image4,
-        alt: "Image-4",
+        alt: "Rafting-4",
     },
     {
         id: 5,
         src: Image5,
-        alt: "Image-5",
+        alt: "Rafting-5",
     },
     {
         id: 6,
         src: Image6,
-        alt: "Image-6",
+        alt: "Rafting-6",
     },
     {
         id: 7,
         src: Image7,
-        alt: "Image-7",
+        alt: "Rafting-7",
     },
     {
         id: 8,
         src: Image8,
-        alt: "Image-8",
+        alt: "Rafting-8",
     },
     {
         id: 9,
         src: Image9,
-        alt: "Image-9",
+        alt: "Rafting-9",
     },
     {
         id: 10,
         src: Image10,
-        alt: "Image-10",
+        alt: "Rafting-10",
     },
     {
         id: 11,
         src: Image11,
-        alt: "Image-11",
+        alt: "Rafting-11",
     },
     {
         id: 12,
         src: Image12,
-        alt: "Image-12",
+        alt: "Rafting-12",
     },
     {
         id: 13,
         src: Image13,
-        alt: "Image-13",
+        alt: "Rafting-13",
     },
     {
         id: 14,
         src: Image14,
-        alt: "Image-14",
+        alt: "Rafting-14",
     },
     {
         id: 15,
         src: Image15,
-        alt: "Image-15",
+        alt: "Rafting-15",
     },
 ];
 
@@ -161,8 +161,8 @@ const Hero = () => {
     const handleSelect = (image) => {
         setSelect(image);
     }
-    const handleSelectr = (image) => {
-        setSelectr(image);
+    const handleSelectr = (rimage) => {
+        setSelectr(rimage);
     }
 
     return (
@@ -197,19 +197,17 @@ const Hero = () => {
                             data-aos="zoom-out" data-aos-duration="700">
                             <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 gap-3">
                                 {images.map((image) => (
-                                    <>
-                                        <button
-                                            onClick={() => handleSelect(image.src)}
-                                            key={image.id} className="relative cursor-pointer">
-                                            <Image
-                                                alt="Gallery Image"
-                                                className="object-cover h-full object-center w-full rounded-lg"
-                                                src={image.src}
-                                                quality={100}
-                                                loading="eager"
-                                            />
-                                        </button>
-                                    </>
+                                    <button
+                                        onClick={() => handleSelect(image.src)}
+                                        key={`${image.id}-${image.alt}`} className="relative cursor-pointer">
+                                        <Image
+                                            alt="Gallery Image"
+                                            className="object-cover h-full object-center w-full rounded-lg"
+                                            src={image.src}
+                                            quality={100}
+                                            loading="eager"
+                                        />
+                                    </button>
                                 ))}
                             </div>
                         </div>
@@ -235,19 +233,17 @@ const Hero = () => {
                             data-aos="zoom-out" data-aos-duration="700">
                             <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 gap-3">
                                 {kayaks.map((image) => (
-                                    <>
-                                        <button
-                                            onClick={() => handleSelectr(image.src)}
-                                            key={image.id} className="relative cursor-pointer">
-                                            <Image
-                                                alt="Gallery Image"
-                                                className="object-cover h-full object-center w-full rounded-lg"
-                                                src={image.src}
-                                                quality={100}
-                                                loading="eager"
-                                            />
-                                        </button>
-                                    </>
+                                    <button
+                                        onClick={() => handleSelectr(image.src)}
+                                        key={`${image.id}-${image.alt}`} className="relative cursor-pointer">
+                                        <Image
+                                            alt="Gallery Image"
+                                            className="object-cover h-full object-center w-full rounded-lg"
+                                            src={image.src}
+                                            quality={100}
+                                            loading="eager"
+                                        />
+                                    </button>
                                 ))}
                             </div>
                         </div>

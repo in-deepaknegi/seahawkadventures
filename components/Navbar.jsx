@@ -16,7 +16,7 @@ const menu = [
             {
                 name: "12 Km Rafting",
                 description: "Read more about 12 km Rafting",
-                href: "#",
+                href: "/rafting",
             },
             {
                 name: "16 Km Rafting",
@@ -29,7 +29,7 @@ const menu = [
                 href: "#",
             },
         ],
-        width: "max-w-[33rem]"
+        width: "max-w-[34rem]"
     },
     {
         title: "Kayaking",
@@ -49,28 +49,46 @@ const menu = [
         width: "max-w-[35rem]"
     },
     {
-        title: "Expediture",
+        title: "Multi-day trip",
         image: K1,
         solutions: [
             {
-                name: "Beginner",
-                description: "Read more about our 4 days kayak lesson.",
+                name: "Rafting Expedition",
+                description: "Book your next expedition with us.",
                 href: "#",
             },
             {
-                name: "Intermediate",
-                description: "Read more about our 7 days kayak lesson.",
+                name: "Kayak Expedition",
+                description: "Book your next expedition with us.",
                 href: "#",
             },
         ],
         width: "max-w-[35rem]"
+    },
+    {
+        title: "More Links",
+        solutions: [
+            {
+                name: "About us",
+                href: "/about",
+            },
+            {
+                name: "Contact us",
+                href: "/contacts",
+            },
+            {
+                name: "Gallery",
+                href: "/gallery",
+            },
+        ],
+        width: "max-w-[10rem]"
     },
 ];
 
 const Navbar = () => {
 
     const [mobilemenu, setMobileMenu] = useState(false);
-    const [isOpen, setIsOpen] = useState(true);
+    const [isOpen, setIsOpen] = useState(false);
 
     const [open, setOpen] = useState(null);
 
@@ -85,6 +103,7 @@ const Navbar = () => {
     const toggleMobileMenu = () => {
         setMobileMenu(!mobilemenu);
     }
+
     return (
 
         <>
@@ -125,6 +144,7 @@ const Navbar = () => {
                             <a href='/' className='-m-1.5 p-1.5 text-2xl font-medium'>
                                 <Image
                                     src={Logo}
+                                    priority='true'
                                     alt='site-logo'
                                     className='w-36'
                                 />
@@ -148,15 +168,14 @@ const Navbar = () => {
                                     <button
                                         onMouseEnter={() => toggleOpen(i)}
                                         onMouseLeave={() => toggleOpen(i)}
-                                        onFocus={() => toggleOpen(i)}
                                         className="inline-flex justify-center items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900"
                                     >
                                         <span>{item.title}</span>
                                         <ChevronDown className={`h-5 w-5 ${open === i ? 'rotate-180 transition-all ease-in duration-200' : ''}`} aria-hidden="true" />
 
                                         {open === i && (
-                                            <div className="absolute -left-5 z-10 mt-5 top-1 pt-2 flex w-screen max-w-max px-4">
-                                                <div className={`w-screen ${item.width} flex-auto overflow-hidden rounded-3xl bg-white bg-clip-padding backdrop-filter bg-opacity-60 backdrop-blur-md text-sm leading-6 shadow-lg ring-1 ring-gray-900/5`}>
+                                            <div className="absolute -left-5 z-50 mt-5 top-1 pt-2 flex w-screen max-w-max px-4">
+                                                <div className={`w-screen ${item.width} flex-auto overflow-hidden rounded-3xl bg-white bg-clip-padding backdrop-filter bg-opacity-80 backdrop-blur-md text-[0.9005rem] leading-6 shadow-lg ring-1 ring-gray-900/5`}>
                                                     <div className="p-2 flex flex-row space-x-3">
                                                         {item.image && (
                                                             <Image
@@ -167,24 +186,22 @@ const Navbar = () => {
                                                         )}
 
                                                         <div className="p-2 flex flex-col">
-                                                            {item.solutions.map((item, j) => (
-                                                                <div
+                                                            {item.solutions.map((c, j) => (
+                                                                <a href={c.href}
                                                                     key={j}
                                                                     className="group relative flex rounded-lg py-1 px-4 hover:bg-gray-50"
                                                                 >
                                                                     <div className="text-left">
-                                                                        <a
-                                                                            href={item.href}
+                                                                        <h3
                                                                             className="font-semibold text-black"
                                                                         >
-                                                                            {item.name}
-                                                                            <span className="absolute inset-0" />
-                                                                        </a>
+                                                                            {c.name}
+                                                                        </h3>
                                                                         <p className="mt-1 text-gray-600 font-medium">
-                                                                            {item.description}
+                                                                            {c.description}
                                                                         </p>
                                                                     </div>
-                                                                </div>
+                                                                </a>
                                                             ))}
                                                         </div>
                                                     </div>
@@ -194,12 +211,8 @@ const Navbar = () => {
                                     </button>
                                 </div>
                             ))}
-
-
-                            <a href='/gallery' className='text-sm font-semibold leading-6 text-gray-900 hover:text-blue-600'>Gallery</a>
-                            <a href='/contacts' className='text-sm font-semibold leading-6 text-gray-900 hover:text-blue-600'>Contacts</a>
-                            <a href='/about' className='text-sm font-semibold leading-6 text-gray-900 hover:text-blue-600'>About</a>
                         </div>
+
                         <div className='hidden lg:ml-8 lg:flex lg:flex-none lg:gap-4 lg:items-center lg:pl-8'>
                             <a href='#' className='text-gray-700'>Search</a>
                             <a href='#' className='text-gray-700'>Help</a>

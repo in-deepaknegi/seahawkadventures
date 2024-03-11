@@ -40,7 +40,7 @@ const Hero = () => {
     })
     return (
         <>
-            <section className='px-6 mt-6 lg:px-8 lg:mt-8'>
+            <section className='px-6 mt-6 lg:px-8 overflow-hidden lg:mt-8'>
                 <div className='relative isolate rounded-2xl shadow-xl shadow-gray-400 overflow-hidden bg-white'
                     style={{
                         backgroundImage: "url('/rafting3.WEBP')",
@@ -61,11 +61,13 @@ const Hero = () => {
                 </div>
             </section>
 
-            <section className=' bg-white py-16 sm:py-20 overflow-hidden'
+            
+
+            {/* <section className='bg-white py-16 sm:py-20 overflow-x-hidden'
                 data-aos="fade-up" data-aos-duration="300">
-                <div className='mx-auto px-6 lg:px-8'>
+                <div className='mx-auto max-w-7xl px-6 lg:px-8'>
                     <div className='mx-auto flex flex-col lg:gap-y-0 gap-x-0 gap-y-10 lg:gap-x-8 lg:flex-row'>
-                        <div className='my-auto w-full '>
+                        <div className='my-auto w-full'>
                             <div className=''>
                                 <h2 className='text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl'>
                                     Experience the Thrill of Rafting in Rishikesh
@@ -94,8 +96,7 @@ const Hero = () => {
                         </div>
                     </div>
                 </div>
-            </section>
-
+            </section> */}
         </>
     )
 }

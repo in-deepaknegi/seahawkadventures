@@ -6,7 +6,6 @@ import L2 from "@/public/logos/ut.png";
 import L3 from "@/public/logos/atoai.jpeg";
 import L4 from "@/public/logos/IAPRO.jpg";
 import L5 from "@/public/logos/mot.png";
-import Link from "next/link";
 
 const logos = [
     {
@@ -43,17 +42,20 @@ const logos = [
 
 const Logo = () => {
     return (
-        <section
-            className="relative isolate py-8"
-            data-aos="fade-left"
-            data-aos-duration="500"
-        >
-            <div className="mx-auto max-w-6xl px-4 md:px-6 lg:px-8">
-                <div className="grid grid-cols-2 md:grid-cols-5 h-15 md:h-30 gap-x-10">
+        <section className="bg-white py-8 sm:py-16">
+            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+                {/* <h2 className="text-center text-lg font-semibold leading-8 text-gray-900">
+                    Trusted by the world’s most innovative teams
+                </h2> */}
+                <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
                     {logos.map((logo) => (
-                        <Link href={logo.href} key={logo.id} className="my-auto">
-                            <Image src={logo.image} alt={logo.alt} className="object-cover" />
-                        </Link>
+                        <a href={logo.href} target="_blank" key={logo.id} className="my-auto">
+                            <Image
+                                src={logo.image}
+                                alt={logo.alt}
+                                className="h-full w-[80%] object-cover lg:col-span-1"
+                            />
+                        </a>
                     ))}
                 </div>
             </div>

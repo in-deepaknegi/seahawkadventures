@@ -37,7 +37,7 @@ export default function Home() {
         <Kayaking />
         <Gallery />
         {/* <Hiw /> */}
-        <Blog />
+        {/* <Blog /> */}
         <Newsletter />
       </main>
       <Footer />

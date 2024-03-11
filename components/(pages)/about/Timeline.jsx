@@ -32,7 +32,7 @@ const timeline = [
 const Timeline = () => {
 
     return (
-        <section className='relative container bg-white py-16 sm:py-20'
+        <section className='relative bg-white py-16 sm:py-20'
             data-aos="fade-up" data-aos-duration="700">
             <div className='mx-auto px-6 lg:px-8'>
                 <div className='mx-auto flex flex-col lg:gap-y-0 gap-x-0 gap-y-10 lg:gap-x-8 lg:flex-row h-full'>

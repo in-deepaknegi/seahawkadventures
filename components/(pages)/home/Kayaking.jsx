@@ -154,7 +154,7 @@ const Feature = () => {
 
     return (
         <>
-            <section className="relative isolate bg-white py-16 sm:py-20">
+            <section className="relative isolate overflow-hidden bg-white py-16 sm:py-20">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="flex flex-col max-w-2xl mx-auto"
                         data-aos="fade-up"
