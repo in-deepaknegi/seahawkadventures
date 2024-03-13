@@ -15,11 +15,11 @@ const Hero = () => {
                 // backgroundAttachment: "fixed",
             }}
         >
-        <Image 
-            src={B1}
-            alt="sdfd"
-            className="absolute bottom-0 h-20"
-        />
+            <Image
+                src={B1}
+                alt="sdfd"
+                className="absolute bottom-0 h-20"
+            />
             <div className="absolute w-full h-full z-[-9] bg-gradient-to-t from-black via-black/10 to-black/50"></div>
 
             <div
@@ -40,7 +40,7 @@ const Hero = () => {
                     beauty of the Himalayas, and along the pristine Ganges River, where
                     every bend brings new thrills and breathtaking views.
                 </p>
-                <div className="mt-10 flex flex-col sm:flex-row md:ml-auto justify-center md:justify-end gap-x-6">
+                <div className="mt-10 mb-20 flex flex-col sm:flex-row md:ml-auto justify-center md:justify-end gap-x-6">
                     <Button text="Explore more" url="/explore" />
                     <a
                         href="/#packages"

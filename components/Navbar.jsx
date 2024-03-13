@@ -1,6 +1,5 @@
 "use client"
-import React, { useEffect, useState } from 'react';
-import Link from 'next/link';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import { ChevronDown, PieChart } from "lucide-react";
 
@@ -16,17 +15,17 @@ const menu = [
             {
                 name: "12 Km Rafting",
                 description: "Read more about 12 km Rafting",
-                href: "/rafting",
+                href: "/rafting/12-km-rafting",
             },
             {
                 name: "16 Km Rafting",
                 description: "Read more about 16 km Rafting",
-                href: "#",
+                href: "/rafting/16-km-rafting",
             },
             {
                 name: "26 Km Rafting",
                 description: "Read more about 26 km Rafting",
-                href: "#",
+                href: "/rafting/26-km-rafting",
             },
         ],
         width: "max-w-[34rem]"
@@ -38,12 +37,12 @@ const menu = [
             {
                 name: "Beginner",
                 description: "Read more about our 4 days kayak lesson.",
-                href: "#",
+                href: "/kayak/beginners-course",
             },
             {
                 name: "Intermediate",
                 description: "Read more about our 7 days kayak lesson.",
-                href: "#",
+                href: "/kayak/intermediate-course",
             },
         ],
         width: "max-w-[35rem]"
@@ -85,19 +84,82 @@ const menu = [
     },
 ];
 
+const mobile = [
+    {
+        title: "Rafting",
+        sub: [
+            {
+                name: "12 Km Rafting",
+                href: "/rafting/12-km-rafting",
+            },
+            {
+                name: "16 Km Rafting",
+                href: "/rafting/16-km-rafting",
+            },
+            {
+                name: "26 Km Rafting",
+                href: "/rafting/26-km-rafting",
+            },
+        ],
+    },
+    {
+        title: "Kayaking",
+        sub: [
+            {
+                name: "Beginner",
+                href: "/kayak/beginners-course",
+            },
+            {
+                name: "Intermediate",
+                href: "/kayak/intermediate-course",
+            },
+        ],
+    },
+    {
+        title: "Multi-day trip",
+        sub: [
+            {
+                name: "Rafting Expedition",
+                href: "#",
+            },
+            {
+                name: "Kayak Expedition",
+                href: "#",
+            },
+        ],
+    },
+    {
+        title: "More Links",
+        sub: [
+            {
+                name: "About us",
+                href: "/about",
+            },
+            {
+                name: "Contact us",
+                href: "/contacts",
+            },
+            {
+                name: "Gallery",
+                href: "/gallery",
+            },
+        ],
+        width: "max-w-[10rem]"
+    },
+]
+
 const Navbar = () => {
 
     const [mobilemenu, setMobileMenu] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
-
     const [open, setOpen] = useState(null);
 
     const toggleOpen = (index) => {
         setOpen(open === index ? null : index);
     };
 
-    const toggleDropdown = () => {
-        setIsOpen(!isOpen);
+    const toggleDropdown = (index) => {
+        setIsOpen(isOpen === index ? null : index);
     };
 
     const toggleMobileMenu = () => {
@@ -242,40 +304,32 @@ const Navbar = () => {
                             </div>
                             <div className='mt-6 flow-root'>
                                 <div className='-my-6 divide-y divide-gray-500/10'>
-                                    <div className='space-y-2 py-6'>
+                                    <div className='space-y-2 py-6 max-h-screen overscroll-y-none'>
+                                        {mobile.map((menu, i) => (
+                                            <div key={i}>
+                                                <button
+                                                    onClick={() => toggleDropdown(i)}
+                                                    className='block rounded-lg py-2 mb-2 text-base font-semibold leading-7 text-gray-900'>
+                                                    <span className='text-left flex'>
+                                                        {menu.title}
+                                                    </span>
 
-                                        <button onClick={toggleDropdown} className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900'>
-                                            {/* <a href='/explore' className='text-sm font-semibold leading-6 text-gray-900'> */}
-                                            <span className='text-left'>
-                                                Explore
-                                            </span>
-                                        </button>
-
-                                        {isOpen && (
-                                            <div className="ml-4 flex flex-col text-left gap-y-4 text-base font-semibold leading-7 text-gray-900">
-                                                <a
-                                                    href="/explore/rafting"
-                                                    className="hover:bg-gray-50 px-3 rounded-lg"
-                                                >
-                                                    Rafting
-                                                </a>
-                                                <a
-                                                    href="/explore/kayaking"
-                                                    className="hover:bg-gray-50 px-3 rounded-lg"
-                                                >
-                                                    Kayaking
-                                                </a>
-                                                <a
-                                                    href="/explore/rafting"
-                                                    className="hover:bg-gray-50 px-3 rounded-lg"
-                                                >
-                                                    Hiking
-                                                </a>
+                                                </button>
+                                                {isOpen === i && (
+                                                    <div className="flex ml-4 mt-2 flex-col gap-y-4 text-base font-semibold leading-7 text-gray-900">
+                                                        {menu.sub.map((c, j) => (
+                                                            <a
+                                                                key={i}
+                                                                href={c.href}
+                                                                className="hover:bg-gray-50 px-3 rounded-lg"
+                                                            >
+                                                                {c.name}
+                                                            </a>
+                                                        ))}
+                                                    </div>
+                                                )}
                                             </div>
-                                        )}
-                                        <a href='/booking' className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>Plan Trip</a>
-                                        <a href='/contacts' className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>Contacts</a>
-                                        <a href='/about' className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>About</a>
+                                        ))}
                                     </div>
                                 </div>
                             </div>
