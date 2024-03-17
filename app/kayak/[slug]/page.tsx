@@ -53,7 +53,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     return {
         title: kayak?.title,
         description: kayak?.title,
-        metadataBase: new URL('http://anjaanbackpackers.com/'),
+        metadataBase: new URL('https://www.seahawkadventures.com/'),
         openGraph: {
             images: [
                 {

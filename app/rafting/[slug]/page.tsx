@@ -52,7 +52,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     return {
         title: rafting?.title,
         description: rafting?.title,
-        metadataBase: new URL('http://anjaanbackpackers.com/'),
+        metadataBase: new URL('https://www.seahawkadventures.com/'),
         openGraph: {
             images: [
                 {

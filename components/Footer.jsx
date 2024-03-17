@@ -2,6 +2,73 @@ import React from 'react'
 import Image from 'next/image';
 import Logo from '@/public/logo.jpg';
 
+const links = [
+    {
+        id: 1,
+        title: "Rafting",
+        sub: [
+            {
+                name: "12 Km Rafting",
+                href: "/rafting/12-km-rafting",
+            },
+            {
+                name: "16 Km Rafting",
+                href: "/rafting/16-km-rafting",
+            },
+            {
+                name: "26 Km Rafting",
+                href: "/rafting/26-km-rafting",
+            },
+        ]
+    },
+    {
+        id: 2,
+        title: "Kayaking",
+        sub: [
+            {
+                name: "Beginner",
+                href: "/kayak/beginners-course",
+            },
+            {
+                name: "Intermediate",
+                href: "/kayak/intermediate-course",
+            },
+        ]
+    },
+    {
+        id: 3,
+        title: "Multi-day trip",
+        sub: [
+            {
+                name: "Rafting Expedition",
+                href: "#",
+            },
+            {
+                name: "Kayak Expedition",
+                href: "#",
+            },
+        ],
+    },
+    {
+        id: 4,
+        title: "Pages",
+        sub: [
+            {
+                name: "About us",
+                href: "/about",
+            },
+            {
+                name: "Contact us",
+                href: "/contacts",
+            },
+            {
+                name: "Gallery",
+                href: "/gallery",
+            },
+        ]
+    }
+]
+
 const Footer = () => {
     return (
         <footer className='relative pt-10 overflow-x-hidden pb-4 border-t border-gray-200'>
@@ -55,43 +122,22 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className='flex gap-x-20 max-w-md mt-10 md:justify-between md:mt-5 md:mr-32 md:max-w-none'>
-                        <div>
-                            <h3 className='mb-3 text-sm font-bold text-gray-900'>
-                                Services
-                            </h3>
-                            <ul className='flex flex-col space-y-2 flex-wrap text-sm font-medium text-gray-500'>
-
-                                <li>
-                                    <a href='/explore/rafting' className='hover:underline '>Rafting</a>
-                                </li>
-                                <li>
-                                    <a href='/explore/kayaking' className='hover:underline'>Kayaking</a>
-                                </li>
-                                <li>
-                                    <a href='#' className='hover:underline '>Hiking</a>
-                                </li>
-                                <li>
-                                    <a href="#" className='hover:underline'>Trekking</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 className='mb-3 text-sm font-bold text-gray-900'>Pages</h3>
-                            <ul className='flex flex-col space-y-2 flex-wrap text-sm font-medium text-gray-500'>
-                                <li>
-                                    <a href='#' className='hover:underline'>Hikes</a>
-                                </li>
-                                <li>
-                                    <a href='#' className='hover:underline'>Trips</a>
-                                </li>
-                                <li>
-                                    <a href='/contacts' className='hover:underline'>Contacts</a>
-                                </li>
-                                <li>
-                                    <a href="/about" className='hover:underline'>About</a>
-                                </li>
-                            </ul>
-                        </div>
+                        {links.map((link) => (
+                            <div key={link.id}>
+                                <h3 className='mb-3 text-sm font-bold text-gray-900'>
+                                    {link.title}
+                                </h3>
+                                <ul className='flex flex-col space-y-2 flex-wrap text-sm font-medium text-gray-500'>
+                                    {link.sub.map((l, j) => (
+                                        <li key={j}>
+                                            <a href={l.href} className='hover:underline '>
+                                                {l.name}
+                                            </a>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        ))}
                     </div>
                 </div>
 
@@ -119,14 +165,14 @@ const Footer = () => {
                             <a href='/' className='hover:underline'> Sea Hawk Adventures™</a>.
                             All Rights Reserved.
                         </span>
-                        <span className='mt-2 block text-xs text-gray-600 sm:text-right'>
+                        <span className='mt-2 block text-xs text-gray-800 sm:text-right'>
                             Designed by:
-                            <a target='_blank' href='https://www.deepaknegi.in/'>Deepak Negi</a>
+                            <a target='_blank' href='https://www.cnippet.com/'>Cnippet Inc</a>
                         </span>
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer >
     )
 }
 
