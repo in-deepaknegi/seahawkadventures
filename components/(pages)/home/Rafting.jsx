@@ -11,6 +11,7 @@ const packages = [
     {
         name: "12 Km Rafting",
         image: Rafting1,
+        href: "rafting/12-km-rafting",
         desc: [
             {
                 svg: (<svg xmlns="http://www.w3.org/2000/svg" className=" text-indigo-600" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" /><circle cx="12" cy="10" r="3" /></svg>),
@@ -30,17 +31,11 @@ const packages = [
             },
         ],
         rate: 620,
-        link: "www.example.com",
-        features: [
-            "Guide included",
-            "Additional safety kayaker",
-            "Age needed 14 - 55",
-            "Grade 4 + Grade 2 rapids"
-        ],
     },
     {
         name: "16 Km Rafting",
         image: Rafting2,
+        href: "rafting/16-km-rafting",
         desc: [
             {
                 svg: (<svg xmlns="http://www.w3.org/2000/svg" className=" text-indigo-600" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" /><circle cx="12" cy="10" r="3" /></svg>),
@@ -60,17 +55,12 @@ const packages = [
             },
         ],
         rate: 1020,
-        link: "www.example.com",
-        features: [
-            "Guide included",
-            "Additional safety kayaker",
-            "Age needed 14 - 55",
-            "Grade 2 + Grade 3 + body surfing"
-        ],
+
     },
     {
         name: "26 Km Rafting",
         image: Rafting3,
+        href: "rafting/26-km-rafting",
         desc: [
             {
                 svg: (<svg xmlns="http://www.w3.org/2000/svg" className=" text-indigo-600" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" /><circle cx="12" cy="10" r="3" /></svg>),
@@ -90,13 +80,6 @@ const packages = [
             },
         ],
         rate: 1520,
-        link: "www.example.com",
-        features: [
-            "Guide included",
-            "Additional safety kayaker",
-            "Age needed 14 - 55",
-            "Grade 2 + Grade 3 + Grade 4 + body surfing"
-        ],
     },
 ];
 
@@ -163,7 +146,7 @@ const Pricing = () => {
                                         /person
                                     </span>
                                 </p>
-                                <div className={`mt-5 flex w-full justify-start gap-2 md:gap-4`}>
+                                <div className={`mt-5 mb-6 flex w-full justify-start gap-2 md:gap-4`}>
                                     <a
                                         href={`https://wa.me/919756620538/?text=Hello! I'm interested in your rafting packages (${pack.name}) and would love to learn more. Can you please provide details on the types of trips available and their durations? Thank you `}
                                         target="_blank"
@@ -194,71 +177,9 @@ const Pricing = () => {
                                     <Button text="Book now" color="bg-blue-500" url={"#"} />
                                 </div>
 
-                                <div key={i} className={`mt-8`}>
-                                    <button
-                                        onClick={() => toggleActive()}
-                                        className="flex w-full items-start justify-between text-left">
-                                        <span className="text-sm font-semibold leading-7 text-gray-900">
-                                            Additional Information
-                                        </span>
-                                        <span>
-                                            {active ? (
-                                                <svg
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    width="18"
-                                                    height="18"
-                                                    viewBox="0 0 24 24"
-                                                    fill="none"
-                                                    stroke="currentColor"
-                                                    strokeWidth="2"
-                                                    strokeLinecap="round"
-                                                    strokeLinejoin="round"
-                                                >
-                                                    <path d="M5 12h14" />
-                                                </svg>
-                                            ) : (
-                                                <svg
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    width="20"
-                                                    height="20"
-                                                    viewBox="0 0 24 24"
-                                                    fill="none"
-                                                    stroke="currentColor"
-                                                    strokeWidth="2"
-                                                    strokeLinecap="round"
-                                                    strokeLinejoin="round"
-                                                >
-                                                    <path d="M5 12h14" />
-                                                    <path d="M12 5v14" />
-                                                </svg>
-                                            )}
-                                        </span>
-                                    </button>
-                                    {active && (
-                                        <dd className="mt-2 text-base leading-7 text-black">
-                                            <ul className="space-y-2 text-sm leading-6">
-                                                {pack.features.map((feature, j) => (
-                                                    <li key={j} className="flex gap-3">
-                                                        <svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            viewBox="0 0 20 20"
-                                                            fill="currentColor"
-                                                            aria-hidden="true"
-                                                            className="h-5 w-5 text-indigo-700"
-                                                        >
-                                                            <path
-                                                                fillRule="evenodd"
-                                                                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                                                                clipRule="evenodd"
-                                                            ></path>
-                                                        </svg>
-                                                        {feature}
-                                                    </li>
-                                                ))}
-                                            </ul>
-                                        </dd>
-                                    )}
-                                </div>
+                                <a href={pack.href} className="text-blue-600 text-sm font-semibold">
+                                    Read more <span aria-hidden="true">→</span>
+                                </a>
                             </div>
 
                         </div>

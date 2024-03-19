@@ -2,6 +2,7 @@ import React from 'react'
 import kayaks from '@/data/kayak';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import Icons from '@/components/Icons';
 
 const page = ({ params }: { params: { slug: string } }) => {
     const id = params.slug
@@ -15,6 +16,7 @@ const page = ({ params }: { params: { slug: string } }) => {
         <>
             <Navbar />
             <main>
+                <Icons />
                 <section className='px-6 mt-6 lg:px-8 lg:mt-8'>
                     <div className='relative isolate overflow-hidden shadow-xl shadow-gray-400 bg-white rounded-2xl'
                         style={{
