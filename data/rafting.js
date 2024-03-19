@@ -1,3 +1,4 @@
+import Hero from '@/components/(pages)/rafting/Hero';
 
 const rafting = [
     {
@@ -6,6 +7,12 @@ const rafting = [
         image: "url('/rafting/r01.jpg')",
         href: "/rafting/12-km-rafting",
         title: "12 Km Rafting in Rishikesh",
+        data: [
+            {
+                id: 1,
+                c1: <Hero />,
+            }
+        ]
     },
     {
         id: 2,

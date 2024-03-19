@@ -1,9 +1,11 @@
+"use server"
 import React from 'react'
 import raftings from '@/data/rafting';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import Layout from '@/components/Layout';
 
-const page = ({ params }: { params: { slug: string } }) => {
+const page = async ({ params }: { params: { slug: string } }) => {
     const id = params.slug
     const rafting = raftings.find((rafting: any) => rafting.slug === id)
 
@@ -15,7 +17,7 @@ const page = ({ params }: { params: { slug: string } }) => {
         <>
             <Navbar />
             <main>
-                <section className='px-6 mt-6 lg:px-8 lg:mt-8'>
+                {/* <section className='px-6 mt-6 lg:px-8 lg:mt-8'>
                     <div className='relative isolate overflow-hidden shadow-xl shadow-gray-400 bg-white rounded-2xl'
                         style={{
                             backgroundImage: `${rafting.image}`,
@@ -34,8 +36,9 @@ const page = ({ params }: { params: { slug: string } }) => {
                             </p>
                         </div>
                     </div>
-                </section>
-                {rafting.title}
+                </section> */}
+                
+                <Layout components={rafting.data} />
             </main>
             <Footer />
         </>
