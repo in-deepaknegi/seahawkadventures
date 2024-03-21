@@ -140,15 +140,18 @@ const Form = () => {
                 </div>
             </section>
 
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3450.496668569471!2d78.38628657490862!3d30.137213114170628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39091100497dec09%3A0x723dbf644ff9f1a7!2sSea%20Hawk%20Adventures!5e0!3m2!1sen!2sin!4v1710685852891!5m2!1sen!2sin"
-                width="1080"
-                height="600"
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                className="w-full rounded-2xl overflow-hidden max-w-7xl mx-auto lg:px-8 px-6"
-            ></iframe>
+            <section className="w-full max-w-7xl lg:px-8 px-6 mx-auto">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3450.496668569471!2d78.38628657490862!3d30.137213114170628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39091100497dec09%3A0x723dbf644ff9f1a7!2sSea%20Hawk%20Adventures!5e0!3m2!1sen!2sin!4v1710685852891!5m2!1sen!2sin"
+                    width="1080"
+                    height="600"
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    className="w-full rounded-2xl"
+                ></iframe>
+            </section>
+
         </>
     );
 };

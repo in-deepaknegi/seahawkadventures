@@ -6,6 +6,7 @@ import { ChevronDown, PieChart } from "lucide-react";
 import Logo from '@/public/logo.jpg';
 import R1 from '@/public/rafting/m00.jpg'
 import K1 from '@/public/kayak/k06.jpg'
+import M1 from '@/public/expedition/mu00.jpg'
 
 const menu = [
     {
@@ -31,7 +32,7 @@ const menu = [
         width: "max-w-[34rem]"
     },
     {
-        title: "Kayaking",
+        title: "Kayak School",
         image: K1,
         solutions: [
             {
@@ -49,7 +50,7 @@ const menu = [
     },
     {
         title: "Multi-day trip",
-        image: K1,
+        image: M1,
         solutions: [
             {
                 name: "Rafting Expedition",
@@ -62,7 +63,24 @@ const menu = [
                 href: "#",
             },
         ],
-        width: "max-w-[35rem]"
+        width: "max-w-[32rem]"
+    },
+    {
+        title: "Camping Package",
+        image: K1,
+        solutions: [
+            {
+                name: "Only Camping",
+                description: "Book your next expedition with us.",
+                href: "#",
+            },
+            {
+                name: "Combo Package",
+                description: "(Rafting + Camping)",
+                href: "#",
+            },
+        ],
+        width: "max-w-[33rem]"
     },
     {
         title: "More Links",
@@ -103,7 +121,7 @@ const mobile = [
         ],
     },
     {
-        title: "Kayaking",
+        title: "Kayak School",
         sub: [
             {
                 name: "Beginner",
@@ -124,6 +142,10 @@ const mobile = [
             },
             {
                 name: "Kayak Expedition",
+                href: "#",
+            },
+            {
+                name: "Camp Expedition",
                 href: "#",
             },
         ],
@@ -224,7 +246,7 @@ const Navbar = () => {
                             </button>
                         </div>
 
-                        <div className='hidden lg:flex lg:gap-x-12 ml-10'>
+                        <div className='hidden lg:flex lg:gap-x-10 ml-10'>
                             {menu.map((item, i) => (
                                 <div key={i} className="relative hidden lg:flex lg:gap-x-12">
                                     <button
@@ -276,9 +298,6 @@ const Navbar = () => {
                         </div>
 
                         <div className='hidden lg:ml-8 lg:flex lg:flex-none lg:gap-4 lg:items-center lg:pl-8'>
-                            <a href='#' className='text-gray-700'>Search</a>
-                            <a href='#' className='text-gray-700'>Help</a>
-                            <span className='h-5 w-[1px] bg-gray-500'></span>
                             <div>
                                 <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' strokeWidth='1.5' stroke='currentColor' aria-hidden='true' className='w-6 h-6 text-gray-600'><path strokeLinecap='round' strokeLinejoin='round' d='M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z'></path></svg>
                             </div>

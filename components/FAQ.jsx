@@ -10,24 +10,17 @@ const FAQ = ({ faq }) => {
 
     return (
         <section className='relative isolate'>
-            <div className='mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-20'>
+            <div className='mx-auto max-w-7xl'>
                 <div className='lg:grid lg:grid-cols-12 lg:gap-8'>
-                    <div className='lg:col-span-5'>
-                        <h2 className='text-4xl font-bold leading-10 text-gray-800'>Frequently asked questions</h2>
-                        <p className='mt-4 leading-7 text-gray-500'>
-                            Can&apos;t find the answer you&apos;re looking for? Reach out to our
-                            <a href="/contacts" className='text-orange-600'> customer support </a>
-                            team.
-                        </p>
-                    </div>
+                    
                     <div className='lg:col-span-7 mt-8 lg:mt-0'>
-                        <ul className='space-y-9'>
+                        <ul className='space-y-4'>
                             {faq.map((item, i) => (
                                 <li key={i}>
                                     <button
                                         onClick={() => toggleActive(i)}
                                         className='flex w-full items-start justify-between text-left'>
-                                        <span className='text-base font-semibold leading-7 text-gray-900'>
+                                        <span className='text-base font-semibold leading-7 text-black'>
                                             {item.question}
                                         </span>
                                         <span>
@@ -39,7 +32,7 @@ const FAQ = ({ faq }) => {
                                         </span>
                                     </button>
                                     {active === i && (
-                                        <dd className='mt-2 text-base leading-7 text-gray-600'>
+                                        <dd className='mt-2 text-base leading-7 text-gray-800'>
                                             {item.answer}
                                         </dd>
                                     )}

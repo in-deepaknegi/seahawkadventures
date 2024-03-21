@@ -3,7 +3,6 @@ import React from 'react'
 import raftings from '@/data/rafting';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import Layout from '@/components/Layout';
 import Icons from '@/components/Icons';
 
 const page = async ({ params }: { params: { slug: string } }) => {
@@ -20,7 +19,9 @@ const page = async ({ params }: { params: { slug: string } }) => {
             <main>
                 <Icons />
 
-                <Layout components={rafting.data} />
+                <section>
+                    {rafting.data}
+                </section>
             </main>
             <Footer />
         </>

@@ -1,9 +1,9 @@
 'use client'
 import Image from 'next/image';
 import React from 'react'
-import Kayak1 from '@/public/kayak3.WEBP'
-import Rafting2 from '@/public/rafting3.WEBP'
-import Hiking1 from '@/public/hiking1.WEBP'
+import Kayak1 from '@/public/kayak/k01.jpg'
+import Rafting2 from '@/public/rafting/r02.jpg'
+import Hiking1 from '@/public/rafting/r08.jpg'
 
 const timeline = [
     {

@@ -1,25 +1,10 @@
-"use client"
-import React, { useState } from "react";
-import { Swiper, SwiperSlide } from 'swiper/react';
+import React from "react";
+import Image from "next/image";
 
-import 'swiper/css';
-import 'swiper/css/free-mode';
-import 'swiper/css/navigation';
-import 'swiper/css/thumbs';
-
-import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
-
+import Faq from '@/components/FAQ';
+import GalleryR from '@/components/(subset)/gallery/expedition';
 
 import C1 from '@/public/kayak/kk.svg'
-import Image from "next/image";
-import R1 from '@/public/rafting/m00.jpg'
-import R2 from '@/public/rafting/r01.jpg'
-import R3 from '@/public/rafting/r03.jpg'
-import R4 from '@/public/rafting/r04.jpg'
-import R5 from '@/public/rafting/r05.jpg'
-import R6 from '@/public/rafting/r07.jpg'
-
-
 
 import S1 from '@/public/svg/s00.svg';
 import S2 from '@/public/svg/sandtimer.svg';
@@ -101,37 +86,10 @@ const Data = [
     },
 ];
 
-const gallery = [
-    {
-        image: R1,
-    },
-    {
-        image: R2,
-    },
-    {
-        image: R3,
-    },
-    {
-        image: R4,
-    },
-    {
-        image: R5,
-    },
-    {
-        image: R6,
-    },
-]
-
 const Hero = () => {
-    const [active, setActive] = useState(null);
-    const [thumbsSwiper, setThumbsSwiper] = useState(null);
-
-    const toggleActive = (index) => {
-        setActive(active === index ? null : index);
-    };
 
     return (
-        <section className="relative isolate bg-white py-10 md:py-16">
+        <div className="relative isolate bg-white py-10 md:py-16">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="relative z-50 max-w-full px-5 md:px-16">
                     <div className="flex flex-col justify-between space-y-10 rounded-xl bg-black p-6 shadow-2xl md:p-12 lg:flex-row lg:space-y-0">
@@ -206,7 +164,6 @@ const Hero = () => {
                                         </span>
                                         {feature.description}
                                     </span>
-
                                 </li>
                             ))}
                         </ul>
@@ -244,60 +201,7 @@ const Hero = () => {
                             Frequently asked question
                         </h3>
 
-                        <div className=" w-full md:w-[55%] z-20">
-                            <dl className="space-y-4">
-                                {Data.map((item, i) => (
-                                    <div key={i}>
-                                        <dt>
-                                            <button
-                                                onClick={() => toggleActive(i)}
-                                                className="flex w-full items-start justify-between text-left">
-                                                <span className="text-base font-semibold leading-7 text-gray-900">
-                                                    {item.question}
-                                                </span>
-                                                <span>
-                                                    {active === i ? (
-                                                        <svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            width="20"
-                                                            height="20"
-                                                            viewBox="0 0 24 24"
-                                                            fill="none"
-                                                            stroke="currentColor"
-                                                            strokeWidth="2"
-                                                            strokeLinecap="round"
-                                                            strokeLinejoin="round"
-                                                        >
-                                                            <path d="M5 12h14" />
-                                                        </svg>
-                                                    ) : (
-                                                        <svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            width="20"
-                                                            height="20"
-                                                            viewBox="0 0 24 24"
-                                                            fill="none"
-                                                            stroke="currentColor"
-                                                            strokeWidth="2"
-                                                            strokeLinecap="round"
-                                                            strokeLinejoin="round"
-                                                        >
-                                                            <path d="M5 12h14" />
-                                                            <path d="M12 5v14" />
-                                                        </svg>
-                                                    )}
-                                                </span>
-                                            </button>
-                                        </dt>
-                                        {active === i && (
-                                            <dd className="mt-2 text-base leading-7 text-gray-700">
-                                                {item.answer}
-                                            </dd>
-                                        )}
-                                    </div>
-                                ))}
-                            </dl>
-                        </div>
+                        <Faq faq={Data} />
 
                         <hr />
 
@@ -323,53 +227,13 @@ const Hero = () => {
 
                         {/* Image gallery */}
                         <div className="w-full h-full px-1 md:px-10 lg:px-20">
-                            <Swiper
-                                style={{
-                                    '--swiper-navigation-color': '#fff',
-                                    '--swiper-pagination-color': '#fff',
-                                }}
-                                spaceBetween={10}
-                                navigation={true}
-                                thumbs={{ swiper: thumbsSwiper }}
-                                modules={[FreeMode, Navigation, Thumbs]}
-                                className="w-full relative h-full z-50"
-                            >
-                                {gallery.map((sub, i) => (
-                                    <SwiperSlide key={i}>
-                                        <Image
-                                            src={sub.image}
-                                            alt="sub"
-                                            className="h-[17rem] md:h-[25rem] rounded-2xl object-cover"
-                                        />
-                                    </SwiperSlide>
-                                ))}
-
-                            </Swiper>
-                            <Swiper
-                                onSwiper={setThumbsSwiper}
-                                spaceBetween={10}
-                                slidesPerView={4}
-                                freeMode={true}
-                                watchSlidesProgress={true}
-                                modules={[FreeMode, Navigation, Thumbs]}
-                                className="mySwiper mt-5"
-                            >
-                                {gallery.map((sub, i) => (
-                                    <SwiperSlide key={i}>
-                                        <Image
-                                            src={sub.image}
-                                            alt="sub"
-                                            className="h-32 md:h-40 w-full rounded-lg object-cover"
-                                        />
-                                    </SwiperSlide>
-                                ))}
-                            </Swiper>
+                            <GalleryR />
                         </div>
 
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     );
 };
 

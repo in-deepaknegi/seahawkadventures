@@ -60,15 +60,15 @@ const Team = () => {
                 </div>
                 <ul role='list' className='mx-auto mt-20 md:px-10 grid grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3'>
                     {people.map((person) => (
-                        <li key={person.name} className='border bg-gray-50 flex flex-col items-center rounded-2xl shadow-xl p-6' data-aos="fade-up" data-aos-duration="500" data-aos-delay={person.delay}>
+                        <li key={person.name} className='border bg-black/90 flex flex-col items-center rounded-2xl shadow-xl p-6' data-aos="fade-up" data-aos-duration="500" data-aos-delay={person.delay}>
                             <Image
                                 src={person.imageUrl}
                                 alt='person'
                                 className='w-52 h-52 rounded-full object-cover mx-auto'
                             />
-                            <h3 className="mt-6 text-2xl font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
+                            <h3 className="mt-6 text-2xl font-semibold leading-7 tracking-tight text-gray-100">{person.name}</h3>
                             <p className="mt-3 text-lg font-semibold leading-6 text-blue-700">{person.role}</p>
-                            <p className='text-sm mt-3 text-gray-900'>{person.description}</p>
+                            <p className='text-sm mt-3 text-gray-200'>{person.description}</p>
                         </li>
                     ))}
                 </ul>
